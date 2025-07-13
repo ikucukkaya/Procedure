@@ -23,9 +23,6 @@
   </Point><Point Name="ELNUG" Type="Fix">
     <Latitude>41 07 35.13 N</Latitude>
     <Longitude>28 42 36.51 E</Longitude>
-  </Point><Point Name="ETLEY" Type="Fix">
-    <Latitude>41 54 24.48 N</Latitude>
-    <Longitude>29 26 06.97 E</Longitude>
   </Point><Point Name="EVMOG" Type="Fix">
     <Latitude>40 32 35.83 N</Latitude>
     <Longitude>28 45 02.26 E</Longitude>
@@ -158,8 +155,6 @@
   </Point><Point Name="FM084" Type="Fix">
     <Latitude>41 47 16.27 N</Latitude>
     <Longitude>29 15 13.32 E</Longitude>
-  </Point><Point Name="FM085" Type="Fix">
-    <Latitude>42 03 45.20 N</Latitude>
     <Longitude>29 40 26.49 E</Longitude>
   </Point><Point Name="FM086" Type="Fix">
     <Latitude>42 08 03.23 N</Latitude>
@@ -1253,4 +1248,19 @@
   </Point><Point Name="FM816" Type="Fix">
     <Latitude>41 34 55.37 N</Latitude>
     <Longitude>28 19 45.16 E</Longitude>  
+  </Point><Point Name="OZZAW" Type="Fix">
+    <Latitude>41 54 24.48 N</Latitude>
+    <Longitude>29 26 06.97 E</Longitude>
+  </Point><Point Name="FM051" Type="Fix">
+    <Latitude>41 10 54.32 N</Latitude>
+    <Longitude>28 43 45.53 E</Longitude>
+  </Point><Point Name="EKAWE" Type="Fix">
+    <Latitude>42 01 51.74 N</Latitude>
+    <Longitude>30 07 23.26 E</Longitude>
+  </Point><Point Name="SAFHU" Type="Fix">
+    <Latitude>42 03 45.20 N</Latitude>
+    <Longitude>29 40 26.49 E</Longitude>
+  </Point><Point Name="FM026" Type="Fix">
+    <Latitude>41 22 56.18 N</Latitude>
+    <Longitude>28 43 31.23 E</Longitude>
   </Point></Fixes>

@@ -704,57 +704,60 @@ class LeftSidebar(QWidget):
                             region_section.setContentLayout(region_layout)
                             proc_group_layout.addWidget(region_section)
                     
-                    else:  # SID procedures - keep original logic
-                        # Group procedures by runway
-                        runway_procedures = defaultdict(list)
+                    else:  # SID procedures - use configuration-based grouping like STARs
+                        # Group procedures by runway configuration
+                        runway_procedures = {}
                         for runway in procedures[proc_type][airport]:
-                            base_runway = self.get_base_runway(runway)
-                            for procedure in procedures[proc_type][airport][runway]:
-                                runway_procedures[base_runway].append((runway, procedure))
+                            runway_procedures[runway] = procedures[proc_type][airport][runway]
                         
-                        # Add procedures grouped by runway
-                        for base_runway in sorted(runway_procedures.keys()):
-                            # Use QGroupBox instead of CollapsibleSection for runway
-                            runway_group_box = QGroupBox(f"Pist {base_runway}")
-                            runway_group_box.setStyleSheet("""
-                                QGroupBox {
+                        # Create configuration sections for SIDs
+                        sid_configs = ["KUZEY", "GÜNEY", "TERS_KUZEY", "TERS_GÜNEY"]
+                        
+                        for config in sid_configs:
+                            config_section = CollapsibleSection(config)
+                            config_section.setStyleSheet("""
+                                QFrame {
                                     border: 1px solid #e0e0e0;
                                     border-radius: 3px;
-                                    margin-top: 8px;
-                                    padding-top: 8px;
-                                }
-                                QGroupBox::title {
-                                    subcontrol-origin: margin;
-                                    left: 5px;
-                                    padding: 0 3px;
                                     background-color: #fcfcfc;
+                                    margin: 2px;
+                                }
+                                QToolButton {
+                                    border: none;
+                                    background: transparent;
+                                    font-weight: bold;
+                                }
+                                QLabel {
+                                    font-weight: bold;
+                                    color: #333333;
                                 }
                             """)
-                            runway_layout = QVBoxLayout() # Layout for the group box
-                            runway_layout.setSpacing(2)
-                            runway_layout.setContentsMargins(5, 5, 5, 5)
+                            config_layout = QVBoxLayout()
+                            config_layout.setSpacing(2)
+                            config_layout.setContentsMargins(5, 5, 5, 5)
                             
-                            # Add procedures for this runway group
-                            for runway, procedure in sorted(runway_procedures[base_runway]):
-                                cb = QCheckBox(procedure)
-                                cb.setStyleSheet("""
-                                    QCheckBox {
-                                        padding: 4px;
-                                        border-radius: 2px;
-                                        font-size: 11px;
-                                    }
-                                    QCheckBox:hover {
-                                        background-color: rgba(240, 240, 240, 0.7);
-                                    }
-                                """)
-                                cb.toggled.connect(
-                                    lambda checked, p=procedure, t=proc_type, a=airport, r=runway: 
-                                    self.procedureToggled.emit(checked, t, a, r, p)
-                                )
-                                runway_layout.addWidget(cb)
+                            # Add procedures for this configuration
+                            if config in runway_procedures:
+                                for procedure in sorted(runway_procedures[config]):
+                                    cb = QCheckBox(procedure)
+                                    cb.setStyleSheet("""
+                                        QCheckBox {
+                                            padding: 4px;
+                                            border-radius: 2px;
+                                            font-size: 11px;
+                                        }
+                                        QCheckBox:hover {
+                                            background-color: rgba(240, 240, 240, 0.7);
+                                        }
+                                    """)
+                                    cb.toggled.connect(
+                                        lambda checked, p=procedure, t=proc_type, a=airport, r=config: 
+                                        self.procedureToggled.emit(checked, t, a, r, p)
+                                    )
+                                    config_layout.addWidget(cb)
                             
-                            runway_group_box.setLayout(runway_layout)
-                            proc_group_layout.addWidget(runway_group_box)
+                            config_section.setContentLayout(config_layout)
+                            proc_group_layout.addWidget(config_section)
                     
                     proc_group_box.setLayout(proc_group_layout)
                     airport_layout.addWidget(proc_group_box)

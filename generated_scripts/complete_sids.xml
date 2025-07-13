@@ -1,0 +1,2555 @@
+  <SIDs>
+    <!-- KUZEY Configuration -->
+    <RunwayConfig Name="KUZEY">
+      <SID Name="BARPE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="TETPU" Turn="Right" />
+          <Waypoint Name="INPIK" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="GUEME" Turn="Right" />
+          <Waypoint Name="ORIAC" Turn="Left" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Turn="Left" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="TETPU" Turn="Right" />
+          <Waypoint Name="INPIK" />
+          <Waypoint Name="ADMIV" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAK0L" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" />
+          <Waypoint Name="EVMOG" Turn="Left" />
+          <Waypoint Name="GUPTU" Turn="Right" />
+          <Waypoint Name="XESRA" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" />
+          <Waypoint Name="EVMOG" Turn="Left" />
+          <Waypoint Name="GUPTU" Turn="Right" />
+          <Waypoint Name="XESRA" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Left" />
+          <Waypoint Name="FM076" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Right" />
+          <Waypoint Name="GUPTU" />
+          <Waypoint Name="XESRA" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM044" Turn="Left" />
+          <Waypoint Name="FM046" />
+          <Waypoint Name="INRUV" />
+          <Waypoint Name="LIDMU" Turn="Left" />
+          <Waypoint Name="NOTVI" Turn="Right" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM044" Turn="Left" />
+          <Waypoint Name="FM046" />
+          <Waypoint Name="INRUV" />
+          <Waypoint Name="LIDMU" Turn="Left" />
+          <Waypoint Name="NOTVI" Turn="Right" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" Turn="Left" />
+          <Waypoint Name="FM044" Turn="Left" />
+          <Waypoint Name="FM046" />
+          <Waypoint Name="INRUV" />
+          <Waypoint Name="LIDMU" Turn="Left" />
+          <Waypoint Name="NOTVI" Turn="Right" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NASNA" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NASNA" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Left" />
+          <Waypoint Name="FM076" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NASNA" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+    </RunwayConfig>
+    <!-- GÜNEY Configuration -->
+    <RunwayConfig Name="GÜNEY">
+      <SID Name="BARPE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="TETPU" Turn="Right" />
+          <Waypoint Name="INPIK" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="GUEME" Turn="Right" />
+          <Waypoint Name="ORIAC" Turn="Left" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Turn="Left" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="TETPU" Turn="Right" />
+          <Waypoint Name="INPIK" />
+          <Waypoint Name="ADMIV" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAK0L" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" />
+          <Waypoint Name="EVMOG" Turn="Left" />
+          <Waypoint Name="GUPTU" Turn="Right" />
+          <Waypoint Name="XESRA" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" />
+          <Waypoint Name="EVMOG" Turn="Left" />
+          <Waypoint Name="GUPTU" Turn="Right" />
+          <Waypoint Name="XESRA" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Left" />
+          <Waypoint Name="FM076" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Right" />
+          <Waypoint Name="GUPTU" />
+          <Waypoint Name="XESRA" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM044" Turn="Left" />
+          <Waypoint Name="FM046" />
+          <Waypoint Name="INRUV" />
+          <Waypoint Name="LIDMU" Turn="Left" />
+          <Waypoint Name="NOTVI" Turn="Right" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM044" Turn="Left" />
+          <Waypoint Name="FM046" />
+          <Waypoint Name="INRUV" />
+          <Waypoint Name="LIDMU" Turn="Left" />
+          <Waypoint Name="NOTVI" Turn="Right" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" Turn="Left" />
+          <Waypoint Name="FM044" Turn="Left" />
+          <Waypoint Name="FM046" />
+          <Waypoint Name="INRUV" />
+          <Waypoint Name="LIDMU" Turn="Left" />
+          <Waypoint Name="NOTVI" Turn="Right" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NASNA" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" />
+          <Waypoint Name="VRACA" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NASNA" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Left" />
+          <Waypoint Name="FM076" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NASNA" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+    </RunwayConfig>
+    <!-- TERS_KUZEY Configuration -->
+    <RunwayConfig Name="TERS_KUZEY">
+      <SID Name="BARPE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="TETPU" Turn="Right" />
+          <Waypoint Name="INPIK" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="GUEME" Turn="Right" />
+          <Waypoint Name="ORIAC" Turn="Left" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Turn="Left" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="TETPU" Turn="Right" />
+          <Waypoint Name="INPIK" />
+          <Waypoint Name="ADMIV" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAK0L" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1T" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Right" />
+          <Waypoint Name="FM079" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1U" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Right" />
+          <Waypoint Name="FM079" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1V" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Left" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Right" />
+          <Waypoint Name="FM079" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1Q" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1R" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1S" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1T" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Left" />
+          <Waypoint Name="NENVI" Turn="Left" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1U" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Left" />
+          <Waypoint Name="NENVI" Turn="Left" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1V" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Left" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Left" />
+          <Waypoint Name="NENVI" Turn="Left" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+    </RunwayConfig>
+    <!-- TERS_GÜNEY Configuration -->
+    <RunwayConfig Name="TERS_GÜNEY">
+      <SID Name="BARPE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" />
+          <Waypoint Name="ORIAC" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="BARPE1V" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="UMBEM" />
+          <Waypoint Name="MIVDI" Turn="Right" />
+          <Waypoint Name="APSID" Turn="Right" />
+          <Waypoint Name="BARPE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Right" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="EKAWE1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" />
+          <Waypoint Name="SAFHU" Turn="Right" />
+          <Waypoint Name="EKAWE" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Turn="Left" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IBLAX1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" Turn="Right" />
+          <Waypoint Name="IBLAX" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Right" />
+          <Waypoint Name="FM025" Turn="Left" />
+          <Waypoint Name="BIBAM" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="MIKOC" Turn="Right" />
+          <Waypoint Name="KRASO" Turn="Right" />
+          <Waypoint Name="BIBAM" Altitude="12000+" />
+          <Waypoint Name="NAHUM" />
+          <Waypoint Name="RITGU" Turn="Right" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM056" Turn="Right" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Right" />
+          <Waypoint Name="FM056" />
+          <Waypoint Name="FM057" Turn="Left" />
+          <Waypoint Name="ADMIV" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="IVGUS1V" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" />
+          <Waypoint Name="TIBNU" Altitude="6000+" Turn="Right" />
+          <Waypoint Name="ASGAX" Turn="Right" />
+          <Waypoint Name="UMBEM" />
+          <Waypoint Name="MIVDI" Turn="Left" />
+          <Waypoint Name="IVGUS" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Right" />
+          <Waypoint Name="MUTBE" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAKOL" />
+        </Route>
+      </SID>
+      <SID Name="MAKOL1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM081" Turn="Right" />
+          <Waypoint Name="FM082" Turn="Right" />
+          <Waypoint Name="FM083" />
+          <Waypoint Name="FM084" Turn="Left" />
+          <Waypoint Name="OZZAW" Turn="Left" />
+          <Waypoint Name="MAK0L" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Right" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="FM045" Turn="Right" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1T" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Right" />
+          <Waypoint Name="FM079" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1U" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Right" />
+          <Waypoint Name="FM079" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="RATVU1V" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Left" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Right" />
+          <Waypoint Name="FM079" Turn="Left" />
+          <Waypoint Name="RATVU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM090" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Left" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" Turn="Right" />
+          <Waypoint Name="UNLIR" Turn="Right" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM011" Turn="Left" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Left" />
+          <Waypoint Name="QUNTE" Altitude="6400+" Turn="Left" />
+          <Waypoint Name="GITVO" Turn="Left" />
+          <Waypoint Name="GOVGU" />
+          <Waypoint Name="ACCUA" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1G" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM060" Turn="Right" />
+          <Waypoint Name="REDGI" Turn="Right" />
+          <Waypoint Name="FM061" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VADEN1H" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM073" Turn="Left" />
+          <Waypoint Name="HANCI" Turn="Left" />
+          <Waypoint Name="FM061" Turn="Right" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1Q" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM017" Altitude="2000+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM018" Turn="Left" />
+          <Waypoint Name="FM019" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1R" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM026" Altitude="1750+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM020" Turn="Left" />
+          <Waypoint Name="FM021" Turn="Left" />
+          <Waypoint Name="ELNUG" Turn="Left" />
+          <Waypoint Name="MIKOC" />
+          <Waypoint Name="FILFU" Turn="Right" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1S" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM032" Altitude="2200+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM033" Turn="Right" />
+          <Waypoint Name="FM034" Turn="Right" />
+          <Waypoint Name="FILFU" />
+          <Waypoint Name="FM043" Turn="Left" />
+          <Waypoint Name="ROCHE" Turn="Left" />
+          <Waypoint Name="NENVI" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1T" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Left" />
+          <Waypoint Name="FM054" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Left" />
+          <Waypoint Name="NENVI" Turn="Left" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1U" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM051" Altitude="1800+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM054" Turn="Left" />
+          <Waypoint Name="ASGAX" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Right" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Left" />
+          <Waypoint Name="NENVI" Turn="Left" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+      <SID Name="VICEN1V" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM072" Altitude="2030+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM074" Turn="Left" />
+          <Waypoint Name="FM077" Turn="Left" />
+          <Waypoint Name="FM078" Turn="Right" />
+          <Waypoint Name="PEPAK" Turn="Left" />
+          <Waypoint Name="NENVI" Turn="Left" />
+          <Waypoint Name="IBSIN" />
+          <Waypoint Name="LECKI" />
+          <Waypoint Name="VICEN" />
+        </Route>
+      </SID>
+    </RunwayConfig>
+  </SIDs>

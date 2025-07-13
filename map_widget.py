@@ -46,8 +46,8 @@ class MapWidget(QWidget):
         # Ekran boyutunun %60'ı kadar minimum bir boyut belirle
         from PyQt5.QtWidgets import QDesktopWidget
         screen_size = QDesktopWidget().availableGeometry().size()
-        min_width = int(screen_size.width())
-        min_height = int(screen_size.height())
+        min_width = int(screen_size.width() * 0.8)
+        min_height = int(screen_size.height() * 0.8)
         self.setMinimumSize(min_width, min_height)
         
         # Initialize view parameters
