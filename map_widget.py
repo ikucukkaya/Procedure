@@ -46,15 +46,15 @@ class MapWidget(QWidget):
         # Ekran boyutunun %60'ı kadar minimum bir boyut belirle
         from PyQt5.QtWidgets import QDesktopWidget
         screen_size = QDesktopWidget().availableGeometry().size()
-        min_width = int(screen_size.width() * 0.6)
-        min_height = int(screen_size.height() * 0.6)
+        min_width = int(screen_size.width())
+        min_height = int(screen_size.height())
         self.setMinimumSize(min_width, min_height)
         
         # Initialize view parameters
-        self.zoom = 1.0
+        self.zoom = 1.2
         self.center_lat = 41.0
         self.center_lon = 29.0
-        self.base_scale = 240.0  # Base scale factor for zoom level 1
+        self.base_scale = 320.0  # Base scale factor for zoom level 1
         self.rotation = 0.0  # Rotation angle in degrees
         self.tilt = 0.0  # Tilt angle in degrees (0-60)
         
@@ -133,20 +133,6 @@ class MapWidget(QWidget):
         self.rotate_center_lat_lon = None  # Döndürme merkezi (coğrafi koordinatlar)
         self.rotate_start_angle = None  # Başlangıç açısı
         
-        # Define a list of colors for point merge patterns - made more distinct
-        self.point_merge_colors = [
-            QColor(0, 128, 128),    # Teal
-            QColor(180, 0, 0),      # Dark Red
-            QColor(0, 120, 0),      # Dark Green
-            QColor(0, 0, 180),      # Dark Blue
-            QColor(128, 0, 128),    # Purple
-            QColor(160, 82, 45),    # Sienna/Brown
-            QColor(0, 128, 64),     # Sea Green
-            QColor(128, 128, 0),    # Olive
-            QColor(64, 0, 128),     # Indigo
-            QColor(128, 64, 0)      # Brown
-        ]
-        
         # Define a list of colors for trajectories
         self.trajectory_colors = [
             QColor(255, 0, 0),      # Red
@@ -177,8 +163,8 @@ class MapWidget(QWidget):
         
         # Initialize light mode colors
         self.colors = {
-            'land': QColor(240, 240, 240),  # Light gray for land
-            'border': QColor(100, 100, 100),  # Daha koyu gri (daha belirgin sınırlar için)
+            'land': QColor(180, 180, 180),  # Dark gray for land
+            'border': QColor(0, 0, 0),  # Daha koyu gri (daha belirgin sınırlar için)
             'procedure': QColor(0, 0, 255),  # Blue for procedures
             'waypoint': QColor(255, 0, 0),  # Red for waypoints
             'runway': QColor(0, 0, 0),  # Black for runways
@@ -190,9 +176,9 @@ class MapWidget(QWidget):
             'route_drawing': QColor(0, 120, 255),    # Çizilirken mavi
             'route_default': QColor(128, 0, 128),    # Normal durumda mor
             'route_selected': QColor(255, 165, 0),   # Seçildiğinde turuncu
-            'trombone_default': QColor(128, 0, 128), # Trombone normal durumda mor
+            'trombone_default': QColor(0, 120, 255), # Trombone normal durumda mavi
             'trombone_selected': QColor(255, 165, 0), # Trombone seçildiğinde turuncu
-            'pointmerge_default': QColor(128, 0, 128), # Point merge normal durumda mor
+            'pointmerge_default': QColor(0, 120, 255), # Point merge normal durumda mavi
             'pointmerge_selected': QColor(255, 165, 0), # Point merge seçildiğinde turuncu
             'moving': QColor(0, 200, 0),             # Taşınırken yeşil
             'rotating': QColor(200, 100, 0)          # Döndürülürken turuncu-kırmızı
@@ -1162,7 +1148,7 @@ class MapWidget(QWidget):
                     if i == self.selected_path_index or i in self.selected_route_indices:
                         # Taşıma modunda olan yol için farklı stil
                         if self.route_move_mode and route.get('id') == self.route_being_moved:
-                            painter.setPen(QPen(QColor(0, 200, 0), 4, Qt.DashLine))  # Yeşil, kesikli çizgi
+                            painter.setPen(QPen(self.colors['pointmerge_default'], 4, Qt.DashLine))  # Mavi, kesikli çizgi
                         # Döndürme modunda olan yol için farklı stil
                         elif self.route_rotate_mode and route.get('id') == self.route_being_rotated:
                             painter.setPen(QPen(QColor(200, 100, 0), 4, Qt.DotLine))  # Turuncu-kırmızı, noktalı çizgi
@@ -1423,7 +1409,7 @@ class MapWidget(QWidget):
                         # Get the color based on selection status
                         if self.route_move_mode and route.get('id') == self.route_being_moved:
                             # Taşıma modundaki rota için özel renk
-                            fill_color = QColor(0, 200, 0)  # Yeşil
+                            fill_color = self.colors['pointmerge_default']  # Mavi
                         elif self.route_rotate_mode and route.get('id') == self.route_being_rotated:
                             # Döndürme modundaki rota için özel renk
                             fill_color = QColor(200, 100, 0)  # Turuncu-kırmızı
@@ -1459,7 +1445,10 @@ class MapWidget(QWidget):
                         # Normal waypoints
                         if self.route_move_mode and route.get('id') == self.route_being_moved:
                             # Taşıma modundaki rota için özel renk
-                            painter.setBrush(QBrush(QColor(0, 200, 0)))  # Yeşil
+                            if pattern_type == 'pointmerge':
+                                painter.setBrush(QBrush(self.colors['pointmerge_default']))  # Mavi
+                            else:
+                                painter.setBrush(QBrush(self.route_color))  # Route için normal renk
                         elif self.route_rotate_mode and route.get('id') == self.route_being_rotated:
                             # Döndürme modundaki rota için özel renk
                             painter.setBrush(QBrush(QColor(200, 100, 0)))  # Turuncu-kırmızı
@@ -1934,12 +1923,12 @@ class MapWidget(QWidget):
         if pattern_type == 'pointmerge':
             pm_routes = [r for r in self.drawn_elements['routes'] if r.get('type', '') == 'pointmerge']
             if not config.get('editing_existing_route', False):
-                color_index = len(pm_routes) % len(self.point_merge_colors)
-                pattern_color = self.point_merge_colors[color_index]
+                # Tüm point merge'ler için aynı default rengi kullan
+                pattern_color = self.colors['pointmerge_default']
             else:
                 route_id = config.get('route_id')
                 existing_route = next((r for r in self.drawn_elements['routes'] if r.get('id') == route_id), None)
-                color_value = existing_route.get('color', self.point_merge_colors[0]) if existing_route else self.point_merge_colors[0]
+                color_value = existing_route.get('color', self.colors['pointmerge_default']) if existing_route else self.colors['pointmerge_default']
                 pattern_color = self._parse_color(color_value)
         else:
             pattern_color = QColor(128, 0, 128) # Purple for trombone
