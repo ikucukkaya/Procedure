@@ -1,0 +1,964 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Procedures>
+  <SIDs>
+    <Runway Name="16L">
+      <SID Name="VADEN1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Altitude="8000+" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" Turn="Left" />
+          <Waypoint Name="FM066" Turn="Right" />
+          <Waypoint Name="VADEN" />
+        </Route>
+      </SID>
+      <SID Name="TUDBU1F" Airport="LTFM">
+        <Route>
+          <Waypoint Name="FM047" Altitude="2100+" Speed="240-" Turn="Right" />
+          <Waypoint Name="FM048" Turn="Right" />
+          <Waypoint Name="FM049" Turn="Right" />
+          <Waypoint Name="FM061" Altitude="8000+" Turn="Left" />
+          <Waypoint Name="FM062" Turn="Left" />
+          <Waypoint Name="FM063" />
+          <Waypoint Name="FM064" Turn="Right" />
+          <Waypoint Name="FM065" />
+          <Waypoint Name="TUDBU" />
+        </Route>
+      </SID>
+    </Runway>
+  </SIDs>
+  <STARs>
+    <Runway Name="34L">
+      
+      <STAR Name="RIXEN1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RIXEN" />
+          <Waypoint Name="GINLI" />
+          <Waypoint Name="ATVAS" />
+          <Waypoint Name="GITVO" />
+          <Waypoint Name="FM906" />
+          <Waypoint Name="FM907" />
+          <Waypoint Name="FM908" />
+          <Waypoint Name="FM827" />
+          <Waypoint Name="FM830" />
+          <Waypoint Name="FM831" />
+          <Waypoint Name="FM832" />
+          <Waypoint Name="FM833" />
+          <Waypoint Name="FM834" />
+          <Waypoint Name="FM835" />
+          <Waypoint Name="FM836" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="NUGBA1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="NUGBA" />
+          <Waypoint Name="FM470" />
+          <Waypoint Name="FM471" />
+          <Waypoint Name="FM472" />
+          <Waypoint Name="FM473" />
+          <Waypoint Name="FM443" />
+          <Waypoint Name="FM444" />
+          <Waypoint Name="FM425" />
+          <Waypoint Name="FM921" />
+          <Waypoint Name="LIZTA" />
+          <Waypoint Name="FM035" />
+          <Waypoint Name="FM908" />
+          <Waypoint Name="FM827" />
+          <Waypoint Name="FM830" />
+          <Waypoint Name="FM831" />
+          <Waypoint Name="FM832" />
+          <Waypoint Name="FM833" />
+          <Waypoint Name="FM834" />
+          <Waypoint Name="FM835" />
+          <Waypoint Name="FM836" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="KANQO1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="KANQO" />
+          <Waypoint Name="FM440" />
+          <Waypoint Name="FM441" />
+          <Waypoint Name="FM442" />
+          <Waypoint Name="FM443" />
+          <Waypoint Name="FM444" />
+          <Waypoint Name="FM425" />
+          <Waypoint Name="FM426" />
+          <Waypoint Name="FM430" />
+          <Waypoint Name="FM431" />
+          <Waypoint Name="FM432" />
+          <Waypoint Name="FM433" />
+          <Waypoint Name="FM434" />
+          <Waypoint Name="FM435" />
+          <Waypoint Name="FM436" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" />
+          <Waypoint Name="FM520" />
+          <Waypoint Name="FM521" />
+          <Waypoint Name="FM522" />
+          <Waypoint Name="FM523" />
+          <Waypoint Name="FM524" />
+          <Waypoint Name="FM525" />
+          <Waypoint Name="FM526" />
+          <Waypoint Name="FM530" />
+          <Waypoint Name="FM531" />
+          <Waypoint Name="FM532" />
+          <Waypoint Name="FM533" />
+          <Waypoint Name="FM534" />
+          <Waypoint Name="FM535" />
+          <Waypoint Name="FM536" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="SISPI1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="SISPI" />
+          <Waypoint Name="FM620" />
+          <Waypoint Name="FM621" />
+          <Waypoint Name="FM622" />
+          <Waypoint Name="FM623" />
+          <Waypoint Name="FM524" />
+          <Waypoint Name="FM525" />
+          <Waypoint Name="FM526" />
+          <Waypoint Name="FM530" />
+          <Waypoint Name="FM531" />
+          <Waypoint Name="FM532" />
+          <Waypoint Name="FM533" />
+          <Waypoint Name="FM534" />
+          <Waypoint Name="FM535" />
+          <Waypoint Name="FM536" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="INBET1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="INBET" />
+          <Waypoint Name="LEKMI" />
+          <Waypoint Name="GUBUL" />
+          <Waypoint Name="FM723" />
+          <Waypoint Name="FM724" />
+          <Waypoint Name="FM725" />
+          <Waypoint Name="FM730" />
+          <Waypoint Name="FM731" />
+          <Waypoint Name="FM732" />
+          <Waypoint Name="FM733" />
+          <Waypoint Name="FM734" />
+          <Waypoint Name="FM735" />
+          <Waypoint Name="FM736" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="DRAMO1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="DRAMO" />
+          <Waypoint Name="AGBET" />
+          <Waypoint Name="FM720" Turn="Left" />
+          <Waypoint Name="FM721" />
+          <Waypoint Name="FM722" />
+          <Waypoint Name="FM723" />
+          <Waypoint Name="FM724" />
+          <Waypoint Name="FM725" />
+          <Waypoint Name="FM730" />
+          <Waypoint Name="FM731" />
+          <Waypoint Name="FM732" />
+          <Waypoint Name="FM733" />
+          <Waypoint Name="FM734" />
+          <Waypoint Name="FM735" />
+          <Waypoint Name="FM736" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" />
+          <Waypoint Name="FM319" />
+          <Waypoint Name="FM320" />
+          <Waypoint Name="FM321" />
+          <Waypoint Name="FM322" />
+          <Waypoint Name="FM823" />
+          <Waypoint Name="FM824" />
+          <Waypoint Name="FM825" />
+          <Waypoint Name="FM826" />
+          <Waypoint Name="FM827" />
+          <Waypoint Name="FM830" />
+          <Waypoint Name="FM831" />
+          <Waypoint Name="FM832" />
+          <Waypoint Name="FM833" />
+          <Waypoint Name="FM834" />
+          <Waypoint Name="FM835" />
+          <Waypoint Name="FM836" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="RILEX1A" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RILEX" />
+          <Waypoint Name="IPMIL" />
+          <Waypoint Name="FM820" />
+          <Waypoint Name="FM821" />
+          <Waypoint Name="FM822" />
+          <Waypoint Name="FM823" />
+          <Waypoint Name="FM824" />
+          <Waypoint Name="FM825" />
+          <Waypoint Name="FM826" />
+          <Waypoint Name="FM827" />
+          <Waypoint Name="FM830" />
+          <Waypoint Name="FM831" />
+          <Waypoint Name="FM832" />
+          <Waypoint Name="FM833" />
+          <Waypoint Name="FM834" />
+          <Waypoint Name="FM835" />
+          <Waypoint Name="FM836" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="NUGBA1N" Airport="LTFM">
+        <Route>
+          <Waypoint Name="NUGBA" />
+          <Waypoint Name="FM470" />
+          <Waypoint Name="FM471" />
+          <Waypoint Name="FM472" />
+          <Waypoint Name="FM473" />
+          <Waypoint Name="FM443" />
+          <Waypoint Name="FM444" />
+          <Waypoint Name="FM425" />
+          <Waypoint Name="FM921" />
+          <Waypoint Name="LIZTA" />
+          <Waypoint Name="FM035" />
+          <Waypoint Name="FM908" />
+          <Waypoint Name="FM827" />
+          <Waypoint Name="FM830" />
+          <Waypoint Name="FM831" />
+          <Waypoint Name="FM832" />
+          <Waypoint Name="FM833" />
+          <Waypoint Name="FM834" />
+          <Waypoint Name="FM835" />
+          <Waypoint Name="FM836" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="KANQO1N" Airport="LTFM">
+        <Route>
+          <Waypoint Name="KANQO" />
+          <Waypoint Name="FM440" />
+          <Waypoint Name="FM441" />
+          <Waypoint Name="FM442" />
+          <Waypoint Name="FM443" />
+          <Waypoint Name="FM444" />
+          <Waypoint Name="FM425" />
+          <Waypoint Name="FM921" />
+          <Waypoint Name="LIZTA" />
+          <Waypoint Name="FM035" />
+          <Waypoint Name="FM908" />
+          <Waypoint Name="FM827" />
+          <Waypoint Name="FM830" />
+          <Waypoint Name="FM831" />
+          <Waypoint Name="FM832" />
+          <Waypoint Name="FM833" />
+          <Waypoint Name="FM834" />
+          <Waypoint Name="FM835" />
+          <Waypoint Name="FM836" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR>
+      <STAR Name="RILEX1N" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RILEX" />
+          <Waypoint Name="IPMIL" />
+          <Waypoint Name="FM820" />
+          <Waypoint Name="FM821" />
+          <Waypoint Name="FM822" />
+          <Waypoint Name="FM823" />
+          <Waypoint Name="FM824" />
+          <Waypoint Name="FM825" />
+          <Waypoint Name="FM826" />
+          <Waypoint Name="FM908" />
+          <Waypoint Name="FM035" />
+          <Waypoint Name="LIZTA" />
+          <Waypoint Name="FM921" />
+          <Waypoint Name="FM426" />
+          <Waypoint Name="FM430" />
+          <Waypoint Name="FM431" />
+          <Waypoint Name="FM432" />
+          <Waypoint Name="FM433" />
+          <Waypoint Name="FM434" />
+          <Waypoint Name="FM435" />
+          <Waypoint Name="FM436" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="RIXEN1N" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RIXEN" />
+          <Waypoint Name="GINLI" />
+          <Waypoint Name="ATVAS" />
+          <Waypoint Name="FM920" />
+          <Waypoint Name="FM921" />
+          <Waypoint Name="FM426" />
+          <Waypoint Name="FM430" />
+          <Waypoint Name="FM431" />
+          <Waypoint Name="FM432" />
+          <Waypoint Name="FM433" />
+          <Waypoint Name="FM434" />
+          <Waypoint Name="FM435" />
+          <Waypoint Name="FM436" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" Speed="270-" Altitude="280" Turn="Left" />
+          <Waypoint Name="FM520" Turn="Right" />
+          <Waypoint Name="FM521" />
+          <Waypoint Name="FM522" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM523" />
+          <Waypoint Name="FM524" Speed="160-150+" Turn="Right" />
+          <Waypoint Name="FM525" />
+          <Waypoint Name="FM526" Speed="230" />
+          <Waypoint Name="FM120" Turn="Right" />
+          <Waypoint Name="FM121" Altitude="12000" />
+          <Waypoint Name="FM122" Altitude="10000-" Turn="Right" />
+          <Waypoint Name="FM123" Turn="Left" />
+          <Waypoint Name="FM124" Altitude="8000" />
+          <Waypoint Name="FM125" Turn="Right" />
+          <Waypoint Name="NEWPE" Altitude="8000-7000+" Speed="220" Turn="Right" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1Q" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="TUSCA" />
+          <Waypoint Name="PATHO" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="GEFME" Turn="Left" />
+          <Waypoint Name="FM442" Turn="Left" />
+          <Waypoint Name="FM443" Speed="210+" Turn="Left" />
+          <Waypoint Name="FM444" Speed="190-170+" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM425" Turn="Right" />
+          <Waypoint Name="FM426" Turn="Left" />
+          <Waypoint Name="FM430" />
+          <Waypoint Name="FM431" Altitude="11000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM432" Turn="Left" />
+          <Waypoint Name="FM433" Turn="Left" />
+          <Waypoint Name="FM434" Turn="Left" />
+          <Waypoint Name="FM435" Altitude="11000" Turn="Left" />
+          <Waypoint Name="FM436" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="SISPI1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="SISPI" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM620" />
+          <Waypoint Name="FM621" Speed="210+" Turn="Right" />
+          <Waypoint Name="FM622" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM623" Turn="Right" />
+          <Waypoint Name="FM524" Speed="160-150+" Turn="Left" />
+          <Waypoint Name="FM525" />
+          <Waypoint Name="FM526" Speed="230" />
+          <Waypoint Name="FM120" Turn="Right" />
+          <Waypoint Name="FM121" Altitude="12000" />
+          <Waypoint Name="FM122" Altitude="10000-" />
+          <Waypoint Name="FM123" Turn="Left" />
+          <Waypoint Name="FM124" Altitude="8000" />
+          <Waypoint Name="FM125" Turn="Right" />
+          <Waypoint Name="NEWPE" Altitude="8000-7000+" Speed="220" Turn="Right" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" Speed="290" Altitude="280" />
+          <Waypoint Name="FM319" Turn="Right" />
+          <Waypoint Name="FM320" Speed="250" Turn="Right" />
+          <Waypoint Name="FM321" Turn="Left" />
+          <Waypoint Name="FM334" Turn="Left" />
+          <Waypoint Name="FM721" Altitude="250" />
+          <Waypoint Name="FM722" />
+          <Waypoint Name="FM723" Speed="140" Altitude="12000+" />
+          <Waypoint Name="FM724" Turn="Right" />
+          <Waypoint Name="FM100" Altitude="10000+" Turn="Left" />
+          <Waypoint Name="FM101" Altitude="10000" />
+          <Waypoint Name="NEWPE" Altitude="8000-7000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="DRAMO1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="DRAMO" Speed="250" Altitude="280" />
+          <Waypoint Name="AGBET" Speed="270-200" />
+          <Waypoint Name="FM720" />
+          <Waypoint Name="FM721" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM722" />
+          <Waypoint Name="FM723" Speed="140" Altitude="12000+" />
+          <Waypoint Name="FM724" />
+          <Waypoint Name="FM100" Altitude="10000+" />
+          <Waypoint Name="FM101" Altitude="10000" />
+          <Waypoint Name="NEWPE" Altitude="8000-7000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="INBET1C" Airport="LTFM">
+        <Route>
+          <Waypoint Name="INBET" Speed="250" Altitude="280" />
+          <Waypoint Name="LEKMI" />
+          <Waypoint Name="GUBUL" Speed="250+" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM723" Speed="140" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="FM724" Turn="Right" />
+          <Waypoint Name="FM100" Altitude="10000+" Turn="Left" />
+          <Waypoint Name="FM101" Altitude="10000" />
+          <Waypoint Name="NEWPE" Altitude="8000-7000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="NUGBA1D" Airport="LTFM">
+        <Route>
+          <Waypoint Name="NUGBA" />
+          <Waypoint Name="FM470" />
+          <Waypoint Name="FM471" />
+          <Waypoint Name="FM472" />
+          <Waypoint Name="FM473" />
+          <Waypoint Name="FM443" />
+          <Waypoint Name="FM444" />
+          <Waypoint Name="FM425" />
+          <Waypoint Name="FM426" />
+          <Waypoint Name="FM430" />
+          <Waypoint Name="FM431" />
+          <Waypoint Name="FM432" />
+          <Waypoint Name="FM433" />
+          <Waypoint Name="FM434" />
+          <Waypoint Name="FM435" />
+          <Waypoint Name="FM436" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1N" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" />
+          <Waypoint Name="FM319" />
+          <Waypoint Name="FM320" />
+          <Waypoint Name="FM321" />
+          <Waypoint Name="FM322" />
+          <Waypoint Name="FM823" />
+          <Waypoint Name="FM824" />
+          <Waypoint Name="FM825" />
+          <Waypoint Name="FM826" />
+          <Waypoint Name="FM908" />
+          <Waypoint Name="FM035" />
+          <Waypoint Name="LIZTA" />
+          <Waypoint Name="FM921" />
+          <Waypoint Name="FM426" />
+          <Waypoint Name="FM430" />
+          <Waypoint Name="FM431" />
+          <Waypoint Name="FM432" />
+          <Waypoint Name="FM433" />
+          <Waypoint Name="FM434" />
+          <Waypoint Name="FM435" />
+          <Waypoint Name="FM436" />
+          <Waypoint Name="SADIK" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1Q" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" />
+          <Waypoint Name="FM319" />
+          <Waypoint Name="FM320" />
+          <Waypoint Name="FM321" />
+          <Waypoint Name="FM334" />
+          <Waypoint Name="FM721" />
+          <Waypoint Name="FM722" />
+          <Waypoint Name="FM723" />
+          <Waypoint Name="FM724" />
+          <Waypoint Name="FM725" />
+          <Waypoint Name="FM730" />
+          <Waypoint Name="FM731" />
+          <Waypoint Name="FM732" />
+          <Waypoint Name="FM733" />
+          <Waypoint Name="FM734" />
+          <Waypoint Name="FM735" />
+          <Waypoint Name="FM736" />
+          <Waypoint Name="IMREN" />
+        </Route>
+      </STAR></Runway>
+    <Runway Name="16R">
+      
+      <STAR Name="DRAMO1P" Airport="LTFM">
+        <Route>
+          <Waypoint Name="DRAMO" Turn="Left" />
+          <Waypoint Name="AGBET" Speed="270-" Altitude="280" />
+          <Waypoint Name="FM751" Speed="220-200+" Turn="Right" />
+          <Waypoint Name="FM752" />
+          <Waypoint Name="FM753" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM754" />
+          <Waypoint Name="FM755" Turn="Left" />
+          <Waypoint Name="FM756" Turn="Left" />
+          <Waypoint Name="FM757" Turn="Left" />
+          <Waypoint Name="FM758" Turn="Left" />
+          <Waypoint Name="FM375" Turn="Right" />
+          <Waypoint Name="ENRAW" />
+          <Waypoint Name="FM395" Speed="150+" Turn="Left" />
+          <Waypoint Name="FM400" Turn="Left" />
+          <Waypoint Name="FM401" Altitude="11000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM402" Turn="Left" />
+          <Waypoint Name="FM403" Turn="Left" />
+          <Waypoint Name="FM404" Turn="Left" />
+          <Waypoint Name="FM405" Altitude="11000" Turn="Left" />
+          <Waypoint Name="FM406" />
+          <Waypoint Name="FM407" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="RIXEN1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RIXEN" Speed="190" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM955" Turn="Right" />
+          <Waypoint Name="FM956" Turn="Left" />
+          <Waypoint Name="FM857" Turn="Left" />
+          <Waypoint Name="FM801" Altitude="10000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM802" Turn="Left" />
+          <Waypoint Name="FM803" Turn="Left" />
+          <Waypoint Name="FM804" Turn="Left" />
+          <Waypoint Name="FM805" Altitude="10000" />
+          <Waypoint Name="FM806" />
+          <Waypoint Name="FM807" />
+          <Waypoint Name="INSTA" Altitude="5000-4000" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="RIXEN1M" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RIXEN" Speed="190" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM955" Turn="Right" />
+          <Waypoint Name="FM956" Turn="Left" />
+          <Waypoint Name="FM910" Turn="Left" />
+          <Waypoint Name="FM911" Altitude="12000" Speed="230" Turn="Left" />
+          <Waypoint Name="FM912" Altitude="8000-" />
+          <Waypoint Name="FM913" Turn="Right" />
+          <Waypoint Name="FM914" Altitude="7000-" Turn="Right" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="RIXEN1P" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RIXEN" Speed="190-" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM966" Speed="160-140+" Turn="Left" />
+          <Waypoint Name="FM967" Turn="Right" />
+          <Waypoint Name="FM458" Altitude="10000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM510" Turn="Left" />
+          <Waypoint Name="FM511" Turn="Right" />
+          <Waypoint Name="FM512" Turn="Right" />
+          <Waypoint Name="FM513" Turn="Right" />
+          <Waypoint Name="FM514" Altitude="10000" Turn="Right" />
+          <Waypoint Name="FM515" />
+          <Waypoint Name="FM516" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="RIXEN1W" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RIXEN" Speed="190-" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM966" Speed="160-140+" Turn="Left" />
+          <Waypoint Name="FM967" Turn="Right" />
+          <Waypoint Name="FM918" Altitude="12000-" Speed="230" Turn="Right" />
+          <Waypoint Name="FM917" Turn="Right" />
+          <Waypoint Name="FM916" Turn="Left" />
+          <Waypoint Name="FM914" Altitude="7000-" Turn="Left" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="NUGBA1E" Airport="LTFM">
+        <Route>
+          <Waypoint Name="NUGBA" Speed="260-" Altitude="280" Turn="Left" />
+          <Waypoint Name="FM653" Turn="Right" />
+          <Waypoint Name="FM654" Speed="220-" Turn="Right" />
+          <Waypoint Name="FM655" Altitude="250" />
+          <Waypoint Name="FM656" Turn="Left" />
+          <Waypoint Name="FM645" Turn="Right" />
+          <Waypoint Name="FM456" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM457" Turn="Left" />
+          <Waypoint Name="FM458" Altitude="10000" Speed="230" />
+          <Waypoint Name="FM510" Turn="Left" />
+          <Waypoint Name="FM511" />
+          <Waypoint Name="FM512" Turn="Right" />
+          <Waypoint Name="FM513" Turn="Right" />
+          <Waypoint Name="FM514" Altitude="10000" Turn="Right" />
+          <Waypoint Name="FM515" />
+          <Waypoint Name="FM516" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="NUGBA1M" Airport="LTFM">
+        <Route>
+          <Waypoint Name="NUGBA" Speed="260-" Altitude="280" Turn="Left" />
+          <Waypoint Name="FM653" Turn="Right" />
+          <Waypoint Name="FM654" Speed="220-" Turn="Right" />
+          <Waypoint Name="FM655" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM656" Turn="Left" />
+          <Waypoint Name="FM645" Turn="Right" />
+          <Waypoint Name="FM456" Speed="140-" Altitude="12000+" />
+          <Waypoint Name="FM457" Turn="Left" />
+          <Waypoint Name="FM458" Turn="Right" />
+          <Waypoint Name="FM918" Altitude="12000-" Speed="230" Turn="Right" />
+          <Waypoint Name="FM917" Turn="Right" />
+          <Waypoint Name="FM916" Turn="Left" />
+          <Waypoint Name="FM914" Altitude="7000-" Turn="Left" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="KANQO1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="KANQO" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM670" />
+          <Waypoint Name="FM671" Speed="240-" />
+          <Waypoint Name="FM643" Turn="Right" />
+          <Waypoint Name="FM644" Altitude="250" />
+          <Waypoint Name="FM645" />
+          <Waypoint Name="FM456" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM457" Turn="Left" />
+          <Waypoint Name="FM458" Altitude="10000" Speed="230" Turn="Left" />
+          <Waypoint Name="FM510" Turn="Left" />
+          <Waypoint Name="FM511" Turn="Right" />
+          <Waypoint Name="FM512" Turn="Right" />
+          <Waypoint Name="FM513" Turn="Right" />
+          <Waypoint Name="FM514" Altitude="10000" Turn="Right" />
+          <Waypoint Name="FM515" />
+          <Waypoint Name="FM516" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="KANQO1M" Airport="LTFM">
+        <Route>
+          <Waypoint Name="KANQO" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM670" />
+          <Waypoint Name="FM671" Speed="240-" />
+          <Waypoint Name="FM643" Turn="Right" />
+          <Waypoint Name="FM644" Altitude="250" />
+          <Waypoint Name="FM645" />
+          <Waypoint Name="FM456" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM457" Turn="Left" />
+          <Waypoint Name="FM458" />
+          <Waypoint Name="FM918" Altitude="12000-" Speed="230" Turn="Right" />
+          <Waypoint Name="FM917" Turn="Right" />
+          <Waypoint Name="FM916" Turn="Left" />
+          <Waypoint Name="FM914" Altitude="7000-" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" Turn="Left" />
+          <Waypoint Name="FM551" Turn="Left" />
+          <Waypoint Name="EPEKI" Speed="280-" Altitude="280" />
+          <Waypoint Name="FM552" Turn="Left" />
+          <Waypoint Name="FM553" Speed="210+" Turn="Right" />
+          <Waypoint Name="PUQET" Speed="190-170+" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM555" Turn="Right" />
+          <Waypoint Name="FM556" Turn="Right" />
+          <Waypoint Name="FM400" />
+          <Waypoint Name="FM401" Altitude="11000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM402" Turn="Left" />
+          <Waypoint Name="FM403" Turn="Left" />
+          <Waypoint Name="FM404" Turn="Left" />
+          <Waypoint Name="FM405" Altitude="11000" Turn="Left" />
+          <Waypoint Name="FM406" />
+          <Waypoint Name="FM407" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1R" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" Turn="Left" />
+          <Waypoint Name="FM551" Turn="Left" />
+          <Waypoint Name="EPEKI" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM641" />
+          <Waypoint Name="FM450" Speed="260-" />
+          <Waypoint Name="FM642" Turn="Left" />
+          <Waypoint Name="FM643" />
+          <Waypoint Name="FM644" Altitude="250" />
+          <Waypoint Name="FM645" />
+          <Waypoint Name="FM456" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM457" Turn="Left" />
+          <Waypoint Name="FM458" Turn="Right" />
+          <Waypoint Name="FM510" Altitude="12000-" Speed="230" />
+          <Waypoint Name="FM511" Turn="Right" />
+          <Waypoint Name="FM512" Turn="Left" />
+          <Waypoint Name="FM513" />
+          <Waypoint Name="FM514" />
+          <Waypoint Name="FM515" />
+          <Waypoint Name="FM516" />  
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1M" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" Turn="Left" />
+          <Waypoint Name="FM551" Turn="Left" />
+          <Waypoint Name="EPEKI" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM641" />
+          <Waypoint Name="FM450" Speed="260-" />
+          <Waypoint Name="FM642" Turn="Left" />
+          <Waypoint Name="FM643" />
+          <Waypoint Name="FM644" Altitude="250" />
+          <Waypoint Name="FM645" />
+          <Waypoint Name="FM456" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM457" Turn="Left" />
+          <Waypoint Name="FM458" Turn="Right" />
+          <Waypoint Name="FM918" Altitude="12000-" Speed="230" />
+          <Waypoint Name="FM917" Turn="Right" />
+          <Waypoint Name="FM916" Turn="Left" />
+          <Waypoint Name="FM914" Altitude="7000-" Turn="Left" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="ERSEN1P" Airport="LTFM">
+        <Route>
+          <Waypoint Name="ERSEN" Turn="Left" />
+          <Waypoint Name="FM551" Turn="Left" />
+          <Waypoint Name="EPEKI" Speed="280-" Altitude="280" />
+          <Waypoint Name="FM552" Turn="Left" />
+          <Waypoint Name="FM553" Speed="210+" Turn="Right" />
+          <Waypoint Name="PUQET" Speed="190-170+" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM555" Turn="Right" />
+          <Waypoint Name="FM556" Turn="Left" />
+          <Waypoint Name="FM396" Turn="Right" />
+          <Waypoint Name="FM395" Speed="130-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="ENRAW" Altitude="9000" Speed="230" />
+          <Waypoint Name="FM375" Turn="Right" />
+          <Waypoint Name="FM810" Turn="Right" />
+          <Waypoint Name="FM811" Turn="Right" />
+          <Waypoint Name="FM812" Turn="Right" />
+          <Waypoint Name="FM813" Turn="Right" />
+          <Waypoint Name="FM814" Altitude="9000" />
+          <Waypoint Name="FM815" />
+          <Waypoint Name="FM816" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="SISPI1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="SISPI" Turn="Right" />
+          <Waypoint Name="FM650" />
+          <Waypoint Name="FM651" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM652" Turn="Left" />
+          <Waypoint Name="LECKI" Turn="Left" />
+          <Waypoint Name="FM553" Speed="210+" Turn="Left" />
+          <Waypoint Name="PUQET" Speed="190-170+" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM555" Turn="Right" />
+          <Waypoint Name="FM556" Turn="Left" />
+          <Waypoint Name="FM400" />
+          <Waypoint Name="FM401" Altitude="11000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM402" Turn="Left" />
+          <Waypoint Name="FM403" Turn="Left" />
+          <Waypoint Name="FM404" Turn="Left" />
+          <Waypoint Name="FM405" Altitude="11000" Turn="Left" />  
+          <Waypoint Name="FM406" />
+          <Waypoint Name="FM407" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="SISPI1P" Airport="LTFM">
+        <Route>
+          <Waypoint Name="SISPI" Turn="Right" />
+          <Waypoint Name="FM650" />
+          <Waypoint Name="FM651" Speed="280-" Altitude="280" Turn="Right" />
+          <Waypoint Name="FM652" Turn="Left" />
+          <Waypoint Name="LECKI" Turn="Left" />
+          <Waypoint Name="FM553" Speed="210+" Turn="Left" />
+          <Waypoint Name="PUQET" Speed="190-170+" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM555" Turn="Right" />
+          <Waypoint Name="FM556" Turn="Left" />
+          <Waypoint Name="FM396" Turn="Right" />
+          <Waypoint Name="FM395" Speed="130-" Altitude="12000+" />
+          <Waypoint Name="ENRAW" Altitude="9000" Speed="230" />
+          <Waypoint Name="FM375" Turn="Right" />
+          <Waypoint Name="FM810" Turn="Right" />
+          <Waypoint Name="FM811" Turn="Right" />
+          <Waypoint Name="FM812" Turn="Right" />
+          <Waypoint Name="FM813" Turn="Right" />
+          <Waypoint Name="FM814" Altitude="9000" Turn="Right" />
+          <Waypoint Name="FM815" />
+          <Waypoint Name="FM816" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="INBET1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="INBET" Turn="Left" />
+          <Waypoint Name="LEKMI" Speed="270-" Altitude="280" />
+          <Waypoint Name="GUBUL" Turn="Left" />
+          <Waypoint Name="FM751" Speed="220-200+" Turn="Right" />
+          <Waypoint Name="FM752" />
+          <Waypoint Name="FM753" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM754" />
+          <Waypoint Name="FM755" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM756" Turn="Left" />
+          <Waypoint Name="FM757" Turn="Left" />
+          <Waypoint Name="FM758" Altitude="9000" Speed="230" Turn="Left" />
+          <Waypoint Name="FM810" Turn="Left" />
+          <Waypoint Name="FM811" Turn="Right" />
+          <Waypoint Name="FM812" Turn="Right" />
+          <Waypoint Name="FM813" Turn="Right" />
+          <Waypoint Name="FM814" Altitude="9000" Turn="Right" />
+          <Waypoint Name="FM815" />
+          <Waypoint Name="FM816" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="INBET1P" Airport="LTFM">
+        <Route>
+          <Waypoint Name="INBET" Turn="Left" />
+          <Waypoint Name="LEKMI" Speed="270-" Altitude="280" />
+          <Waypoint Name="GUBUL" Turn="Left" />
+          <Waypoint Name="FM751" Speed="220-200+" Turn="Right" />
+          <Waypoint Name="FM752" />
+          <Waypoint Name="FM753" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM754" />
+          <Waypoint Name="FM755" Turn="Left" />
+          <Waypoint Name="FM756" Turn="Left" />
+          <Waypoint Name="FM757" Turn="Left" />
+          <Waypoint Name="FM758" Turn="Left" />
+          <Waypoint Name="FM375" Turn="Right" />
+          <Waypoint Name="ENRAW" />
+          <Waypoint Name="FM395" Speed="150+" Turn="Left" />
+          <Waypoint Name="FM400" Turn="Left" />
+          <Waypoint Name="FM401" Altitude="11000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM402" Turn="Left" />
+          <Waypoint Name="FM403" Turn="Left" />
+          <Waypoint Name="FM404" Turn="Left" />
+          <Waypoint Name="FM405" Altitude="11000" Turn="Left" />
+          <Waypoint Name="FM406" />
+          <Waypoint Name="FM407" />
+          <Waypoint Name="GAZGE" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="DRAMO1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="DRAMO" Speed="270-" Altitude="280" Turn="Left" />
+          <Waypoint Name="AGBET" Turn="Left" />
+          <Waypoint Name="FM751" Speed="220-200+" Turn="Left" />
+          <Waypoint Name="FM752" />
+          <Waypoint Name="FM753" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM754" />
+          <Waypoint Name="FM755" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM756" Turn="Left" />
+          <Waypoint Name="FM757" Turn="Left" />
+          <Waypoint Name="FM758" Altitude="9000" Speed="230" Turn="Left" />
+          <Waypoint Name="FM810" Turn="Left" />
+          <Waypoint Name="FM811" Turn="Right" />
+          <Waypoint Name="FM812" Turn="Right" />
+          <Waypoint Name="FM813" Turn="Right" />
+          <Waypoint Name="FM814" Altitude="9000" Turn="Right" />
+          <Waypoint Name="FM815" />
+          <Waypoint Name="FM816" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" Speed="290-" Altitude="280" />
+          <Waypoint Name="FM319" Turn="Right" />
+          <Waypoint Name="FM320" Speed="250-" Turn="Right" />
+          <Waypoint Name="FM321" Turn="Left" />
+          <Waypoint Name="FM322" Turn="Left" />
+          <Waypoint Name="FM853" Altitude="250" Turn="Left" />
+          <Waypoint Name="FM854" />
+          <Waypoint Name="FM855" Speed="140-" Altitude="12000" Turn="Right" />
+          <Waypoint Name="FM856" Turn="Right" />
+          <Waypoint Name="FM857" Turn="Right" />
+          <Waypoint Name="FM801" Altitude="10000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM802" Turn="Left" />
+          <Waypoint Name="FM803" Turn="Left" />
+          <Waypoint Name="FM804" Turn="Left" />
+          <Waypoint Name="FM805" Altitude="10000" Turn="Left" />
+          <Waypoint Name="FM806" />
+          <Waypoint Name="FM807" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1M" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" Speed="290-" Altitude="280" />
+          <Waypoint Name="FM319" Turn="Right" />
+          <Waypoint Name="FM320" Speed="250-" Turn="Right" />
+          <Waypoint Name="FM321" Turn="Left" />
+          <Waypoint Name="FM322" Turn="Left" />
+          <Waypoint Name="FM853" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM854" />
+          <Waypoint Name="FM855" Speed="140-" Altitude="12000" Turn="Right" />
+          <Waypoint Name="FM856" Turn="Right" />
+          <Waypoint Name="FM857" Turn="Left" />
+          <Waypoint Name="FM911" Altitude="12000-" Speed="230" Turn="Left" />
+          <Waypoint Name="FM912" Altitude="8000-" />
+          <Waypoint Name="FM913" Turn="Right" />
+          <Waypoint Name="FM914" Altitude="7000-" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="AYTEK1R" Airport="LTFM">
+        <Route>
+          <Waypoint Name="AYTEK" Speed="290-" Altitude="280" />
+          <Waypoint Name="FM319" Turn="Right" />
+          <Waypoint Name="FM320" Speed="250-" Turn="Right" />
+          <Waypoint Name="FM321" Turn="Left" />
+          <Waypoint Name="FM334" Turn="Right" />
+          <Waypoint Name="FM753" Altitude="250" Turn="Right" />
+          <Waypoint Name="FM754" />
+          <Waypoint Name="FM755" Speed="140-" Altitude="12000+" Turn="Left" />
+          <Waypoint Name="FM756" Turn="Left" />
+          <Waypoint Name="FM757" Turn="Left" />
+          <Waypoint Name="FM758" Altitude="9000" Speed="230" Turn="Left" />
+          <Waypoint Name="FM810" Turn="Left" />
+          <Waypoint Name="FM811" Turn="Right" />
+          <Waypoint Name="FM812" Turn="Right" />
+          <Waypoint Name="FM813" Turn="Right" />
+          <Waypoint Name="FM814" Altitude="9000" Turn="Right" />
+          <Waypoint Name="FM815" />
+          <Waypoint Name="FM816" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="RILEX1B" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RILEX" Speed="270-" Altitude="280" />
+          <Waypoint Name="IPMIL" />
+          <Waypoint Name="FM820" />
+          <Waypoint Name="FM852" />
+          <Waypoint Name="FM853" Altitude="250" />
+          <Waypoint Name="FM854" />
+          <Waypoint Name="FM855" Speed="140-" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="FM856" Turn="Right" />
+          <Waypoint Name="FM857" Turn="Right" />
+          <Waypoint Name="FM801" Altitude="10000" Speed="230" Turn="Right" />
+          <Waypoint Name="FM802" Turn="Left" />
+          <Waypoint Name="FM803" Turn="Left" />
+          <Waypoint Name="FM804" Turn="Left" />
+          <Waypoint Name="FM805" Altitude="10000" Turn="Left" />
+          <Waypoint Name="FM806" />
+          <Waypoint Name="FM807" />
+          <Waypoint Name="INSTA" Altitude="5000-4000+" Speed="220" />
+        </Route>
+      </STAR>
+      <STAR Name="RILEX1M" Airport="LTFM">
+        <Route>
+          <Waypoint Name="RILEX" Speed="270-" Altitude="280" />
+          <Waypoint Name="IPMIL" Turn="Right" />
+          <Waypoint Name="FM820" />
+          <Waypoint Name="FM852" />
+          <Waypoint Name="FM853" Altitude="250" />
+          <Waypoint Name="FM854" />
+          <Waypoint Name="FM855" Speed="140-" Altitude="12000+" Turn="Right" />
+          <Waypoint Name="FM856" Turn="Right" />
+          <Waypoint Name="FM857" Turn="Left" />
+          <Waypoint Name="FM911" Altitude="12000-" Speed="230" Turn="Left" />
+          <Waypoint Name="FM912" Altitude="8000-" />
+          <Waypoint Name="FM913" Turn="Right" />
+          <Waypoint Name="FM914" Altitude="7000-" Turn="Right" />
+          <Waypoint Name="ULQAL" Altitude="7000-6000+" Speed="220" />
+        </Route>
+      </STAR>
+      </Runway>
+  </STARs>
+</Procedures>

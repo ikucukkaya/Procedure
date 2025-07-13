@@ -1,0 +1,1256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Fixes><Point Name="ACCUA" Type="Fix">
+    <Latitude>41 40 32.15 N</Latitude>
+    <Longitude>28 01 52.94 E</Longitude>
+  </Point><Point Name="ADMIV" Type="Fix">
+    <Latitude>40 46 17.11 N</Latitude>
+    <Longitude>27 42 15.25 E</Longitude>
+  </Point><Point Name="APSID" Type="Fix">
+    <Latitude>40 47 48.62 N</Latitude>
+    <Longitude>27 36 08.21 E</Longitude>
+  </Point><Point Name="ASGAX" Type="Fix">
+    <Latitude>40 54 40.44 N</Latitude>
+    <Longitude>28 41 33.88 E</Longitude>
+  </Point><Point Name="ASMAP" Type="Fix">
+    <Latitude>40 37 53.00 N</Latitude>
+    <Longitude>30 42 41.00 E</Longitude>
+  </Point><Point Name="BARPE" Type="Fix">
+    <Latitude>40 55 34.00 N</Latitude>
+    <Longitude>26 58 41.00 E</Longitude>
+  </Point><Point Name="BIBAM" Type="Fix">
+    <Latitude>40 52 21.65 N</Latitude>
+    <Longitude>28 24 03.78 E</Longitude>
+  </Point><Point Name="ELNUG" Type="Fix">
+    <Latitude>41 07 35.13 N</Latitude>
+    <Longitude>28 42 36.51 E</Longitude>
+  </Point><Point Name="ETLEY" Type="Fix">
+    <Latitude>41 54 24.48 N</Latitude>
+    <Longitude>29 26 06.97 E</Longitude>
+  </Point><Point Name="EVMOG" Type="Fix">
+    <Latitude>40 32 35.83 N</Latitude>
+    <Longitude>28 45 02.26 E</Longitude>
+  </Point><Point Name="FILFU" Type="Fix">
+    <Latitude>41 01 11.14 N</Latitude>
+    <Longitude>28 55 37.30 E</Longitude>
+  </Point><Point Name="FM011" Type="Fix">
+    <Latitude>41 34 40.34 N</Latitude>
+    <Longitude>28 17 24.81 E</Longitude>
+  </Point><Point Name="FM012" Type="Fix">
+    <Latitude>41 22 56.18 N</Latitude>
+    <Longitude>28 43 31.23 E</Longitude>
+  </Point><Point Name="FM017" Type="Fix">
+    <Latitude>41 22 52.73 N</Latitude>
+    <Longitude>28 38 27.83 E</Longitude>
+  </Point><Point Name="FM018" Type="Fix">
+    <Latitude>41 22 47.18 N</Latitude>
+    <Longitude>28 30 56.67 E</Longitude>
+  </Point><Point Name="FM019" Type="Fix">
+    <Latitude>41 14 55.77 N</Latitude>
+    <Longitude>28 31 07.33 E</Longitude>
+  </Point><Point Name="FM020" Type="Fix">
+    <Latitude>41 22 48.75 N</Latitude>
+    <Longitude>28 33 00.12 E</Longitude>
+  </Point><Point Name="FM021" Type="Fix">
+    <Latitude>41 14 57.34 N</Latitude>
+    <Longitude>28 33 10.53 E</Longitude>
+  </Point><Point Name="FM025" Type="Fix">
+    <Latitude>41 03 50.35 N</Latitude>
+    <Longitude>28 27 38.54 E</Longitude>
+  </Point><Point Name="FM032" Type="Fix">
+    <Latitude>41 22 59.99 N</Latitude>
+    <Longitude>28 49 31.65 E</Longitude>
+  </Point><Point Name="FM033" Type="Fix">
+    <Latitude>41 23 04.19 N</Latitude>
+    <Longitude>28 56 48.15 E</Longitude>
+  </Point><Point Name="FM034" Type="Fix">
+    <Latitude>41 15 12.81 N</Latitude>
+    <Longitude>28 56 55.70 E</Longitude>
+  </Point><Point Name="FM038" Type="Fix">
+    <Latitude>41 55 43.96 N</Latitude>
+    <Longitude>29 26 47.25 E</Longitude>
+  </Point><Point Name="FM039" Type="Fix">
+    <Latitude>41 59 19.63 N</Latitude>
+    <Longitude>29 46 18.23 E</Longitude>
+  </Point><Point Name="FM043" Type="Fix">
+    <Latitude>40 52 29.34 N</Latitude>
+    <Longitude>28 54 31.73 E</Longitude>
+  </Point><Point Name="FM044" Type="Fix">
+    <Latitude>40 50 38.34 N</Latitude>
+    <Longitude>29 09 19.50 E</Longitude>
+  </Point><Point Name="FM045" Type="Fix">
+    <Latitude>40 11 09.65 N</Latitude>
+    <Longitude>29 14 44.55 E</Longitude>
+  </Point><Point Name="FM046" Type="Fix">
+    <Latitude>40 48 51.82 N</Latitude>
+    <Longitude>29 18 18.68 E</Longitude>
+  </Point><Point Name="FM047" Type="Fix">
+    <Latitude>41 10 50.98 N</Latitude>
+    <Longitude>28 38 42.58 E</Longitude>
+  </Point><Point Name="FM048" Type="Fix">
+    <Latitude>41 10 45.72 N</Latitude>
+    <Longitude>28 31 09.48 E</Longitude>
+  </Point><Point Name="FM049" Type="Fix">
+    <Latitude>41 17 45.98 N</Latitude>
+    <Longitude>28 31 00.52 E</Longitude>
+  </Point><Point Name="FM052" Type="Fix">
+    <Latitude>41 10 54.32 N</Latitude>
+    <Longitude>28 43 45.53 E</Longitude>
+  </Point><Point Name="FM054" Type="Fix">
+    <Latitude>41 07 15.60 N</Latitude>
+    <Longitude>28 39 20.71 E</Longitude>
+  </Point><Point Name="FM056" Type="Fix">
+    <Latitude>41 04 30.92 N</Latitude>
+    <Longitude>28 23 34.02 E</Longitude>
+  </Point><Point Name="FM057" Type="Fix">
+    <Latitude>40 58 32.11 N</Latitude>
+    <Longitude>27 49 57.55 E</Longitude>
+  </Point><Point Name="FM060" Type="Fix">
+    <Latitude>41 10 47.23 N</Latitude>
+    <Longitude>28 33 15.59 E</Longitude>
+  </Point><Point Name="FM061" Type="Fix">
+    <Latitude>41 26 16.44 N</Latitude>
+    <Longitude>28 34 16.84 E</Longitude>
+  </Point><Point Name="FM062" Type="Fix">
+    <Latitude>41 45 41.47 N</Latitude>
+    <Longitude>28 33 52.96 E</Longitude>
+  </Point><Point Name="FM063" Type="Fix">
+    <Latitude>41 46 17.95 N</Latitude>
+    <Longitude>28 22 45.68 E</Longitude>
+  </Point><Point Name="FM064" Type="Fix">
+    <Latitude>41 46 53.34 N</Latitude>
+    <Longitude>28 11 38.17 E</Longitude>
+  </Point><Point Name="FM065" Type="Fix">
+    <Latitude>41 51 34.47 N</Latitude>
+    <Longitude>28 01 07.67 E</Longitude>
+  </Point><Point Name="FM066" Type="Fix">
+    <Latitude>41 52 32.97 N</Latitude>
+    <Longitude>27 29 21.28 E</Longitude>
+  </Point><Point Name="FM072" Type="Fix">
+    <Latitude>41 10 58.14 N</Latitude>
+    <Longitude>28 49 24.25 E</Longitude>
+  </Point><Point Name="FM073" Type="Fix">
+    <Latitude>41 11 02.71 N</Latitude>
+    <Longitude>28 56 41.31 E</Longitude>
+  </Point><Point Name="FM074" Type="Fix">
+    <Latitude>41 06 09.23 N</Latitude>
+    <Longitude>28 49 05.77 E</Longitude>
+  </Point><Point Name="FM076" Type="Fix">
+    <Latitude>40 39 53.37 N</Latitude>
+    <Longitude>28 51 22.45 E</Longitude>
+  </Point><Point Name="FM077" Type="Fix">
+    <Latitude>40 54 30.90 N</Latitude>
+    <Longitude>28 51 33.66 E</Longitude>
+  </Point><Point Name="FM078" Type="Fix">
+    <Latitude>40 48 34.21 N</Latitude>
+    <Longitude>29 16 15.83 E</Longitude>
+  </Point><Point Name="FM079" Type="Fix">
+    <Latitude>40 20 57.51 N</Latitude>
+    <Longitude>29 09 48.43 E</Longitude>
+  </Point><Point Name="FM081" Type="Fix">
+    <Latitude>41 27 34.68 N</Latitude>
+    <Longitude>28 50 05.20 E</Longitude>
+  </Point><Point Name="FM082" Type="Fix">
+    <Latitude>41 45 52.82 N</Latitude>
+    <Longitude>28 51 05.97 E</Longitude>
+  </Point><Point Name="FM083" Type="Fix">
+    <Latitude>41 46 35.18 N</Latitude>
+    <Longitude>29 03 09.56 E</Longitude>
+  </Point><Point Name="FM084" Type="Fix">
+    <Latitude>41 47 16.27 N</Latitude>
+    <Longitude>29 15 13.32 E</Longitude>
+  </Point><Point Name="FM085" Type="Fix">
+    <Latitude>42 03 45.20 N</Latitude>
+    <Longitude>29 40 26.49 E</Longitude>
+  </Point><Point Name="FM086" Type="Fix">
+    <Latitude>42 08 03.23 N</Latitude>
+    <Longitude>30 06 25.53 E</Longitude>
+  </Point><Point Name="FM090" Type="Fix">
+    <Latitude>41 34 30.69 N</Latitude>
+    <Longitude>28 36 07.10 E</Longitude>
+  </Point><Point Name="GITVO" Type="Fix">
+    <Latitude>41 40 11.54 N</Latitude>
+    <Longitude>28 36 30.44 E</Longitude>
+  </Point><Point Name="GOVGU" Type="Fix">
+    <Latitude>41 40 17.82 N</Latitude>
+    <Longitude>28 27 38.60 E</Longitude>
+  </Point><Point Name="GUEME" Type="Fix">
+    <Latitude>40 45 29.83 N</Latitude>
+    <Longitude>27 33 14.43 E</Longitude>
+  </Point><Point Name="GUPTU" Type="Fix">
+    <Latitude>40 18 37.01 N</Latitude>
+    <Longitude>29 01 20.56 E</Longitude>
+  </Point><Point Name="HANCI" Type="Fix">
+    <Latitude>41 18 28.25 N</Latitude>
+    <Longitude>28 56 34.71 E</Longitude>
+  </Point><Point Name="IBLAX" Type="Fix">
+    <Latitude>41 58 59.00 N</Latitude>
+    <Longitude>28 17 09.00 E</Longitude>
+  </Point><Point Name="IBSIN" Type="Fix">
+    <Latitude>40 36 40.23 N</Latitude>
+    <Longitude>29 41 14.13 E</Longitude>
+  </Point><Point Name="INPIK" Type="Fix">
+    <Latitude>40 47 37.77 N</Latitude>
+    <Longitude>27 57 57.44 E</Longitude>
+  </Point><Point Name="INRUV" Type="Fix">
+    <Latitude>40 46 07.90 N</Latitude>
+    <Longitude>29 32 00.78 E</Longitude>
+  </Point><Point Name="IVGUS" Type="Fix">
+    <Latitude>40 34 08.00 N</Latitude>
+    <Longitude>27 34 40.00 E</Longitude>
+  </Point><Point Name="KRASO" Type="Fix">
+    <Latitude>40 54 36.47 N</Latitude>
+    <Longitude>28 39 19.60 E</Longitude>
+  </Point><Point Name="LECKI" Type="Fix">
+    <Latitude>40 37 41.10 N</Latitude>
+    <Longitude>29 52 24.88 E</Longitude>
+  </Point><Point Name="LIDMU" Type="Fix">
+    <Latitude>40 44 04.07 N</Latitude>
+    <Longitude>29 42 15.71 E</Longitude>
+  </Point><Point Name="MAKOL" Type="Fix">
+    <Latitude>42 10 14.00 N</Latitude>
+    <Longitude>29 08 34.00 E</Longitude>
+  </Point><Point Name="MIKOC" Type="Fix">
+    <Latitude>41 04 23.31 N</Latitude>
+    <Longitude>28 49 07.23 E</Longitude>
+  </Point><Point Name="MIVDI" Type="Fix">
+    <Latitude>40 47 44.05 N</Latitude>
+    <Longitude>27 44 28.67 E</Longitude>
+  </Point><Point Name="MUTBE" Type="Fix">
+    <Latitude>41 44 00.66 N</Latitude>
+    <Longitude>28 55 52.77 E</Longitude>
+  </Point><Point Name="NAHUM" Type="Fix">
+    <Latitude>40 50 14.03 N</Latitude>
+    <Longitude>28 09 50.17 E</Longitude>
+  </Point><Point Name="NASNA" Type="Fix">
+    <Latitude>40 33 44.32 N</Latitude>
+    <Longitude>29 10 01.27 E</Longitude>
+  </Point><Point Name="NENVI" Type="Fix">
+    <Latitude>40 35 12.92 N</Latitude>
+    <Longitude>29 25 32.98 E</Longitude>
+  </Point><Point Name="NOTVI" Type="Fix">
+    <Latitude>40 43 39.78 N</Latitude>
+    <Longitude>30 03 58.01 E</Longitude>
+  </Point><Point Name="ORIAC" Type="Fix">
+    <Latitude>40 53 05.26 N</Latitude>
+    <Longitude>27 20 12.02 E</Longitude>
+  </Point><Point Name="OSMEV" Type="Fix">
+    <Latitude>41 59 52.00 N</Latitude>
+    <Longitude>30 34 18.00 E</Longitude>
+  </Point><Point Name="PEPAK" Type="Fix">
+    <Latitude>40 41 45.60 N</Latitude>
+    <Longitude>29 19 17.96 E</Longitude>
+  </Point><Point Name="QUNTE" Type="Fix">
+    <Latitude>41 36 52.27 N</Latitude>
+    <Longitude>28 47 49.21 E</Longitude>
+  </Point><Point Name="RATVU" Type="Fix">
+    <Latitude>39 54 24.00 N</Latitude>
+    <Longitude>29 22 42.00 E</Longitude>
+  </Point><Point Name="REDGI" Type="Fix">
+    <Latitude>41 18 27.36 N</Latitude>
+    <Longitude>28 33 06.03 E</Longitude>
+  </Point><Point Name="RITGU" Type="Fix">
+    <Latitude>40 47 38.87 N</Latitude>
+    <Longitude>27 52 49.10 E</Longitude>
+  </Point><Point Name="ROCHE" Type="Fix">
+    <Latitude>40 33 06.79 N</Latitude>
+    <Longitude>28 56 05.22 E</Longitude>
+  </Point><Point Name="TETPU" Type="Fix">
+    <Latitude>40 50 12.66 N</Latitude>
+    <Longitude>28 29 23.82 E</Longitude>
+  </Point><Point Name="TIBNU" Type="Fix">
+    <Latitude>40 57 55.58 N</Latitude>
+    <Longitude>28 48 34.32 E</Longitude>
+  </Point><Point Name="TUDBU" Type="Fix">
+    <Latitude>41 58 00.00 N</Latitude>
+    <Longitude>27 46 37.00 E</Longitude>
+  </Point><Point Name="UMBEM" Type="Fix">
+    <Latitude>40 52 08.58 N</Latitude>
+    <Longitude>28 20 16.02 E</Longitude>
+  </Point><Point Name="UNLIR" Type="Fix">
+    <Latitude>41 47 38.57 N</Latitude>
+    <Longitude>28 05 06.17 E</Longitude>
+  </Point><Point Name="VADEN" Type="Fix">
+    <Latitude>42 03 56.00 N</Latitude>
+    <Longitude>27 12 58.00 E</Longitude>
+  </Point><Point Name="VICEN" Type="Fix">
+    <Latitude>40 39 56.51 N</Latitude>
+    <Longitude>30 18 03.42 E</Longitude>
+  </Point><Point Name="VRACA" Type="Fix">
+    <Latitude>40 40 07.03 N</Latitude>
+    <Longitude>28 43 51.51 E</Longitude>
+  </Point><Point Name="XESRA" Type="Fix">
+    <Latitude>40 11 08.95 N</Latitude>
+    <Longitude>29 04 02.13 E</Longitude>
+  </Point><Point Name="AGBET" Type="Fix">
+    <Latitude>41 02 23.66 N</Latitude>
+    <Longitude>26 53 50.73 E</Longitude>
+  </Point><Point Name="ATPIX" Type="Fix">
+    <Latitude>41 45 12.00 N</Latitude>
+    <Longitude>30 37 25.00 E</Longitude>
+  </Point><Point Name="AYTEK" Type="Fix">
+    <Latitude>41 48 29.00 N</Latitude>
+    <Longitude>26 21 42.00 E</Longitude>
+  </Point><Point Name="DIVDI" Type="Fix">
+    <Latitude>41 36 23.49 N</Latitude>
+    <Longitude>28 53 17.89 E</Longitude>
+  </Point><Point Name="DRAMO" Type="Fix">
+    <Latitude>41 02 04.00 N</Latitude>
+    <Longitude>26 36 40.00 E</Longitude>
+  </Point><Point Name="ENLEC" Type="Fix">
+    <Latitude>41 28 29.32 N</Latitude>
+    <Longitude>29 05 27.20 E</Longitude>
+  </Point><Point Name="ENRAW" Type="Fix">
+    <Latitude>41 08 57.15 N</Latitude>
+    <Longitude>28 22 54.60 E</Longitude>
+  </Point><Point Name="EPEKI" Type="Fix">
+    <Latitude>40 54 49.72 N</Latitude>
+    <Longitude>30 13 14.15 E</Longitude>
+  </Point><Point Name="ERSEN" Type="Fix">
+    <Latitude>40 51 56.00 N</Latitude>
+    <Longitude>30 39 58.00 E</Longitude>
+  </Point><Point Name="FM166" Type="Fix">
+    <Latitude>41 27 49.58 N</Latitude>
+    <Longitude>28 17 24.99 E</Longitude>
+  </Point><Point Name="FM319" Type="Fix">
+    <Latitude>41 45 01.88 N</Latitude>
+    <Longitude>26 34 18.61 E</Longitude>
+  </Point><Point Name="FM320" Type="Fix">
+    <Latitude>41 38 08.03 N</Latitude>
+    <Longitude>26 48 13.46 E</Longitude>
+  </Point><Point Name="FM321" Type="Fix">
+    <Latitude>41 28 04.74 N</Latitude>
+    <Longitude>26 50 24.39 E</Longitude>
+  </Point><Point Name="FM322" Type="Fix">
+    <Latitude>41 26 42.71 N</Latitude>
+    <Longitude>27 06 04.89 E</Longitude>
+  </Point><Point Name="FM334" Type="Fix">
+    <Latitude>41 23 11.46 N</Latitude>
+    <Longitude>27 05 13.62 E</Longitude>
+  </Point><Point Name="FM375" Type="Fix">
+    <Latitude>41 08 51.65 N</Latitude>
+    <Longitude>28 16 17.46 E</Longitude>
+  </Point><Point Name="FM395" Type="Fix">
+    <Latitude>41 09 11.36 N</Latitude>
+    <Longitude>28 42 45.89 E</Longitude>
+  </Point><Point Name="FM396" Type="Fix">
+    <Latitude>41 05 33.03 N</Latitude>
+    <Longitude>28 54 47.00 E</Longitude>
+  </Point><Point Name="FM451" Type="Fix">
+    <Latitude>41 43 09.58 N</Latitude>
+    <Longitude>30 28 00.81 E</Longitude>
+  </Point><Point Name="FM452" Type="Fix">
+    <Latitude>41 45 14.70 N</Latitude>
+    <Longitude>30 17 42.20 E</Longitude>
+  </Point><Point Name="FM453" Type="Fix">
+    <Latitude>41 52 17.24 N</Latitude>
+    <Longitude>30 12 27.48 E</Longitude>
+  </Point><Point Name="FM454" Type="Fix">
+    <Latitude>41 59 19.57 N</Latitude>
+    <Longitude>30 07 11.65 E</Longitude>
+  </Point><Point Name="FM455" Type="Fix">
+    <Latitude>41 54 54.65 N</Latitude>
+    <Longitude>29 56 38.42 E</Longitude>
+  </Point><Point Name="FM456" Type="Fix">
+    <Latitude>41 50 28.72 N</Latitude>
+    <Longitude>29 46 06.61 E</Longitude>
+  </Point><Point Name="FM457" Type="Fix">
+    <Latitude>41 50 48.59 N</Latitude>
+    <Longitude>29 34 39.98 E</Longitude>
+  </Point><Point Name="FM458" Type="Fix">
+    <Latitude>41 47 56.47 N</Latitude>
+    <Longitude>29 27 37.09 E</Longitude>
+  </Point><Point Name="FM460" Type="Fix">
+    <Latitude>41 40 15.14 N</Latitude>
+    <Longitude>29 27 35.39 E</Longitude>
+  </Point><Point Name="FM461" Type="Fix">
+    <Latitude>41 32 33.81 N</Latitude>
+    <Longitude>29 27 33.75 E</Longitude>
+  </Point><Point Name="FM462" Type="Fix">
+    <Latitude>41 25 12.93 N</Latitude>
+    <Longitude>29 24 33.02 E</Longitude>
+  </Point><Point Name="FM463" Type="Fix">
+    <Latitude>41 18 50.80 N</Latitude>
+    <Longitude>29 18 49.84 E</Longitude>
+  </Point><Point Name="FM464" Type="Fix">
+    <Latitude>41 14 00.45 N</Latitude>
+    <Longitude>29 10 54.52 E</Longitude>
+  </Point><Point Name="FM465" Type="Fix">
+    <Latitude>41 20 53.96 N</Latitude>
+    <Longitude>29 05 30.67 E</Longitude>
+  </Point><Point Name="FM466" Type="Fix">
+    <Latitude>41 26 03.94 N</Latitude>
+    <Longitude>29 01 27.05 E</Longitude>
+  </Point><Point Name="FM467" Type="Fix">
+    <Latitude>41 31 13.78 N</Latitude>
+    <Longitude>28 57 22.79 E</Longitude>
+  </Point><Point Name="FM551" Type="Fix">
+    <Latitude>40 54 02.71 N</Latitude>
+    <Longitude>30 25 50.86 E</Longitude>
+  </Point><Point Name="FM552" Type="Fix">
+    <Latitude>40 55 35.35 N</Latitude>
+    <Longitude>30 00 37.05 E</Longitude>
+  </Point><Point Name="FM553" Type="Fix">
+    <Latitude>40 49 16.39 N</Latitude>
+    <Longitude>29 45 38.55 E</Longitude>
+  </Point><Point Name="FM555" Type="Fix">
+    <Latitude>40 56 11.65 N</Latitude>
+    <Longitude>29 10 30.91 E</Longitude>
+  </Point><Point Name="FM556" Type="Fix">
+    <Latitude>41 04 09.26 N</Latitude>
+    <Longitude>29 07 14.43 E</Longitude>
+  </Point><Point Name="FM560" Type="Fix">
+    <Latitude>41 15 43.85 N</Latitude>
+    <Longitude>29 09 33.66 E</Longitude>
+  </Point><Point Name="FM561" Type="Fix">
+    <Latitude>41 20 11.97 N</Latitude>
+    <Longitude>29 16 52.49 E</Longitude>
+  </Point><Point Name="FM562" Type="Fix">
+    <Latitude>41 26 04.80 N</Latitude>
+    <Longitude>29 22 09.18 E</Longitude>
+  </Point><Point Name="FM563" Type="Fix">
+    <Latitude>41 32 51.84 N</Latitude>
+    <Longitude>29 24 55.77 E</Longitude>
+  </Point><Point Name="FM564" Type="Fix">
+    <Latitude>41 39 57.69 N</Latitude>
+    <Longitude>29 24 57.00 E</Longitude>
+  </Point><Point Name="FM565" Type="Fix">
+    <Latitude>41 39 04.97 N</Latitude>
+    <Longitude>29 17 01.93 E</Longitude>
+  </Point><Point Name="FM566" Type="Fix">
+    <Latitude>41 38 11.69 N</Latitude>
+    <Longitude>29 09 07.05 E</Longitude>
+  </Point><Point Name="FM567" Type="Fix">
+    <Latitude>41 37 17.87 N</Latitude>
+    <Longitude>29 01 12.37 E</Longitude>
+  </Point><Point Name="FM641" Type="Fix">
+    <Latitude>41 04 41.50 N</Latitude>
+    <Longitude>30 11 12.03 E</Longitude>
+  </Point><Point Name="FM642" Type="Fix">
+    <Latitude>41 19 25.39 N</Latitude>
+    <Longitude>30 08 08.79 E</Longitude>
+  </Point><Point Name="FM644" Type="Fix">
+    <Latitude>41 34 32.75 N</Latitude>
+    <Longitude>29 57 27.65 E</Longitude>
+  </Point><Point Name="FM645" Type="Fix">
+    <Latitude>41 42 55.22 N</Latitude>
+    <Longitude>29 51 30.50 E</Longitude>
+  </Point><Point Name="FM650" Type="Fix">
+    <Latitude>40 13 51.71 N</Latitude>
+    <Longitude>29 48 09.88 E</Longitude>
+  </Point><Point Name="FM651" Type="Fix">
+    <Latitude>40 21 55.32 N</Latitude>
+    <Longitude>29 46 26.30 E</Longitude>
+  </Point><Point Name="FM652" Type="Fix">
+    <Latitude>40 29 44.25 N</Latitude>
+    <Longitude>29 53 38.63 E</Longitude>
+  </Point><Point Name="FM751" Type="Fix">
+    <Latitude>41 03 28.55 N</Latitude>
+    <Longitude>27 06 59.43 E</Longitude>
+  </Point><Point Name="FM752" Type="Fix">
+    <Latitude>41 10 32.56 N</Latitude>
+    <Longitude>27 14 26.61 E</Longitude>
+  </Point><Point Name="FM753" Type="Fix">
+    <Latitude>41 17 36.08 N</Latitude>
+    <Longitude>27 21 55.41 E</Longitude>
+  </Point><Point Name="FM754" Type="Fix">
+    <Latitude>41 12 31.45 N</Latitude>
+    <Longitude>27 30 18.44 E</Longitude>
+  </Point><Point Name="FM755" Type="Fix">
+    <Latitude>41 07 26.21 N</Latitude>
+    <Longitude>27 38 40.18 E</Longitude>
+  </Point><Point Name="FM756" Type="Fix">
+    <Latitude>41 05 37.10 N</Latitude>
+    <Longitude>27 47 36.96 E</Longitude>
+  </Point><Point Name="FM757" Type="Fix">
+    <Latitude>41 05 31.98 N</Latitude>
+    <Longitude>27 55 33.20 E</Longitude>
+  </Point><Point Name="FM758" Type="Fix">
+    <Latitude>41 07 06.22 N</Latitude>
+    <Longitude>28 05 56.02 E</Longitude>
+  </Point><Point Name="FM760" Type="Fix">
+    <Latitude>41 12 09.19 N</Latitude>
+    <Longitude>28 10 14.06 E</Longitude>
+  </Point><Point Name="FM761" Type="Fix">
+    <Latitude>41 17 13.52 N</Latitude>
+    <Longitude>28 02 34.30 E</Longitude>
+  </Point><Point Name="FM762" Type="Fix">
+    <Latitude>41 23 45.72 N</Latitude>
+    <Longitude>27 57 11.40 E</Longitude>
+  </Point><Point Name="FM763" Type="Fix">
+    <Latitude>41 31 11.83 N</Latitude>
+    <Longitude>27 54 34.03 E</Longitude>
+  </Point><Point Name="FM764" Type="Fix">
+    <Latitude>41 38 53.05 N</Latitude>
+    <Longitude>27 54 56.85 E</Longitude>
+  </Point><Point Name="FM765" Type="Fix">
+    <Latitude>41 37 23.96 N</Latitude>
+    <Longitude>28 05 26.08 E</Longitude>
+  </Point><Point Name="FM766" Type="Fix">
+    <Latitude>41 36 16.52 N</Latitude>
+    <Longitude>28 13 17.68 E</Longitude>
+  </Point><Point Name="FM767" Type="Fix">
+    <Latitude>41 35 08.54 N</Latitude>
+    <Longitude>28 21 08.99 E</Longitude>
+  </Point><Point Name="FM820" Type="Fix">
+    <Latitude>41 48 39.02 N</Latitude>
+    <Longitude>27 07 09.68 E</Longitude>
+  </Point><Point Name="FM852" Type="Fix">
+    <Latitude>41 41 33.27 N</Latitude>
+    <Longitude>27 13 43.33 E</Longitude>
+  </Point><Point Name="FM853" Type="Fix">
+    <Latitude>41 34 27.15 N</Latitude>
+    <Longitude>27 20 15.54 E</Longitude>
+  </Point><Point Name="FM854" Type="Fix">
+    <Latitude>41 39 35.72 N</Latitude>
+    <Longitude>27 30 13.07 E</Longitude>
+  </Point><Point Name="FM855" Type="Fix">
+    <Latitude>41 44 43.41 N</Latitude>
+    <Longitude>27 40 12.17 E</Longitude>
+  </Point><Point Name="FM856" Type="Fix">
+    <Latitude>41 47 39.49 N</Latitude>
+    <Longitude>27 47 35.24 E</Longitude>
+  </Point><Point Name="FM857" Type="Fix">
+    <Latitude>41 45 36.60 N</Latitude>
+    <Longitude>27 57 55.65 E</Longitude>
+  </Point><Point Name="FM860" Type="Fix">
+    <Latitude>41 38 30.87 N</Latitude>
+    <Longitude>27 57 34.21 E</Longitude>
+  </Point><Point Name="FM861" Type="Fix">
+    <Latitude>41 31 25.13 N</Latitude>
+    <Longitude>27 57 12.86 E</Longitude>
+  </Point><Point Name="FM862" Type="Fix">
+    <Latitude>41 24 33.29 N</Latitude>
+    <Longitude>27 59 37.87 E</Longitude>
+  </Point><Point Name="FM863" Type="Fix">
+    <Latitude>41 18 31.17 N</Latitude>
+    <Longitude>28 04 35.80 E</Longitude>
+  </Point><Point Name="FM864" Type="Fix">
+    <Latitude>41 13 50.14 N</Latitude>
+    <Longitude>28 11 40.23 E</Longitude>
+  </Point><Point Name="FM865" Type="Fix">
+    <Latitude>41 18 52.88 N</Latitude>
+    <Longitude>28 15 59.16 E</Longitude>
+  </Point><Point Name="FM866" Type="Fix">
+    <Latitude>41 23 55.44 N</Latitude>
+    <Longitude>28 20 18.76 E</Longitude>
+  </Point><Point Name="FM867" Type="Fix">
+    <Latitude>41 28 57.83 N</Latitude>
+    <Longitude>28 24 39.05 E</Longitude>
+  </Point><Point Name="FM955" Type="Fix">
+    <Latitude>41 55 06.47 N</Latitude>
+    <Longitude>28 30 35.74 E</Longitude>
+  </Point><Point Name="FM956" Type="Fix">
+    <Latitude>41 53 26.12 N</Latitude>
+    <Longitude>28 12 18.49 E</Longitude>
+  </Point><Point Name="FM966" Type="Fix">
+    <Latitude>41 56 06.57 N</Latitude>
+    <Longitude>28 58 57.09 E</Longitude>
+  </Point><Point Name="FM967" Type="Fix">
+    <Latitude>41 54 21.86 N</Latitude>
+    <Longitude>29 15 40.05 E</Longitude>
+  </Point><Point Name="GUBUL" Type="Fix">
+    <Latitude>40 44 18.84 N</Latitude>
+    <Longitude>27 18 46.36 E</Longitude>
+  </Point><Point Name="INBET" Type="Fix">
+    <Latitude>40 11 11.00 N</Latitude>
+    <Longitude>27 16 30.00 E</Longitude>
+  </Point><Point Name="INSTA" Type="Fix">
+    <Latitude>41 34 00.03 N</Latitude>
+    <Longitude>28 29 00.01 E</Longitude>
+  </Point><Point Name="IPMIL" Type="Fix">
+    <Latitude>41 53 51.37 N</Latitude>
+    <Longitude>26 55 43.67 E</Longitude>
+  </Point><Point Name="LEKMI" Type="Fix">
+    <Latitude>40 28 37.07 N</Latitude>
+    <Longitude>27 17 41.56 E</Longitude>
+  </Point><Point Name="PUQET" Type="Fix">
+    <Latitude>40 56 54.16 N</Latitude>
+    <Longitude>29 30 37.82 E</Longitude>
+  </Point><Point Name="RILEX" Type="Fix">
+    <Latitude>41 58 16.00 N</Latitude>
+    <Longitude>26 45 59.00 E</Longitude>
+  </Point><Point Name="RIXEN" Type="Fix">
+    <Latitude>42 04 56.00 N</Latitude>
+    <Longitude>28 45 58.00 E</Longitude>
+  </Point><Point Name="SISPI" Type="Fix">
+    <Latitude>39 54 53.00 N</Latitude>
+    <Longitude>29 52 12.00 E</Longitude>
+  </Point><Point Name="AIFOS" Type="Fix">
+    <Latitude>41 00 00.00 N</Latitude>
+    <Longitude>029 00 00.00 E</Longitude>
+  </Point><Point Name="ATVAS" Type="Fix">
+    <Latitude>41 45 45.30 N</Latitude>
+    <Longitude>028 46 43.10 E</Longitude>
+  </Point><Point Name="BOZDE" Type="Fix">
+    <Latitude>41 00 53.74 N</Latitude>
+    <Longitude>029 11 49.29 E</Longitude>
+  </Point><Point Name="FM035" Type="Fix">
+    <Latitude>41 27 56.37 N</Latitude>
+    <Longitude>028 43 34.45 E</Longitude>
+  </Point><Point Name="FM420" Type="Fix">
+    <Latitude>41 40 18.23 N</Latitude>
+    <Longitude>030 05 37.20 E</Longitude>
+  </Point><Point Name="FM421" Type="Fix">
+    <Latitude>41 43 35.47 N</Latitude>
+    <Longitude>029 55 44.03 E</Longitude>
+  </Point><Point Name="FM422" Type="Fix">
+    <Latitude>41 46 51.88 N</Latitude>
+    <Longitude>029 45 49.81 E</Longitude>
+  </Point><Point Name="FM423" Type="Fix">
+    <Latitude>41 38 35.75 N</Latitude>
+    <Longitude>029 40 58.68 E</Longitude>
+  </Point><Point Name="FM424" Type="Fix">
+    <Latitude>41 30 19.38 N</Latitude>
+    <Longitude>029 36 08.84 E</Longitude>
+  </Point><Point Name="FM425" Type="Fix">
+    <Latitude>41 26 22.44 N</Latitude>
+    <Longitude>029 22 29.45 E</Longitude>
+  </Point><Point Name="FM426" Type="Fix">
+    <Latitude>41 21 32.09 N</Latitude>
+    <Longitude>029 17 46.43 E</Longitude>
+  </Point><Point Name="FM430" Type="Fix">
+    <Latitude>41 13 40.30 N</Latitude>
+    <Longitude>029 17 46.02 E</Longitude>
+  </Point><Point Name="FM431" Type="Fix">
+    <Latitude>41 09 38.83 N</Latitude>
+    <Longitude>029 23 40.27 E</Longitude>
+  </Point><Point Name="FM432" Type="Fix">
+    <Latitude>41 04 36.16 N</Latitude>
+    <Longitude>029 27 59.03 E</Longitude>
+  </Point><Point Name="FM433" Type="Fix">
+    <Latitude>40 58 53.09 N</Latitude>
+    <Longitude>029 30 24.91 E</Longitude>
+  </Point><Point Name="FM434" Type="Fix">
+    <Latitude>40 52 53.12 N</Latitude>
+    <Longitude>029 30 48.43 E</Longitude>
+  </Point><Point Name="FM435" Type="Fix">
+    <Latitude>40 53 36.44 N</Latitude>
+    <Longitude>029 18 58.82 E</Longitude>
+  </Point><Point Name="FM436" Type="Fix">
+    <Latitude>40 54 09.30 N</Latitude>
+    <Longitude>029 09 46.68 E</Longitude>
+  </Point><Point Name="FM520" Type="Fix">
+    <Latitude>40 53 10.92 N</Latitude>
+    <Longitude>030 27 15.07 E</Longitude>
+  </Point><Point Name="FM521" Type="Fix">
+    <Latitude>40 59 27.70 N</Latitude>
+    <Longitude>030 17 55.43 E</Longitude>
+  </Point><Point Name="FM522" Type="Fix">
+    <Latitude>41 05 43.77 N</Latitude>
+    <Longitude>030 08 34.01 E</Longitude>
+  </Point><Point Name="FM523" Type="Fix">
+    <Latitude>40 58 56.25 N</Latitude>
+    <Longitude>030 00 39.39 E</Longitude>
+  </Point><Point Name="FM524" Type="Fix">
+    <Latitude>40 52 08.13 N</Latitude>
+    <Longitude>029 52 46.40 E</Longitude>
+  </Point><Point Name="FM525" Type="Fix">
+    <Latitude>40 52 02.42 N</Latitude>
+    <Longitude>029 44 41.07 E</Longitude>
+  </Point><Point Name="FM526" Type="Fix">
+    <Latitude>40 51 57.78 N</Latitude>
+    <Longitude>029 38 38.02 E</Longitude>
+  </Point><Point Name="FM530" Type="Fix">
+    <Latitude>40 53 02.85 N</Latitude>
+    <Longitude>029 28 10.77 E</Longitude>
+  </Point><Point Name="FM531" Type="Fix">
+    <Latitude>40 58 31.52 N</Latitude>
+    <Longitude>029 27 49.08 E</Longitude>
+  </Point><Point Name="FM532" Type="Fix">
+    <Latitude>41 03 44.71 N</Latitude>
+    <Longitude>029 25 35.70 E</Longitude>
+  </Point><Point Name="FM533" Type="Fix">
+    <Latitude>41 08 21.00 N</Latitude>
+    <Longitude>029 21 39.35 E</Longitude>
+  </Point><Point Name="FM534" Type="Fix">
+    <Latitude>41 12 01.38 N</Latitude>
+    <Longitude>029 16 15.91 E</Longitude>
+  </Point><Point Name="FM535" Type="Fix">
+    <Latitude>41 06 15.00 N</Latitude>
+    <Longitude>029 11 01.14 E</Longitude>
+  </Point><Point Name="FM536" Type="Fix">
+    <Latitude>41 00 28.35 N</Latitude>
+    <Longitude>029 05 47.29 E</Longitude>
+  </Point><Point Name="FM620" Type="Fix">
+    <Latitude>40 11 34.11 N</Latitude>
+    <Longitude>029 52 10.39 E</Longitude>
+  </Point><Point Name="FM621" Type="Fix">
+    <Latitude>40 24 43.92 N</Latitude>
+    <Longitude>029 52 08.96 E</Longitude>
+  </Point><Point Name="FM622" Type="Fix">
+    <Latitude>40 31 17.44 N</Latitude>
+    <Longitude>029 58 09.19 E</Longitude>
+  </Point><Point Name="FM623" Type="Fix">
+    <Latitude>40 40 29.34 N</Latitude>
+    <Longitude>029 58 09.15 E</Longitude>
+  </Point><Point Name="FM720" Type="Fix">
+    <Latitude>41 07 05.16 N</Latitude>
+    <Longitude>027 04 03.53 E</Longitude>
+  </Point><Point Name="FM721" Type="Fix">
+    <Latitude>41 11 45.68 N</Latitude>
+    <Longitude>027 14 17.64 E</Longitude>
+  </Point><Point Name="FM722" Type="Fix">
+    <Latitude>41 04 46.85 N</Latitude>
+    <Longitude>027 19 51.34 E</Longitude>
+  </Point><Point Name="FM723" Type="Fix">
+    <Latitude>40 57 47.74 N</Latitude>
+    <Longitude>027 25 23.87 E</Longitude>
+  </Point><Point Name="FM724" Type="Fix">
+    <Latitude>40 54 30.91 N</Latitude>
+    <Longitude>027 36 27.71 E</Longitude>
+  </Point><Point Name="FM725" Type="Fix">
+    <Latitude>40 54 15.34 N</Latitude>
+    <Longitude>027 45 20.74 E</Longitude>
+  </Point><Point Name="FM730" Type="Fix">
+    <Latitude>40 55 20.65 N</Latitude>
+    <Longitude>027 53 07.88 E</Longitude>
+  </Point><Point Name="FM731" Type="Fix">
+    <Latitude>41 01 21.21 N</Latitude>
+    <Longitude>027 53 02.52 E</Longitude>
+  </Point><Point Name="FM732" Type="Fix">
+    <Latitude>41 07 10.52 N</Latitude>
+    <Longitude>027 55 00.74 E</Longitude>
+  </Point><Point Name="FM733" Type="Fix">
+    <Latitude>41 12 24.65 N</Latitude>
+    <Longitude>027 58 54.97 E</Longitude>
+  </Point><Point Name="FM734" Type="Fix">
+    <Latitude>41 16 42.03 N</Latitude>
+    <Longitude>028 04 29.51 E</Longitude>
+  </Point><Point Name="FM735" Type="Fix">
+    <Latitude>41 09 36.01 N</Latitude>
+    <Longitude>028 11 49.95 E</Longitude>
+  </Point><Point Name="FM736" Type="Fix">
+    <Latitude>41 04 04.35 N</Latitude>
+    <Longitude>028 17 31.43 E</Longitude>
+  </Point><Point Name="FM821" Type="Fix">
+    <Latitude>41 41 33.58 N</Latitude>
+    <Longitude>027 20 59.28 E</Longitude>
+  </Point><Point Name="FM822" Type="Fix">
+    <Latitude>41 33 12.59 N</Latitude>
+    <Longitude>027 23 53.94 E</Longitude>
+  </Point><Point Name="FM823" Type="Fix">
+    <Latitude>41 24 51.53 N</Latitude>
+    <Longitude>027 26 47.87 E</Longitude>
+  </Point><Point Name="FM824" Type="Fix">
+    <Latitude>41 27 08.27 N</Latitude>
+    <Longitude>027 38 27.96 E</Longitude>
+  </Point><Point Name="FM825" Type="Fix">
+    <Latitude>41 29 23.81 N</Latitude>
+    <Longitude>027 50 08.85 E</Longitude>
+  </Point><Point Name="FM826" Type="Fix">
+    <Latitude>41 28 37.03 N</Latitude>
+    <Longitude>028 00 11.97 E</Longitude>
+  </Point><Point Name="FM827" Type="Fix">
+    <Latitude>41 23 07.76 N</Latitude>
+    <Longitude>028 05 59.16 E</Longitude>
+  </Point><Point Name="FM830" Type="Fix">
+    <Latitude>41 15 07.40 N</Latitude>
+    <Longitude>028 06 07.52 E</Longitude>
+  </Point><Point Name="FM831" Type="Fix">
+    <Latitude>41 11 12.49 N</Latitude>
+    <Longitude>028 01 02.07 E</Longitude>
+  </Point><Point Name="FM832" Type="Fix">
+    <Latitude>41 06 25.74 N</Latitude>
+    <Longitude>027 57 28.10 E</Longitude>
+  </Point><Point Name="FM833" Type="Fix">
+    <Latitude>41 01 06.85 N</Latitude>
+    <Longitude>027 55 39.97 E</Longitude>
+  </Point><Point Name="FM834" Type="Fix">
+    <Latitude>40 55 37.64 N</Latitude>
+    <Longitude>027 55 44.70 E</Longitude>
+  </Point><Point Name="FM835" Type="Fix">
+    <Latitude>40 56 36.62 N</Latitude>
+    <Longitude>028 04 53.50 E</Longitude>
+  </Point><Point Name="FM836" Type="Fix">
+    <Latitude>40 57 34.88 N</Latitude>
+    <Longitude>028 14 02.61 E</Longitude>
+  </Point><Point Name="FM906" Type="Fix">
+    <Latitude>41 35 06.56 N</Latitude>
+    <Longitude>028 27 13.61 E</Longitude>
+  </Point><Point Name="FM907" Type="Fix">
+    <Latitude>41 32 17.63 N</Latitude>
+    <Longitude>028 22 06.40 E</Longitude>
+  </Point><Point Name="FM908" Type="Fix">
+    <Latitude>41 26 58.29 N</Latitude>
+    <Longitude>028 12 43.63 E</Longitude>
+  </Point><Point Name="FM920" Type="Fix">
+    <Latitude>41 38 07.50 N</Latitude>
+    <Longitude>028 56 33.72 E</Longitude>
+  </Point><Point Name="FM921" Type="Fix">
+    <Latitude>41 27 27.03 N</Latitude>
+    <Longitude>029 10 14.39 E</Longitude>
+  </Point><Point Name="GEFME" Type="Fix">
+    <Latitude>41 11 40.98 N</Latitude>
+    <Longitude>030 09 36.67 E</Longitude>
+  </Point><Point Name="GINLI" Type="Fix">
+    <Latitude>41 52 16.00 N</Latitude>
+    <Longitude>028 46 28.00 E</Longitude>
+  </Point><Point Name="IMREN" Type="Fix">
+    <Latitude>40 58 32.41 N</Latitude>
+    <Longitude>028 23 11.96 E</Longitude>
+  </Point><Point Name="LIZTA" Type="Fix">
+    <Latitude>41 28 22.97 N</Latitude>
+    <Longitude>028 59 25.09 E</Longitude>
+  </Point><Point Name="PATHO" Type="Fix">
+    <Latitude>41 05 25.21 N</Latitude>
+    <Longitude>030 19 13.49 E</Longitude>
+  </Point><Point Name="PAZAR" Type="Fix">
+    <Latitude>41 17 56.00 N</Latitude>
+    <Longitude>029 59 58.00 E</Longitude>
+  </Point><Point Name="SADIK" Type="Fix">
+    <Latitude>40 54 41.43 N</Latitude>
+    <Longitude>029 00 34.36 E</Longitude>
+  </Point><Point Name="TUSCA" Type="Fix">
+    <Latitude>40 58 52.72 N</Latitude>
+    <Longitude>030 29 12.81 E</Longitude>
+  </Point><Point Name="ABNIN" Type="Fix">
+    <Latitude>40 46 54.89 N</Latitude>
+    <Longitude>28 14 54.42 E</Longitude>
+  </Point><Point Name="ADVUX" Type="Fix">
+    <Latitude>40 21 01.10 N</Latitude>
+    <Longitude>29 30 18.00 E</Longitude>
+  </Point><Point Name="AFGAR" Type="Fix">
+    <Latitude>41 27 01.00 N</Latitude>
+    <Longitude>27 48 25.00 E</Longitude>
+  </Point><Point Name="ARRSO" Type="Fix">
+    <Latitude>40 28 50.27 N</Latitude>
+    <Longitude>29 22 07.97 E</Longitude>
+  </Point><Point Name="ASGUK" Type="Fix">
+    <Latitude>40 10 31.34 N</Latitude>
+    <Longitude>29 41 10.10 E</Longitude>
+  </Point><Point Name="ASVIK" Type="Fix">
+    <Latitude>40 12 31.45 N</Latitude>
+    <Longitude>29 39 07.58 E</Longitude>
+  </Point><Point Name="AZBAN" Type="Fix">
+    <Latitude>41 14 15.63 N</Latitude>
+    <Longitude>29 32 14.84 E</Longitude>
+  </Point><Point Name="BEBIS" Type="Fix">
+    <Latitude>41 35 17.26 N</Latitude>
+    <Longitude>29 37 06.14 E</Longitude>
+  </Point><Point Name="BETIZ" Type="Fix">
+    <Latitude>41 39 11.90 N</Latitude>
+    <Longitude>29 21 30.62 E</Longitude>
+  </Point><Point Name="BKZ" Type="VOR">
+    <Latitude>41 07 37.00 N</Latitude>
+    <Longitude>29 08 34.00 E</Longitude>
+  </Point><Point Name="EFESE" Type="Fix">
+    <Latitude>40 48 17.75 N</Latitude>
+    <Longitude>28 46 09.34 E</Longitude>
+  </Point><Point Name="EROVA" Type="Fix">
+    <Latitude>41 39 55.79 N</Latitude>
+    <Longitude>28 49 46.86 E</Longitude>
+  </Point><Point Name="ERTAS" Type="Fix">
+    <Latitude>41 27 41.00 N</Latitude>
+    <Longitude>29 08 48.00 E</Longitude>
+  </Point><Point Name="EVKEB" Type="Fix">
+    <Latitude>41 32 08.16 N</Latitude>
+    <Longitude>29 45 32.04 E</Longitude>
+  </Point><Point Name="FENER" Type="Fix">
+    <Latitude>41 17 11.00 N</Latitude>
+    <Longitude>28 21 28.00 E</Longitude>
+  </Point><Point Name="FJ010" Type="Fix">
+    <Latitude>40 50 21.88 N</Latitude>
+    <Longitude>29 08 43.52 E</Longitude>
+  </Point><Point Name="FJ015" Type="Fix">
+    <Latitude>40 45 44.67 N</Latitude>
+    <Longitude>29 11 36.96 E</Longitude>
+  </Point><Point Name="FJ016" Type="Fix">
+    <Latitude>40 40 19.25 N</Latitude>
+    <Longitude>29 15 00.01 E</Longitude>
+  </Point><Point Name="FJ017" Type="Fix">
+    <Latitude>40 45 15.08 N</Latitude>
+    <Longitude>29 28 55.20 E</Longitude>
+  </Point><Point Name="FJ018" Type="Fix">
+    <Latitude>40 40 04.41 N</Latitude>
+    <Longitude>28 56 06.56 E</Longitude>
+  </Point><Point Name="FJ019" Type="Fix">
+    <Latitude>40 40 42.40 N</Latitude>
+    <Longitude>28 34 59.10 E</Longitude>
+  </Point><Point Name="FJ020" Type="Fix">
+    <Latitude>40 45 45.10 N</Latitude>
+    <Longitude>28 56 06.16 E</Longitude>
+  </Point><Point Name="FJ030" Type="Fix">
+    <Latitude>40 44 57.34 N</Latitude>
+    <Longitude>29 12 06.53 E</Longitude>
+  </Point><Point Name="FJ040" Type="Fix">
+    <Latitude>40 48 31.75 N</Latitude>
+    <Longitude>29 22 11.08 E</Longitude>
+  </Point><Point Name="FJ041" Type="Fix">
+    <Latitude>40 52 33.05 N</Latitude>
+    <Longitude>29 33 35.82 E</Longitude>
+  </Point><Point Name="FJ050" Type="Fix">
+    <Latitude>40 56 26.94 N</Latitude>
+    <Longitude>29 25 27.00 E</Longitude>
+  </Point><Point Name="FJ051" Type="Fix">
+    <Latitude>41 00 47.69 N</Latitude>
+    <Longitude>29 37 20.40 E</Longitude>
+  </Point><Point Name="FJ053" Type="Fix">
+    <Latitude>40 53 32.38 N</Latitude>
+    <Longitude>29 27 18.26 E</Longitude>
+  </Point><Point Name="FJ054" Type="Fix">
+    <Latitude>40 56 34.92 N</Latitude>
+    <Longitude>29 35 37.19 E</Longitude>
+  </Point><Point Name="FJ055" Type="Fix">
+    <Latitude>41 00 08.34 N</Latitude>
+    <Longitude>29 45 23.68 E</Longitude>
+  </Point><Point Name="FJ061" Type="Fix">
+    <Latitude>40 50 08.59 N</Latitude>
+    <Longitude>29 29 27.92 E</Longitude>
+  </Point><Point Name="FJ062" Type="Fix">
+    <Latitude>40 44 26.36 N</Latitude>
+    <Longitude>29 08 15.53 E</Longitude>
+  </Point><Point Name="FJ075" Type="Fix">
+    <Latitude>41 17 48.96 N</Latitude>
+    <Longitude>29 38 44.54 E</Longitude>
+  </Point><Point Name="INDUG" Type="Fix">
+    <Latitude>41 22 08.29 N</Latitude>
+    <Longitude>29 41 15.86 E</Longitude>
+  </Point><Point Name="INGIX" Type="Fix">
+    <Latitude>40 46 18.60 N</Latitude>
+    <Longitude>28 37 34.86 E</Longitude>
+  </Point><Point Name="INPAP" Type="Fix">
+    <Latitude>41 39 32.89 N</Latitude>
+    <Longitude>29 07 07.14 E</Longitude>
+  </Point><Point Name="IRDED" Type="Fix">
+    <Latitude>40 57 56.13 N</Latitude>
+    <Longitude>28 18 42.37 E</Longitude>
+  </Point><Point Name="IXODU" Type="Fix">
+    <Latitude>40 40 50.69 N</Latitude>
+    <Longitude>29 41 14.82 E</Longitude>
+  </Point><Point Name="KVITO" Type="Fix">
+    <Latitude>41 17 04.45 N</Latitude>
+    <Longitude>27 51 56.34 E</Longitude>
+  </Point><Point Name="NUDMU" Type="Fix">
+    <Latitude>41 09 34.87 N</Latitude>
+    <Longitude>29 35 56.17 E</Longitude>
+  </Point><Point Name="NUGBA" Type="Fix">
+    <Latitude>41 35 28.00 N</Latitude>
+    <Longitude>30 40 27.00 E</Longitude>
+  </Point><Point Name="NUSGI" Type="Fix">
+    <Latitude>41 42 44.23 N</Latitude>
+    <Longitude>29 07 15.07 E</Longitude>
+  </Point><Point Name="OBIXI" Type="Fix">
+    <Latitude>40 46 12.92 N</Latitude>
+    <Longitude>29 00 53.53 E</Longitude>
+  </Point><Point Name="REKNU" Type="Fix">
+    <Latitude>41 46 47.33 N</Latitude>
+    <Longitude>28 50 44.84 E</Longitude>
+  </Point><Point Name="ROXUK" Type="Fix">
+    <Latitude>39 53 25.00 N</Latitude>
+    <Longitude>29 43 07.00 E</Longitude>
+  </Point><Point Name="SBH" Type="VOR">
+    <Latitude>40 54 26.70 N</Latitude>
+    <Longitude>29 19 58.00 E</Longitude>
+  </Point><Point Name="SGN" Type="VOR">
+    <Latitude>40 54 05.65 N</Latitude>
+    <Longitude>29 20 36.96 E</Longitude>
+  </Point><Point Name="UNKEX" Type="Fix">
+    <Latitude>40 24 33.66 N</Latitude>
+    <Longitude>29 41 12.18 E</Longitude>
+  </Point><Point Name="UPMIV" Type="Fix">
+    <Latitude>41 45 35.16 N</Latitude>
+    <Longitude>29 35 49.04 E</Longitude>
+  </Point><Point Name="VAGSI" Type="Fix">
+    <Latitude>41 27 39.18 N</Latitude>
+    <Longitude>29 56 50.12 E</Longitude>
+  </Point><Point Name="VAZZO" Type="Fix">
+    <Latitude>40 47 39.66 N</Latitude>
+    <Longitude>28 35 39.19 E</Longitude>
+  </Point><Point Name="YAA" Type="VOR">
+    <Latitude>40 28 30.00 N</Latitude>
+    <Longitude>29 12 27.00 E</Longitude>
+  </Point><Point Name="YOBOR" Type="Fix">
+    <Latitude>40 40 43.00 N</Latitude>
+    <Longitude>28 49 04.00 E</Longitude>
+  </Point><Point Name="YUZVE" Type="Fix">
+    <Latitude>41 23 07.17 N</Latitude>
+    <Longitude>29 29 45.14 E</Longitude>
+  </Point><Point Name="AKCAK" Type="Fix">
+      <Latitude>41 25 44.00 N</Latitude>
+      <Longitude>30 43 29.00 E</Longitude>
+    </Point><Point Name="ENFEZ" Type="Fix">
+      <Latitude>41 29 56.42 N</Latitude>
+      <Longitude>28 33 32.11 E</Longitude>
+    </Point><Point Name="EMGIM" Type="Fix">
+      <Latitude>39 54 34.00 N</Latitude>
+      <Longitude>29 32 32.00 E</Longitude>
+    </Point><Point Name="ETAMP" Type="Fix">
+      <Latitude>39 34 47.00 N</Latitude>
+      <Longitude>29 43 44.00 E</Longitude>
+    </Point><Point Name="EVRUG" Type="Fix">
+      <Latitude>40 23 08.14 N</Latitude>
+      <Longitude>30 08 04.50 E</Longitude>
+    </Point><Point Name="GUMRU" Type="Fix">
+      <Latitude>41 32 56.00 N</Latitude>
+      <Longitude>31 20 58.00 E</Longitude>
+    </Point><Point Name="IBODU" Type="Fix">
+      <Latitude>41 33 16.00 N</Latitude>
+      <Longitude>27 04 44.00 E</Longitude>
+    </Point><Point Name="IZMAL" Type="Fix">
+      <Latitude>40 11 57.00 N</Latitude>
+      <Longitude>27 30 43.00 E</Longitude>
+    </Point><Point Name="LAMVU" Type="Fix">
+      <Latitude>40 39 08.93 N</Latitude>
+      <Longitude>27 29 49.71 E</Longitude>
+    </Point><Point Name="LANTU" Type="Fix">
+      <Latitude>40 33 43.62 N</Latitude>
+      <Longitude>30 04 10.34 E</Longitude>
+    </Point><Point Name="OKIPI" Type="Fix">
+      <Latitude>41 02 23.03 N</Latitude>
+      <Longitude>29 41 42.98 E</Longitude>
+    </Point><Point Name="PAMZA" Type="Fix">
+      <Latitude>41 00 52.69 N</Latitude>
+      <Longitude>29 50 44.79 E</Longitude>
+    </Point><Point Name="PITOF" Type="Fix">
+      <Latitude>41 18 31.26 N</Latitude>
+      <Longitude>29 26 11.80 E</Longitude>
+    </Point><Point Name="RAVIL" Type="Fix">
+      <Latitude>40 20 10.27 N</Latitude>
+      <Longitude>30 00 07.31 E</Longitude>
+    </Point><Point Name="REBAH" Type="Fix">
+      <Latitude>41 14 18.10 N</Latitude>
+      <Longitude>28 20 37.61 E</Longitude>
+    </Point><Point Name="RERSU" Type="Fix">
+      <Latitude>40 43 22.03 N</Latitude>
+      <Longitude>29 45 50.41 E</Longitude>
+    </Point><Point Name="TELRI" Type="Fix">
+      <Latitude>40 18 10.71 N</Latitude>
+      <Longitude>27 33 18.58 E</Longitude>
+    </Point><Point Name="TOKER" Type="Fix">
+      <Latitude>40 18 48.00 N</Latitude>
+      <Longitude>30 46 20.00 E</Longitude>
+    </Point><Point Name="TUZWE" Type="Fix">
+      <Latitude>41 02 23.17 N</Latitude>
+      <Longitude>28 10 52.52 E</Longitude>
+    </Point><Point Name="FM438" Type="Fix">
+      <Latitude>41 19 21.61 N</Latitude>
+      <Longitude>29 03 11.33 E</Longitude>
+    </Point><Point Name="FJ470" Type="Fix">
+      <Latitude>40 41 25.94 N</Latitude>
+      <Longitude>27 56 08.03 E</Longitude>
+    </Point><Point Name="FJ471" Type="Fix">
+      <Latitude>40 44 26.60 N</Latitude>
+      <Longitude>28 32 47.49 E</Longitude>
+    </Point><Point Name="FJ472" Type="Fix">
+      <Latitude>40 43 35.19 N</Latitude>
+      <Longitude>29 01 11.29 E</Longitude>
+    </Point><Point Name="FJ473" Type="Fix">
+      <Latitude>40 41 03.96 N</Latitude>
+      <Longitude>29 12 40.47 E</Longitude>
+    </Point><Point Name="FJ474" Type="Fix">
+      <Latitude>40 42 23.26 N</Latitude>
+      <Longitude>29 31 26.09 E</Longitude>
+    </Point><Point Name="FJ475" Type="Fix">
+      <Latitude>40 44 18.99 N</Latitude>
+      <Longitude>30 00 15.05 E</Longitude>
+    </Point><Point Name="FJ476" Type="Fix">
+      <Latitude>40 50 24.66 N</Latitude>
+      <Longitude>30 10 41.12 E</Longitude>
+    </Point><Point Name="FJ480" Type="Fix">
+      <Latitude>40 57 23.60 N</Latitude>
+      <Longitude>30 11 21.51 E</Longitude>
+    </Point><Point Name="FJ481" Type="Fix">
+      <Latitude>41 04 10.50 N</Latitude>
+      <Longitude>30 12 00.91 E</Longitude>
+    </Point><Point Name="FJ482" Type="Fix">
+      <Latitude>41 10 48.34 N</Latitude>
+      <Longitude>30 10 01.31 E</Longitude>
+    </Point><Point Name="NEWPE" Type="Fix">
+    <Latitude>40 51 29.33 N</Latitude>
+    <Longitude>28 27 37.98 E</Longitude>
+  </Point><Point Name="FM101" Type="Fix">
+    <Latitude>40 50 14.67 N</Latitude>
+    <Longitude>28 08 41.96 E</Longitude>
+  </Point><Point Name="FM100" Type="Fix">
+    <Latitude>40 49 06.42 N</Latitude>
+    <Longitude>27 52 03.09 E</Longitude>
+  </Point><Point Name="FM125" Type="Fix">
+    <Latitude>40 45 48.53 N</Latitude>
+    <Longitude>28 30 11.89 E</Longitude>
+  </Point><Point Name="FM124" Type="Fix">
+    <Latitude>40 50 20.33 N</Latitude>
+    <Longitude>28 47 40.76 E</Longitude>
+  </Point><Point Name="FM123" Type="Fix">
+    <Latitude>40 51 35.68 N</Latitude>
+    <Longitude>28 52 33.80 E</Longitude>
+  </Point><Point Name="FM120" Type="Fix">
+    <Latitude>40 50 41.87 N</Latitude>
+    <Longitude>29 30 54.37 E</Longitude>
+  </Point><Point Name="FM121" Type="Fix">
+    <Latitude>40 50 21.32 N</Latitude>
+    <Longitude>29 18 59.12 E</Longitude>
+  </Point><Point Name="FM122" Type="Fix">
+    <Latitude>40 49 58.55 N</Latitude>
+    <Longitude>29 06 32.59 E</Longitude>
+  </Point><Point Name="GAZGE" Type="Fix">
+    <Latitude>41 34 46.63 N</Latitude>
+    <Longitude>28 57 04.36 E</Longitude>
+  </Point><Point Name="FM402" Type="Fix">
+    <Latitude>41 22 16.85 N</Latitude>
+    <Longitude>29 19 31.91 E</Longitude>
+  </Point><Point Name="FM405" Type="Fix">
+    <Latitude>41 37 52.36 N</Latitude>
+    <Longitude>29 24 45.60 E</Longitude>
+  </Point><Point Name="FM401" Type="Fix">
+    <Latitude>41 18 20.48 N</Latitude>
+    <Longitude>29 14 28.11 E</Longitude>
+  </Point><Point Name="FM403" Type="Fix">
+    <Latitude>41 27 04.29 N</Latitude>
+    <Longitude>29 23 04.73 E</Longitude>
+  </Point><Point Name="FM404" Type="Fix">
+    <Latitude>41 32 23.34 N</Latitude>
+    <Longitude>29 24 51.88 E</Longitude>
+  </Point><Point Name="FM406" Type="Fix">
+    <Latitude>41 36 51.20 N</Latitude>
+    <Longitude>29 15 31.60 E</Longitude>
+  </Point><Point Name="FM400" Type="Fix">
+    <Latitude>41 10 41.52 N</Latitude>
+    <Longitude>29 10 33.84 E</Longitude>
+  </Point><Point Name="FM407" Type="Fix">
+    <Latitude>41 35 49.29 N</Latitude>
+    <Longitude>29 06 17.85 E</Longitude>
+  </Point><Point Name="FM653" Type="Fix">
+    <Latitude>41 33 25.88 N</Latitude>
+    <Longitude>30 31 04.59 E</Longitude>
+  </Point><Point Name="FM643" Type="Fix">
+    <Latitude>41 26 29.38 N</Latitude>
+    <Longitude>30 03 09.88 E</Longitude>
+  </Point><Point Name="FM654" Type="Fix">
+    <Latitude>41 35 31.22 N</Latitude>
+    <Longitude>30 20 47.63 E</Longitude>
+  </Point><Point Name="FM450" Type="Fix">
+    <Latitude>41 11 31.13 N</Latitude>
+    <Longitude>30 09 47.26 E</Longitude>
+  </Point><Point Name="ULQAL" Type="Fix">
+    <Latitude>41 43 23.13 N</Latitude>
+    <Longitude>28 52 18.69 E</Longitude>
+  </Point><Point Name="FM803" Type="Fix">
+    <Latitude>41 25 56.94 N</Latitude>
+    <Longitude>28 03 10.70 E</Longitude>
+  </Point><Point Name="FM801" Type="Fix">
+    <Latitude>41 36 43.83 N</Latitude>
+    <Longitude>28 01 14.62 E</Longitude>
+  </Point><Point Name="FM807" Type="Fix">
+    <Latitude>41 28 26.95 N</Latitude>
+    <Longitude>28 23 18.90 E</Longitude>
+  </Point><Point Name="FM802" Type="Fix">
+    <Latitude>41 31 14.64 N</Latitude>
+    <Longitude>28 01 16.08 E</Longitude>
+  </Point><Point Name="FM805" Type="Fix">
+    <Latitude>41 17 19.92 N</Latitude>
+    <Longitude>28 11 59.61 E</Longitude>
+  </Point><Point Name="FM806" Type="Fix">
+    <Latitude>41 22 53.58 N</Latitude>
+    <Longitude>28 17 38.77 E</Longitude>
+  </Point><Point Name="FM804" Type="Fix">
+    <Latitude>41 21 12.27 N</Latitude>
+    <Longitude>28 06 50.27 E</Longitude>
+  </Point><Point Name="FM513" Type="Fix">
+    <Latitude>41 21 05.23 N</Latitude>
+    <Longitude>29 21 39.78 E</Longitude>
+  </Point><Point Name="FM510" Type="Fix">
+    <Latitude>41 38 09.70 N</Latitude>
+    <Longitude>29 27 23.93 E</Longitude>
+  </Point><Point Name="FM511" Type="Fix">
+    <Latitude>41 32 09.35 N</Latitude>
+    <Longitude>29 27 30.55 E</Longitude>
+  </Point><Point Name="FM514" Type="Fix">
+    <Latitude>41 16 46.43 N</Latitude>
+    <Longitude>29 16 07.06 E</Longitude>
+  </Point><Point Name="FM512" Type="Fix">
+    <Latitude>41 26 19.96 N</Latitude>
+    <Longitude>29 25 33.01 E</Longitude>
+  </Point><Point Name="FM516" Type="Fix">
+    <Latitude>41 29 18.19 N</Latitude>
+    <Longitude>29 02 53.25 E</Longitude>
+  </Point><Point Name="FM515" Type="Fix">
+    <Latitude>41 23 49.47 N</Latitude>
+    <Longitude>29 08 41.16 E</Longitude>
+  </Point><Point Name="FM441" Type="Fix">
+    <Latitude>41 20 55.34 N</Latitude>
+    <Longitude>30 16 50.70 E</Longitude>
+  </Point><Point Name="FM440" Type="Fix">
+    <Latitude>41 17 18.68 N</Latitude>
+    <Longitude>30 33 21.13 E</Longitude>
+  </Point><Point Name="FM442" Type="Fix">
+    <Latitude>41 24 29.24 N</Latitude>
+    <Longitude>30 00 20.41 E</Longitude>
+  </Point><Point Name="FM444" Type="Fix">
+    <Latitude>41 36 37.81 N</Latitude>
+    <Longitude>29 34 07.77 E</Longitude>
+  </Point><Point Name="FM470" Type="Fix">
+    <Latitude>41 36 20.02 N</Latitude>
+    <Longitude>30 16 52.61 E</Longitude>
+  </Point><Point Name="FM471" Type="Fix">
+    <Latitude>41 41 11.53 N</Latitude>
+    <Longitude>30 10 09.51 E</Longitude>
+  </Point><Point Name="FM473" Type="Fix">
+    <Latitude>41 41 36.08 N</Latitude>
+    <Longitude>29 56 12.07 E</Longitude>
+  </Point><Point Name="FM472" Type="Fix">
+    <Latitude>41 46 02.68 N</Latitude>
+    <Longitude>30 03 25.39 E</Longitude>
+  </Point><Point Name="FM443" Type="Fix">
+    <Latitude>41 37 09.00 N</Latitude>
+    <Longitude>29 48 59.73 E</Longitude>
+  </Point><Point Name="KANQO" Type="Fix">
+    <Latitude>41 13 30.49 N</Latitude>
+    <Longitude>30 45 36.30 E</Longitude>
+  </Point><Point Name="FM655" Type="Fix">
+    <Latitude>41 42 33.87 N</Latitude>
+    <Longitude>30 15 33.98 E</Longitude>
+  </Point><Point Name="FM656" Type="Fix">
+    <Latitude>41 47 50.62 N</Latitude>
+    <Longitude>30 11 33.53 E</Longitude>
+  </Point><Point Name="FM670" Type="Fix">
+    <Latitude>41 17 51.79 N</Latitude>
+    <Longitude>30 31 29.48 E</Longitude>
+  </Point><Point Name="FM671" Type="Fix">
+    <Latitude>41 22 11.42 N</Latitude>
+    <Longitude>30 17 20.67 E</Longitude>
+  </Point><Point Name="FM918" Type="Fix">
+    <Latitude>41 46 18.42 N</Latitude>
+    <Longitude>29 18 10.22 E</Longitude>
+  </Point><Point Name="FM910" Type="Fix">
+    <Latitude>41 49 54.40 N</Latitude>
+    <Longitude>28 05 48.56 E</Longitude>
+  </Point><Point Name="FM911" Type="Fix">
+    <Latitude>41 45 12.34 N</Latitude>      
+    <Longitude>28 10 48.05 E</Longitude>
+  </Point><Point Name="FM912" Type="Fix">
+    <Latitude>41 50 04.24 N</Latitude>
+    <Longitude>28 32 07.44 E</Longitude>
+  </Point><Point Name="FM913" Type="Fix">
+    <Latitude>41 52 44.77 N</Latitude>
+    <Longitude>28 43 59.97 E</Longitude>
+  </Point><Point Name="FM914" Type="Fix">
+    <Latitude>41 48 32.17 N</Latitude>
+    <Longitude>28 50 15.44 E</Longitude>
+  </Point><Point Name="FM916" Type="Fix">
+    <Latitude>41 50 39.92 N</Latitude>
+    <Longitude>28 59 49.03 E</Longitude>
+  </Point><Point Name="FM917" Type="Fix">
+    <Latitude>41 44 39.15 N</Latitude>
+    <Longitude>29 08 41.32 E</Longitude>
+  </Point><Point Name="FM810" Type="Fix">
+    <Latitude>41 15 44.53 N</Latitude>
+    <Longitude>28 10 22.88 E</Longitude>
+  </Point><Point Name="FM811" Type="Fix">
+    <Latitude>41 19 58.93 N</Latitude>
+    <Longitude>28 04 44.09 E</Longitude>
+  </Point><Point Name="FM812" Type="Fix">
+    <Latitude>41 25 10.62 N</Latitude>
+    <Longitude>28 00 43.48 E</Longitude>
+  </Point><Point Name="FM813" Type="Fix">
+    <Latitude>41 30 58.54 N</Latitude>      
+    <Longitude>27 58 37.73 E</Longitude>
+  </Point><Point Name="FM814" Type="Fix">
+    <Latitude>41 36 59.08 N</Latitude>    
+    <Longitude>27 58 35.89 E</Longitude>
+  </Point><Point Name="FM815" Type="Fix">
+    <Latitude>41 35 49.97 N</Latitude>
+    <Longitude>28 10 30.03 E</Longitude>
+  </Point><Point Name="FM816" Type="Fix">
+    <Latitude>41 34 55.37 N</Latitude>
+    <Longitude>28 19 45.16 E</Longitude>  
+  </Point></Fixes>

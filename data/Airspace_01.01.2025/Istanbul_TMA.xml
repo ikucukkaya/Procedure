@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Fixes>
+  <Point Name="ISTTMA01" Type="Boundary">
+    <Latitude>40 12 56.00 N</Latitude>
+    <Longitude>27 31 58.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA02" Type="Boundary">
+    <Latitude>40 12 55.00 N</Latitude>
+    <Longitude>27 11 51.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA03" Type="Boundary">
+    <Latitude>40 44 56.00 N</Latitude>
+    <Longitude>27 14 19.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA04" Type="Boundary">
+    <Latitude>40 58 10.00 N</Latitude>
+    <Longitude>26 50 38.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA05" Type="Boundary">
+    <Latitude>41 26 33.00 N</Latitude>
+    <Longitude>26 49 17.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA06" Type="Boundary">
+    <Latitude>41 53 37.00 N</Latitude>
+    <Longitude>27 11 13.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA07" Type="Boundary">
+    <Latitude>41 53 45.00 N</Latitude>
+    <Longitude>27 53 01.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA08" Type="Boundary">
+    <Latitude>41 59 00.00 N</Latitude>
+    <Longitude>28 19 00.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA09" Type="Boundary">
+    <Latitude>42 07 00.00 N</Latitude>
+    <Longitude>29 00 00.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA10" Type="Boundary">
+    <Latitude>42 21 28.00 N</Latitude>
+    <Longitude>29 41 25.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA11" Type="Boundary">
+    <Latitude>42 06 09.00 N</Latitude>
+    <Longitude>30 32 12.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA12" Type="Boundary">
+    <Latitude>40 13 08.00 N</Latitude>
+    <Longitude>30 26 12.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA13" Type="Boundary">
+    <Latitude>40 16 00.00 N</Latitude>
+    <Longitude>29 56 52.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA14" Type="Boundary">
+    <Latitude>39 54 56.00 N</Latitude>
+    <Longitude>29 55 58.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA15" Type="Boundary">
+    <Latitude>39 53 56.00 N</Latitude>
+    <Longitude>28 59 58.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA16" Type="Boundary">
+    <Latitude>40 15 56.00 N</Latitude>
+    <Longitude>28 59 58.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA17" Type="Boundary">
+    <Latitude>40 38 31.00 N</Latitude>
+    <Longitude>28 27 43.00 E</Longitude>
+    </Point>
+  <Point Name="ISTTMA18" Type="Boundary">
+    <Latitude>40 38 26.00 N</Latitude>
+    <Longitude>27 56 58.00 E</Longitude>
+    </Point>
+  </Fixes>

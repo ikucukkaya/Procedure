@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Airports>
+  <Airport Name="LTBA">
+    <Runway Name="05" Type="DEP">
+      <Threshold Name="05">
+        <Latitude>40 57 58.55 N</Latitude>
+        <Longitude>28 48 40.75 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="23" Type="ARR">
+      <Threshold Name="23">
+        <Latitude>40 58 39.95 N</Latitude>
+        <Longitude>28 50 10.16 E</Longitude>
+      </Threshold>
+    </Runway>
+  </Airport>
+
+  <Airport Name="LTFM">
+    <Runway Name="34L" Type="ARR">
+      <Threshold Name="34L">
+        <Latitude>41 15 53.40 N</Latitude>
+        <Longitude>28 42 27.00 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="34R" Type="DEP">
+      <Threshold Name="34R">
+        <Latitude>41 15 53.40 N</Latitude>
+        <Longitude>28 42 36.00 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="35L" Type="DEP">
+      <Threshold Name="35L">
+        <Latitude>41 15 42.60 N</Latitude>
+        <Longitude>28 43 31.20 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="35R" Type="ARR">
+      <Threshold Name="35R">
+        <Latitude>41 15 43.20 N</Latitude>
+        <Longitude>28 43 40.20 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="36" Type="MIX">
+      <Threshold Name="36">
+        <Latitude>41 15 43.80 N</Latitude>
+        <Longitude>28 45 24.00 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="16L" Type="DEP">
+      <Threshold Name="16L">
+        <Latitude>41 17 55.20 N</Latitude>
+        <Longitude>28 42 33.60 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="16R" Type="ARR">
+      <Threshold Name="16R">
+        <Latitude>41 17 55.20 N</Latitude>
+        <Longitude>28 42 24.60 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="17L" Type="ARR">
+      <Threshold Name="17L">
+        <Latitude>41 17 55.80 N</Latitude>
+        <Longitude>28 43 37.20 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="17R" Type="DEP">
+      <Threshold Name="17R">
+        <Latitude>41 17 55.80 N</Latitude>
+        <Longitude>28 43 28.20 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="18" Type="MIX">
+      <Threshold Name="18">
+        <Latitude>41 17 23.40 N</Latitude>
+        <Longitude>28 45 22.20 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="09" Type="DEP">
+      <Threshold Name="09">
+        <Latitude>41 15 13.30 N</Latitude>
+        <Longitude>28 45 58.58 E</Longitude>
+      </Threshold>
+    </Runway>
+        <Runway Name="27" Type="DEP">
+      <Threshold Name="27">
+        <Latitude>41 15 14.58 N</Latitude>
+        <Longitude>28 47 59.69 E</Longitude>
+      </Threshold>
+    </Runway>
+  </Airport>
+
+  <Airport Name="LTFJ">
+    <Runway Name="06L">
+      <Threshold Name="06L">
+        <Latitude>40 53 33.55 N</Latitude>
+        <Longitude>29 17 35.57 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="06R">
+      <Threshold Name="06R">
+        <Latitude>40 53 05.45 N</Latitude>
+        <Longitude>29 18 09.33 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="24L">
+      <Threshold Name="24L">
+        <Latitude>40 53 55.54 N</Latitude>
+        <Longitude>29 20 25.38 E</Longitude>
+      </Threshold>
+    </Runway>
+    <Runway Name="24R">
+      <Threshold Name="24R">
+        <Latitude>40 54 16.01 N</Latitude>
+        <Longitude>29 19 30.87 E</Longitude>
+      </Threshold>
+    </Runway>
+  </Airport>
+</Airports>

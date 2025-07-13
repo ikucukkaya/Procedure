@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Fixes>
+  <Point Name="LTP2CanakkaleII01" Type="Boundary">
+    <Latitude>40 25 00.00 N</Latitude>
+    <Longitude>26 40 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP2CanakkaleII02" Type="Boundary">
+    <Latitude>40 38 00.00 N</Latitude>
+    <Longitude>26 32 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP2CanakkaleII03" Type="Boundary">
+    <Latitude>40 50 00.00 N</Latitude>
+    <Longitude>27 02 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP2CanakkaleII04" Type="Boundary">
+    <Latitude>40 37 00.00 N</Latitude>
+    <Longitude>27 06 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP7Imrali01" Type="Boundary">
+    <Latitude>40 37 00.00 N</Latitude>
+    <Longitude>28 27 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP7Imrali02" Type="Boundary">
+    <Latitude>40 37 00.00 N</Latitude>
+    <Longitude>28 37 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP7Imrali03" Type="Boundary">
+    <Latitude>40 28 00.00 N</Latitude>
+    <Longitude>28 37 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTP7Imrali04" Type="Boundary">
+    <Latitude>40 28 00.00 N</Latitude>
+    <Longitude>28 27 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD4Bandırma01" Type="Boundary">
+    <Latitude>40 09 00.00 N</Latitude>
+    <Longitude>27 59 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD4Bandırma02" Type="Boundary">
+    <Latitude>40 08 00.00 N</Latitude>
+    <Longitude>27 59 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD4Bandırma03" Type="Boundary">
+    <Latitude>40 08 00.00 N</Latitude>
+    <Longitude>27 58 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD4Bandırma04" Type="Boundary">
+    <Latitude>40 09 00.00 N</Latitude>
+    <Longitude>27 58 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD5MarmaraDenizi01" Type="Boundary">
+    <Latitude>40 25 00.00 N</Latitude>
+    <Longitude>28 39 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD5MarmaraDenizi02" Type="Boundary">
+    <Latitude>40 28 30.00 N</Latitude>
+    <Longitude>28 40 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD5MarmaraDenizi03" Type="Boundary">
+    <Latitude>40 29 30.00 N</Latitude>
+    <Longitude>28 31 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD5MarmaraDenizi04" Type="Boundary">
+    <Latitude>40 38 00.00 N</Latitude>
+    <Longitude>28 07 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD5MarmaraDenizi05" Type="Boundary">
+    <Latitude>40 32 00.00 N</Latitude>
+    <Longitude>28 01 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD5MarmaraDenizi06" Type="Boundary">
+    <Latitude>40 26 00.00 N</Latitude>
+    <Longitude>28 16 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD7Eskisehir01" Type="Boundary">
+    <Latitude>39 51 00.00 N</Latitude>
+    <Longitude>30 59 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD7Eskisehir02" Type="Boundary">
+    <Latitude>39 50 00.00 N</Latitude>
+    <Longitude>30 59 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD7Eskisehir03" Type="Boundary">
+    <Latitude>39 50 00.00 N</Latitude>
+    <Longitude>30 57 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD7Eskisehir04" Type="Boundary">
+    <Latitude>39 51 00.00 N</Latitude>
+    <Longitude>30 57 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD17KaradenizII01" Type="Boundary">
+    <Latitude>41 56 00.00 N</Latitude>
+    <Longitude>35 15 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD17KaradenizII02" Type="Boundary">
+    <Latitude>41 43 00.00 N</Latitude>
+    <Longitude>35 50 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD17KaradenizII03" Type="Boundary">
+    <Latitude>41 47 00.00 N</Latitude>
+    <Longitude>35 52 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD17KaradenizII04" Type="Boundary">
+    <Latitude>41 59 00.00 N</Latitude>
+    <Longitude>35 18 00.00 E</Longitude>
+    </Point>
+  <Point Name="LTD38TarabyaHuber01" Type="Boundary">
+    <Latitude>41 07 06.00 N</Latitude>
+    <Longitude>29 03 40.00 E</Longitude>
+    </Point>
+  <Point Name="LTD38TarabyaHuber02" Type="Boundary">
+    <Latitude>41 07 29.00 N</Latitude>
+    <Longitude>29 04 29.00 E</Longitude>
+    </Point>
+  <Point Name="LTD38TarabyaHuber03" Type="Boundary">
+    <Latitude>41 08 15.00 N</Latitude>
+    <Longitude>29 03 40.00 E</Longitude>
+    </Point>
+  <Point Name="LTD38TarabyaHuber04" Type="Boundary">
+    <Latitude>41 08 09.00 N</Latitude>
+    <Longitude>29 02 39.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli01" Type="Boundary">
+    <Latitude>41 02 24.00 N</Latitude>
+    <Longitude>29 03 24.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli02" Type="Boundary">
+    <Latitude>41 02 19.00 N</Latitude>
+    <Longitude>29 03 54.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli03" Type="Boundary">
+    <Latitude>41 02 06.00 N</Latitude>
+    <Longitude>29 04 20.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli04" Type="Boundary">
+    <Latitude>41 01 47.00 N</Latitude>
+    <Longitude>29 04 37.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli05" Type="Boundary">
+    <Latitude>41 01 24.00 N</Latitude>
+    <Longitude>29 04 44.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli06" Type="Boundary">
+    <Latitude>41 01 01.00 N</Latitude>
+    <Longitude>29 04 37.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli07" Type="Boundary">
+    <Latitude>41 00 42.00 N</Latitude>
+    <Longitude>29 04 20.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli08" Type="Boundary">
+    <Latitude>41 00 29.00 N</Latitude>
+    <Longitude>29 03 54.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli09" Type="Boundary">
+    <Latitude>41 00 24.00 N</Latitude>
+    <Longitude>29 03 24.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli10" Type="Boundary">
+    <Latitude>41 00 29.00 N</Latitude>
+    <Longitude>29 02 54.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli11" Type="Boundary">
+    <Latitude>41 00 42.00 N</Latitude>
+    <Longitude>29 02 28.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli12" Type="Boundary">
+    <Latitude>41 01 01.00 N</Latitude>
+    <Longitude>29 02 11.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli13" Type="Boundary">
+    <Latitude>41 01 24.00 N</Latitude>
+    <Longitude>29 02 04.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli14" Type="Boundary">
+    <Latitude>41 01 47.00 N</Latitude>
+    <Longitude>29 02 11.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli15" Type="Boundary">
+    <Latitude>41 02 06.00 N</Latitude>
+    <Longitude>29 02 28.00 E</Longitude>
+    </Point>
+  <Point Name="LTD37UskudarKisikli16" Type="Boundary">
+    <Latitude>41 02 19.00 N</Latitude>
+    <Longitude>29 02 54.00 E</Longitude>
+    </Point>
+  </Fixes>
