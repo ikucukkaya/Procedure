@@ -27,11 +27,10 @@ class LeftSidebar(QWidget):
     snapEnabledToggled = pyqtSignal(bool)
     snapModeChanged = pyqtSignal(int)
     snapToleranceChanged = pyqtSignal(int)
-    # Çizgi ayarları için sinyal tanımları
-    routeLineWidthChanged = pyqtSignal(int)
-    selectedRouteLineWidthChanged = pyqtSignal(int)
-    routeColorChanged = pyqtSignal(object)  # QColor nesnesi
-    selectedRouteColorChanged = pyqtSignal(object)  # QColor nesnesi
+    # Harita renkleri için yeni sinyaller
+    landColorChanged = pyqtSignal(object)  # QColor nesnesi
+    backgroundColorChanged = pyqtSignal(object)  # QColor nesnesi  
+    restrictedAreaColorChanged = pyqtSignal(object)  # QColor nesnesi
     
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -88,6 +87,11 @@ class LeftSidebar(QWidget):
         self.setup_procedure_section()
         self.setup_runway_section()
         self.setup_map_controls_section()
+        
+        # Renk butonlarının mevcut renklerini takip etmek için değişkenler
+        self.current_land_color = QColor("#B4B4B4")  # Açık gri
+        self.current_background_color = QColor("#DCE6F0")  # Açık mavi
+        self.current_restricted_area_color = QColor("#FF0000")  # Kırmızı
         
         # Add stretch to push content to top
         self.scroll_layout.addStretch()
@@ -288,62 +292,43 @@ class LeftSidebar(QWidget):
         separator.setStyleSheet("background-color: #e0e0e0; margin-top: 10px; margin-bottom: 10px;")
         controls_layout.addWidget(separator)
         
-        # Çizgi ayarları başlığı
-        line_settings_label = QLabel("Line Settings")
-        line_settings_label.setStyleSheet("font-weight: bold; color: #444444; margin-top: 5px;")
-        controls_layout.addWidget(line_settings_label)
+        # Harita renkleri başlığı
+        map_colors_label = QLabel("Map Colors")
+        map_colors_label.setStyleSheet("font-weight: bold; color: #444444; margin-top: 5px;")
+        controls_layout.addWidget(map_colors_label)
         
-        # Rota çizgisi kalınlık ayarı
-        route_width_layout = QHBoxLayout()
-        route_width_layout.addWidget(QLabel("Route Line Width:"))
-        self.route_line_width_slider = QSlider(Qt.Horizontal)
-        self.route_line_width_slider.setRange(1, 6)
-        self.route_line_width_slider.setValue(2)  # Varsayılan kalınlık
-        self.route_line_width_slider.setTickPosition(QSlider.TicksBelow)
-        self.route_line_width_slider.setTickInterval(1)
-        self.route_line_width_slider.valueChanged.connect(self.on_route_line_width_changed)
+        # Land rengi ayarı
+        land_color_layout = QHBoxLayout()
+        land_color_layout.addWidget(QLabel("Land Color:"))
+        self.land_color_button = QPushButton()
+        self.land_color_button.setFixedSize(25, 25)
+        self.land_color_button.setStyleSheet("background-color: #B4B4B4; border: 1px solid #444444;")  # Açık gri
+        self.land_color_button.clicked.connect(self.on_land_color_button_clicked)
+        land_color_layout.addWidget(self.land_color_button)
+        land_color_layout.addStretch(1)
+        controls_layout.addLayout(land_color_layout)
         
-        self.route_width_value_label = QLabel("2px")
-        route_width_layout.addWidget(self.route_line_width_slider)
-        route_width_layout.addWidget(self.route_width_value_label)
-        controls_layout.addLayout(route_width_layout)
+        # Background rengi ayarı
+        background_color_layout = QHBoxLayout()
+        background_color_layout.addWidget(QLabel("Background Color:"))
+        self.background_color_button = QPushButton()
+        self.background_color_button.setFixedSize(25, 25)
+        self.background_color_button.setStyleSheet("background-color: #DCE6F0; border: 1px solid #444444;")  # Açık mavi
+        self.background_color_button.clicked.connect(self.on_background_color_button_clicked)
+        background_color_layout.addWidget(self.background_color_button)
+        background_color_layout.addStretch(1)
+        controls_layout.addLayout(background_color_layout)
         
-        # Seçili rota çizgisi kalınlık ayarı
-        selected_route_width_layout = QHBoxLayout()
-        selected_route_width_layout.addWidget(QLabel("Selected Route Width:"))
-        self.selected_route_line_width_slider = QSlider(Qt.Horizontal)
-        self.selected_route_line_width_slider.setRange(2, 8)
-        self.selected_route_line_width_slider.setValue(4)  # Varsayılan kalınlık
-        self.selected_route_line_width_slider.setTickPosition(QSlider.TicksBelow)
-        self.selected_route_line_width_slider.setTickInterval(1)
-        self.selected_route_line_width_slider.valueChanged.connect(self.on_selected_route_line_width_changed)
-        
-        self.selected_route_width_value_label = QLabel("4px")
-        selected_route_width_layout.addWidget(self.selected_route_line_width_slider)
-        selected_route_width_layout.addWidget(self.selected_route_width_value_label)
-        controls_layout.addLayout(selected_route_width_layout)
-        
-        # Rota rengi ayarı
-        route_color_layout = QHBoxLayout()
-        route_color_layout.addWidget(QLabel("Route Color:"))
-        self.route_color_button = QPushButton()
-        self.route_color_button.setFixedSize(25, 25)
-        self.route_color_button.setStyleSheet("background-color: #800080; border: 1px solid #444444;")  # Mor renk
-        self.route_color_button.clicked.connect(self.on_route_color_button_clicked)
-        route_color_layout.addWidget(self.route_color_button)
-        route_color_layout.addStretch(1)
-        controls_layout.addLayout(route_color_layout)
-        
-        # Seçili rota rengi ayarı
-        selected_route_color_layout = QHBoxLayout()
-        selected_route_color_layout.addWidget(QLabel("Selected Route Color:"))
-        self.selected_route_color_button = QPushButton()
-        self.selected_route_color_button.setFixedSize(25, 25)
-        self.selected_route_color_button.setStyleSheet("background-color: #FFA500; border: 1px solid #444444;")  # Turuncu renk
-        self.selected_route_color_button.clicked.connect(self.on_selected_route_color_button_clicked)
-        selected_route_color_layout.addWidget(self.selected_route_color_button)
-        selected_route_color_layout.addStretch(1)
-        controls_layout.addLayout(selected_route_color_layout)
+        # Yasaklı sahalar rengi ayarı
+        restricted_area_color_layout = QHBoxLayout()
+        restricted_area_color_layout.addWidget(QLabel("Restricted Areas Color:"))
+        self.restricted_area_color_button = QPushButton()
+        self.restricted_area_color_button.setFixedSize(25, 25)
+        self.restricted_area_color_button.setStyleSheet("background-color: #FF0000; border: 1px solid #444444;")  # Kırmızı
+        self.restricted_area_color_button.clicked.connect(self.on_restricted_area_color_button_clicked)
+        restricted_area_color_layout.addWidget(self.restricted_area_color_button)
+        restricted_area_color_layout.addStretch(1)
+        controls_layout.addLayout(restricted_area_color_layout)
         
         # Set layout for section
         self.map_controls_section.setContentLayout(controls_layout)
@@ -928,51 +913,81 @@ class LeftSidebar(QWidget):
         """Handle segment distance labels visibility toggle"""
         self.showSegmentDistancesToggled.emit(checked)
         
-    def on_route_line_width_changed(self, value):
-        """Rota çizgisi kalınlık değişikliği sinyalini gönder"""
-        self.route_width_value_label.setText(f"{value}px")
-        self.routeLineWidthChanged.emit(value)
-        
-    def on_selected_route_line_width_changed(self, value):
-        """Seçili rota çizgisi kalınlık değişikliği sinyalini gönder"""
-        self.selected_route_width_value_label.setText(f"{value}px")
-        self.selectedRouteLineWidthChanged.emit(value)
-    
-    def on_route_color_button_clicked(self):
-        """Rota rengi seçici diyalog kutusunu göster"""
-        current_color = self.route_color_button.palette().button().color()
-        color_dialog = QColorDialog(current_color, self)
+    def on_land_color_button_clicked(self):
+        """Land rengi seçici diyalog kutusunu göster"""
+        print("DEBUG: Land color button clicked")
+        color_dialog = QColorDialog(self.current_land_color, self)
         color_dialog.setOption(QColorDialog.ShowAlphaChannel, False)
-        color_dialog.setWindowTitle("Select Route Color")
+        color_dialog.setWindowTitle("Select Land Color")
         
         if color_dialog.exec_() == QColorDialog.Accepted:
             selected_color = color_dialog.selectedColor()
             if selected_color.isValid():
-                self.update_route_color_button(selected_color)
-                self.routeColorChanged.emit(selected_color)
+                print(f"DEBUG: Land color selected: {selected_color.name()}")
+                self.current_land_color = selected_color
+                # Doğrudan burada buton stilini güncelle
+                self.land_color_button.setStyleSheet(
+                    f"background-color: {selected_color.name()}; border: 1px solid #444444;"
+                )
+                print("DEBUG: Emitting landColorChanged signal")
+                self.landColorChanged.emit(selected_color)
     
-    def on_selected_route_color_button_clicked(self):
-        """Seçili rota rengi seçici diyalog kutusunu göster"""
-        current_color = self.selected_route_color_button.palette().button().color()
-        color_dialog = QColorDialog(current_color, self)
+    def on_background_color_button_clicked(self):
+        """Background rengi seçici diyalog kutusunu göster"""
+        print("DEBUG: Background color button clicked")
+        color_dialog = QColorDialog(self.current_background_color, self)
         color_dialog.setOption(QColorDialog.ShowAlphaChannel, False)
-        color_dialog.setWindowTitle("Select Selected Route Color")
+        color_dialog.setWindowTitle("Select Background Color")
         
         if color_dialog.exec_() == QColorDialog.Accepted:
             selected_color = color_dialog.selectedColor()
             if selected_color.isValid():
-                self.update_selected_route_color_button(selected_color)
-                self.selectedRouteColorChanged.emit(selected_color)
+                print(f"DEBUG: Background color selected: {selected_color.name()}")
+                self.current_background_color = selected_color
+                # Doğrudan burada buton stilini güncelle
+                self.background_color_button.setStyleSheet(
+                    f"background-color: {selected_color.name()}; border: 1px solid #444444;"
+                )
+                print("DEBUG: Emitting backgroundColorChanged signal")
+                self.backgroundColorChanged.emit(selected_color)
     
-    def update_route_color_button(self, color):
-        """Rota rengi butonunun arka plan rengini güncelle"""
-        self.route_color_button.setStyleSheet(
+    def on_restricted_area_color_button_clicked(self):
+        """Yasaklı sahalar rengi seçici diyalog kutusunu göster"""
+        print("DEBUG: Restricted area color button clicked")
+        color_dialog = QColorDialog(self.current_restricted_area_color, self)
+        color_dialog.setOption(QColorDialog.ShowAlphaChannel, False)
+        color_dialog.setWindowTitle("Select Restricted Areas Color")
+        
+        if color_dialog.exec_() == QColorDialog.Accepted:
+            selected_color = color_dialog.selectedColor()
+            if selected_color.isValid():
+                print(f"DEBUG: Restricted area color selected: {selected_color.name()}")
+                self.current_restricted_area_color = selected_color
+                # Doğrudan burada buton stilini güncelle
+                self.restricted_area_color_button.setStyleSheet(
+                    f"background-color: {selected_color.name()}; border: 1px solid #444444;"
+                )
+                print("DEBUG: Emitting restrictedAreaColorChanged signal")
+                self.restrictedAreaColorChanged.emit(selected_color)
+    
+    def update_land_color_button(self, color):
+        """Land rengi butonunun arka plan rengini güncelle"""
+        self.current_land_color = color
+        self.land_color_button.setStyleSheet(
             f"background-color: {color.name()}; border: 1px solid #444444;"
         )
     
-    def update_selected_route_color_button(self, color):
-        """Seçili rota rengi butonunun arka plan rengini güncelle"""
-        self.selected_route_color_button.setStyleSheet(
+    def update_background_color_button(self, color):
+        """Background rengi butonunun arka plan rengini güncelle"""
+        self.current_background_color = color
+        self.background_color_button.setStyleSheet(
+            f"background-color: {color.name()}; border: 1px solid #444444;"
+        )
+    
+    def update_restricted_area_color_button(self, color):
+        """Yasaklı sahalar rengi butonunun arka plan rengini güncelle"""
+        self.current_restricted_area_color = color
+        self.restricted_area_color_button.setStyleSheet(
             f"background-color: {color.name()}; border: 1px solid #444444;"
         )
     

@@ -12,5 +12,6 @@ if __name__ == "__main__":
     # Debug mesajı
     print("AirspaceVisualizer yüklendi")
 
-    window.show()
+    # Uygulamayı tam sayfa olarak başlat
+    window.showMaximized()
     sys.exit(app.exec_())

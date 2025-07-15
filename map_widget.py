@@ -1160,6 +1160,27 @@ class MapWidget(QWidget):
                     else:
                         color = self._parse_color(route.get('color', '#008080'))  # Varsayılan türkuaz
                         painter.setPen(QPen(color, self.normal_route_line_width))  # Normal kalınlıkta rota çizgisi
+                elif pattern_type == 'user_route':
+                    # For user routes - use individual route color and line width
+                    route_color = self._parse_color(route.get('color', '#800080'))  # Varsayılan mor
+                    route_width = route.get('line_width', self.normal_route_line_width)
+                    
+                    if i == self.selected_path_index or i in self.selected_route_indices:
+                        # Taşıma modunda olan yol için farklı stil
+                        if self.route_move_mode and route.get('id') == self.route_being_moved:
+                            painter.setPen(QPen(QColor(0, 200, 0), route_width + 2, Qt.DashLine))  # Yeşil, kesikli çizgi
+                        # Döndürme modunda olan yol için farklı stil
+                        elif self.route_rotate_mode and route.get('id') == self.route_being_rotated:
+                            painter.setPen(QPen(QColor(200, 100, 0), route_width + 2, Qt.DotLine))  # Turuncu-kırmızı, noktalı çizgi
+                        # Çoklu seçim modunda seçilen yol için farklı stil
+                        elif self.multi_select_mode and i in self.selected_route_indices:
+                            painter.setPen(QPen(QColor(255, 0, 255), route_width + 1))  # Mor renk, çoklu seçim için
+                        else:
+                            # Seçili user route için orijinal renk ama kalın çizgi
+                            painter.setPen(QPen(route_color, route_width + 2))  # Seçilmiş rota için kalınlık artırıldı
+                    else:
+                        # Normal user route - kullanıcının belirlediği renk ve kalınlık
+                        painter.setPen(QPen(route_color, route_width))
                 else:
                     # For trombone or other patterns
                     pen = QPen(self.route_default_color, self.normal_route_line_width)  # Normal rota kalınlığı
@@ -2696,6 +2717,22 @@ class MapWidget(QWidget):
         
         # Route döndürme sinyalini bağla
         popup.routeRotateRequested.connect(self._on_route_rotate_requested)
+        
+        # Route color ve line width sinyallerini ana pencereye bağla
+        main_window = self.parent()
+        while main_window and not hasattr(main_window, 'on_route_color_changed'):
+            main_window = main_window.parent()
+        
+        if main_window:
+            popup.routeColorChanged.connect(main_window.on_route_color_changed)
+            popup.routeLineWidthChanged.connect(main_window.on_route_line_width_changed)
+        
+        # Route color ve line width sinyallerini bağla - ana pencereyi bul
+        main_window = self.window()  # Ana pencereyi bul
+        if hasattr(main_window, 'on_route_color_changed'):
+            popup.routeColorChanged.connect(main_window.on_route_color_changed)
+        if hasattr(main_window, 'on_route_line_width_changed'):
+            popup.routeLineWidthChanged.connect(main_window.on_route_line_width_changed)
         
         # Popup'ı göster
         popup.show()

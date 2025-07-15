@@ -1156,7 +1156,7 @@
           <Waypoint Name="FM083" />
           <Waypoint Name="FM084" Turn="Left" />
           <Waypoint Name="OZZAW" Turn="Left" />
-          <Waypoint Name="MAK0L" />
+          <Waypoint Name="MAKOL" />
         </Route>
       </SID>
       <SID Name="EKAWE1F" Airport="LTFM">

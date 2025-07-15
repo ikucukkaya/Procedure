@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, QSpinBox, 
-    QDoubleSpinBox, QPushButton, QWidget, QGridLayout, QMessageBox)
+    QDoubleSpinBox, QPushButton, QWidget, QGridLayout, QMessageBox, QTabWidget, QTextEdit)
 from PyQt5.QtCore import Qt, pyqtSignal
 import math
 
@@ -126,10 +126,35 @@ class PointMergePopupDialog(QDialog):
         
         layout.addWidget(self.title_bar)
         
-        # İçerik alanı
-        content_widget = QWidget()
-        content_layout = QVBoxLayout(content_widget)
-        content_layout.setContentsMargins(10, 10, 10, 0)
+        # Tab widget oluştur
+        self.tab_widget = QTabWidget()
+        self.tab_widget.setStyleSheet("""
+            QTabWidget::pane {
+                border: 1px solid #cccccc;
+                background-color: white;
+            }
+            QTabBar::tab {
+                background-color: #f0f0f0;
+                border: 1px solid #cccccc;
+                border-bottom: none;
+                padding: 6px 12px;
+                margin-right: 2px;
+                font-size: 10px;
+                font-weight: bold;
+            }
+            QTabBar::tab:selected {
+                background-color: white;
+                border-bottom: 1px solid white;
+            }
+            QTabBar::tab:hover {
+                background-color: #e5e5e5;
+            }
+        """)
+        
+        # Ayarlar sekmesi
+        settings_tab = QWidget()
+        settings_layout = QVBoxLayout(settings_tab)
+        settings_layout.setContentsMargins(10, 10, 10, 0)
 
         # Parametreler için grid layout
         grid = QGridLayout()
@@ -167,10 +192,22 @@ class PointMergePopupDialog(QDialog):
         self.segments_spin.setValue(self.config.get('segments', self.config.get('num_segments', 3)))
         grid.addWidget(self.segments_spin, 2, 1)
         
-        content_layout.addLayout(grid)
+        settings_layout.addLayout(grid)
         
-        # İçerik widget'ını ana layout'a ekle
-        layout.addWidget(content_widget)
+        # Detay sekmesi
+        details_tab = QWidget()
+        details_layout = QVBoxLayout(details_tab)
+        details_layout.setContentsMargins(10, 10, 10, 10)
+        
+        # Detay bilgilerini ekle
+        self.add_pointmerge_details(details_layout)
+        
+        # Sekmeleri tab widget'a ekle
+        self.tab_widget.addTab(settings_tab, "Ayarlar")
+        self.tab_widget.addTab(details_tab, "Detay")
+        
+        # Tab widget'ını ana layout'a ekle
+        layout.addWidget(self.tab_widget)
         
         # Butonlar
         btn_layout = QHBoxLayout()
@@ -217,9 +254,10 @@ class PointMergePopupDialog(QDialog):
         for btn in buttons:
             btn.setFixedWidth(int(button_width))
             
-        content_layout.addLayout(btn_layout)
+        # Buton layout'unu ana layout'a ekle
+        layout.addLayout(btn_layout)
         
-        self.setFixedSize(390, 200)  # Move butonu eklendiğinden biraz daha geniş
+        self.setFixedSize(390, 250)  # Sekme yapısı için boyut artırıldı
     
     def on_apply(self):
         """Point merge ayarlarını güncelle"""
@@ -265,6 +303,10 @@ class PointMergePopupDialog(QDialog):
             
         # Parametre değişim sinyalini gönder
         self.pointMergeSettingsChanged.emit(updated_cfg)
+        
+        # Detay sekmesini güncelle
+        self.update_details_tab()
+        
         # popup açık kalsın
     
     def on_export_json(self):
@@ -295,6 +337,141 @@ class PointMergePopupDialog(QDialog):
         if rid:
             self.pointMergeRotateRequested.emit(rid)
             self.accept()  # İşlem sonrası popup'ı kapat
+    
+    def add_pointmerge_details(self, layout):
+        """Point Merge detaylarını ekle"""
+        # Point Merge detay bilgilerini göster
+        self.details_text = QTextEdit()
+        self.details_text.setReadOnly(True)
+        self.details_text.setStyleSheet("font-family: monospace; font-size: 10px;")
+        
+        # Detay bilgilerini hazırla
+        details_content = self.generate_pointmerge_details()
+        self.details_text.setPlainText(details_content)
+        
+        layout.addWidget(self.details_text)
+    
+    def update_details_tab(self):
+        """Detay sekmesini günceller"""
+        # Yeni detay metnini oluştur
+        details_text = self.generate_pointmerge_details()
+        # Detay metin alanını güncelle
+        self.details_text.setPlainText(details_text)
+    
+    def generate_pointmerge_details(self):
+        """Point Merge detay bilgilerini oluştur"""
+        details = []
+        
+        # Temel bilgiler
+        details.append("=== POINT MERGE DETAILS ===")
+        details.append(f"Pattern ID: {self.config.get('id', 'N/A')}")
+        details.append(f"Pattern Name: {self.config.get('name', 'N/A')}")
+        details.append(f"Pattern Type: {self.config.get('pattern_type', 'pointmerge')}")
+        details.append("")
+        
+        # Yapılandırma parametreleri (UI'dan güncel değerleri al)
+        details.append("=== CONFIGURATION ===")
+        details.append(f"Distance from Merge: {self.distance_spin.value():.1f} NM")
+        details.append(f"Track Angle: {self.angle_spin.value():.1f}°")
+        details.append(f"Number of Segments: {self.segments_spin.value()}")
+        details.append("")
+        
+        # Merge point bilgileri
+        merge_point = self.config.get('merge_point', [])
+        if merge_point:
+            details.append("=== MERGE POINT ===")
+            details.append(f"Latitude: {merge_point[0]:.6f}")
+            details.append(f"Longitude: {merge_point[1]:.6f}")
+            details.append("")
+        
+        # Waypoint bilgileri
+        # Debug: Mevcut config'i kontrol et
+        print(f"Point Merge config keys: {list(self.config.keys())}")
+        print(f"Points from config: {self.config.get('points', [])}")
+        
+        # Parent'tan waypoint bilgilerini al
+        parent_points = []
+        parent = self.parent()
+        if parent and hasattr(parent, 'drawn_elements'):
+            for route in parent.drawn_elements.get('routes', []):
+                if route.get('id') == self.config.get('id'):
+                    parent_points = route.get('points', [])
+                    print(f"Parent'tan alınan points: {parent_points}")
+                    break
+        
+        points = self.config.get('points', []) or parent_points
+        waypoint_names = self.config.get('waypoint_names', [])
+        waypoints_found = False
+        
+        if points:
+            details.append("=== WAYPOINTS ===")
+            waypoints_found = True
+            for i, point in enumerate(points):
+                if isinstance(point, (list, tuple)) and len(point) >= 2:
+                    lat, lon = point[0], point[1]
+                    waypoint_name = waypoint_names[i] if i < len(waypoint_names) else f"WP{i+1}"
+                    details.append(f"• {waypoint_name}: {lat:.6f}, {lon:.6f}")
+                else:
+                    waypoint_name = waypoint_names[i] if i < len(waypoint_names) else f"WP{i+1}"
+                    details.append(f"• {waypoint_name}: {point}")
+            details.append("")
+        
+        # Eğer points yoksa diğer olası anahtarları kontrol et
+        if not waypoints_found:
+            for key, value in self.config.items():
+                if 'waypoint' in key.lower() or 'point' in key.lower():
+                    print(f"Possible waypoint key found: {key} = {value}")
+                    if isinstance(value, list) and value:
+                        details.append("=== WAYPOINTS ===")
+                        waypoints_found = True
+                        for i, item in enumerate(value):
+                            if isinstance(item, dict):
+                                lat = item.get('lat', 'N/A')
+                                lon = item.get('lon', 'N/A')
+                                name = item.get('name', f'WP{i+1}')
+                                if lat != 'N/A' and lon != 'N/A':
+                                    details.append(f"• {name}: {lat:.6f}, {lon:.6f}")
+                                else:
+                                    details.append(f"• {name}: {lat}, {lon}")
+                            elif isinstance(item, (list, tuple)) and len(item) >= 2:
+                                lat, lon = item[0], item[1]
+                                details.append(f"• WP{i+1}: {lat:.6f}, {lon:.6f}")
+                            else:
+                                details.append(f"• WP{i+1}: {item}")
+                        details.append("")
+                        break
+        
+        if not waypoints_found:
+            details.append("=== WAYPOINTS ===")
+            details.append("• Henüz tanımlanmamış")
+            details.append("")
+            print("No waypoints found in any config key!")
+        
+        # Segment bilgileri
+        segment_distances = self.config.get('segment_distances', [])
+        segment_angles = self.config.get('segment_angles', [])
+        
+        if segment_distances:
+            details.append("=== SEGMENTS ===")
+            for i, distance in enumerate(segment_distances):
+                angle = segment_angles[i] if i < len(segment_angles) else 0
+                details.append(f"Segment {i+1}: {distance:.2f} NM, {angle:.1f}°")
+            details.append("")
+        
+        # Toplam mesafe
+        if segment_distances:
+            total_distance = sum(d for d in segment_distances if d > 0)
+            details.append(f"Total Distance: {total_distance:.2f} NM")
+            details.append("")
+        
+        # Zaman bilgileri (varsa)
+        if 'created_at' in self.config:
+            details.append("=== TIMING ===")
+            details.append(f"Created: {self.config.get('created_at', 'N/A')}")
+            if 'modified_at' in self.config:
+                details.append(f"Modified: {self.config.get('modified_at', 'N/A')}")
+        
+        return "\n".join(details)
     
     def mousePressEvent(self, event):
         """Fare tıklama olayını yakala - sadece başlık çubuğundan sürüklenmeye izin ver"""
