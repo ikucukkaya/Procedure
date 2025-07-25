@@ -831,6 +831,10 @@ def calculate_point_merge_waypoints(runway, config):
         Dictionary with merge point and leg points for visualization
     """
     try:
+        # Check if Double PMS is enabled and handle it
+        if config.get('double_pms_enabled'):
+            return _calculate_double_pms_from_config(config)
+
         # Debug gelen config
         print(f"calculate_point_merge_waypoints için config: {config}")
         
@@ -983,3 +987,107 @@ def calculate_point_merge_waypoints(runway, config):
         import traceback
         traceback.print_exc()
         raise ValueError(f"Failed to generate point merge: {str(e)}")
+
+def _calculate_double_pms_from_config(config):
+    """
+    Calculates waypoints for a Double Point-Merge System.
+    The structure involves a main leg, a perpendicular base segment leading
+    to an inner "double" leg that curves back towards the initial approach line.
+    """
+    # Extract common parameters
+    merge_lat, merge_lon = config['merge_lat'], config['merge_lon']
+    track_angle = config['track_angle']
+    first_point_distance = config['first_point_distance']
+    clockwise = config['clockwise']
+    base_segment_distance = config['base_segment_distance']
+    
+    # Handle segments - convert to list if needed
+    segments_raw = config['segments']
+    if isinstance(segments_raw, list):
+        first_leg_segments = segments_raw
+    elif isinstance(segments_raw, (int, float)):
+        num_segments = int(segments_raw)
+        total_arc_width = config.get('arc_width', 60.0)  # In degrees
+        arc_length_nm = math.radians(total_arc_width) * first_point_distance
+        segment_distance = arc_length_nm / num_segments if num_segments > 0 else arc_length_nm
+        first_leg_segments = [segment_distance] * num_segments
+    else:
+        # Fallback: create 5 equal segments
+        num_segments = 5
+        total_arc_width = config.get('arc_width', 60.0) 
+        arc_length_nm = math.radians(total_arc_width) * first_point_distance
+        first_leg_segments = [arc_length_nm / num_segments] * num_segments
+
+    # --- 1. Calculate Main Leg ---
+    main_leg_points = calculate_leg_points(
+        merge_lat, merge_lon,
+        track_angle, first_point_distance,
+        first_leg_segments, clockwise
+    )
+    if not main_leg_points:
+        raise ValueError("Failed to generate main leg for Double PMS.")
+
+    # --- 2. Calculate Double Leg Parameters ---
+    # The double leg is an inner arc, so its radius is smaller.
+    r_main = first_point_distance
+    r_double = r_main - base_segment_distance
+    if r_double <= 0:
+        raise ValueError("Base Segment Distance is too large; it must be less than the main leg's distance from the merge point.")
+
+    # Determine the start and end angles of the main leg arc
+    direction = 1 if clockwise else -1
+    total_arc_length_main = sum(first_leg_segments)
+    angular_displacement_rad = total_arc_length_main / r_main
+    
+    start_angle_deg = track_angle
+    end_angle_deg = (start_angle_deg + direction * math.degrees(angular_displacement_rad)) % 360
+
+    # --- 3. Calculate Double Leg ---
+    # The double leg starts at the same angle as the main leg's end, but on the inner radius.
+    # It then curves back towards the main leg's start angle.
+    # We use the same number of segments as the main leg.
+    num_segments_double = len(first_leg_segments)
+    arc_length_double = angular_displacement_rad * r_double
+    double_leg_segment_dist = arc_length_double / num_segments_double if num_segments_double > 0 else 0
+    double_leg_segments = [double_leg_segment_dist] * num_segments_double
+    
+    # We start from the end angle and go backwards, so the direction is reversed.
+    double_leg_points = calculate_leg_points(
+        merge_lat, merge_lon,
+        end_angle_deg, r_double,
+        double_leg_segments, not clockwise
+    )
+    if not double_leg_points:
+        raise ValueError("Failed to generate double leg for Double PMS.")
+
+    # The start of the drawn double leg is the first point calculated.
+    p_double_start = double_leg_points[0]
+    # The end is the last point, which lies on the line to the first point of the main leg.
+    p_double_end = double_leg_points[-1]
+
+    # --- 4. Assemble Waypoint List for Drawing ---
+    # The drawing sequence is: Main Leg -> Base Segment -> Double Leg -> Merge Point
+    # The base segment is the line from the end of the main leg to the start of the double leg.
+    p_main_end = main_leg_points[-1]
+    
+    # The final list is constructed to create a continuous line for drawing.
+    final_waypoints = []
+    # Add main leg points (from start to end)
+    final_waypoints.extend(main_leg_points)
+    # Add the points for the double leg (from its start to its end)
+    final_waypoints.extend(double_leg_points)
+    # Finally, add the merge point to connect the end of the double leg to it.
+    final_waypoints.append((merge_lat, merge_lon))
+
+    # Convert to the required dictionary format with names
+    all_waypoints_data = []
+    # Name main leg points
+    for i, (lat, lon) in enumerate(main_leg_points):
+        all_waypoints_data.append({'lat': lat, 'lon': lon, 'name': f"L1WP{i+1}"})
+    # Name double leg points
+    for i, (lat, lon) in enumerate(double_leg_points):
+        all_waypoints_data.append({'lat': lat, 'lon': lon, 'name': f"L2WP{i+1}"})
+    # Name merge point
+    all_waypoints_data.append({'lat': merge_lat, 'lon': merge_lon, 'name': 'MP'})
+
+    return all_waypoints_data

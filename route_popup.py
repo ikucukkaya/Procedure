@@ -1,15 +1,17 @@
 from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, 
-    QPushButton, QWidget, QMessageBox, QSpinBox, QColorDialog, QTabWidget, QTextEdit)
+    QPushButton, QWidget, QMessageBox, QTabWidget, QTextEdit, QScrollArea,
+    QGridLayout, QSlider, QColorDialog)
 from PyQt5.QtCore import Qt, pyqtSignal
+from PyQt5.QtGui import QFont, QColor
+import math
 
 class RoutePopupDialog(QDialog):
     """User Route düzenleme popup menüsü"""
+    routeSettingsChanged = pyqtSignal(dict)  # Route ayarları güncellemesi için
     routeRemoveRequested = pyqtSignal(str)  # Route ID'sini gönderir
     routeExportJsonRequested = pyqtSignal(str)  # Route ID'sini gönderir - JSON formatında kaydetmek için
     routeMoveRequested = pyqtSignal(str)  # Taşıma modu için Route ID'sini gönderir
     routeRotateRequested = pyqtSignal(str)  # Döndürme modu için Route ID'sini gönderir
-    routeColorChanged = pyqtSignal(str, str)  # Route ID ve yeni renk
-    routeLineWidthChanged = pyqtSignal(str, int)  # Route ID ve yeni line width
 
     def __init__(self, config, parent=None):
         super().__init__(parent)
@@ -104,7 +106,7 @@ class RoutePopupDialog(QDialog):
         self.tab_widget = QTabWidget()
         self.tab_widget.setStyleSheet("""
             QTabWidget::pane {
-                border: 1px solid #cccccc;
+                border: none;
                 background-color: white;
             }
             QTabBar::tab {
@@ -126,43 +128,24 @@ class RoutePopupDialog(QDialog):
         """)
         
         # Ayarlar sekmesi
-        settings_tab = QWidget()
-        settings_layout = QVBoxLayout(settings_tab)
-        settings_layout.setContentsMargins(10, 10, 10, 0)
-        
-        # Rota bilgisi
-        info_label = QLabel(f"Route: {route_name}")
-        info_label.setStyleSheet("font-size: 11px;")
-        settings_layout.addWidget(info_label)
-        
-        # Waypoint sayısı bilgisi
-        points = self.config.get('points', [])
-        waypoint_count = len(points)
-        waypoints_label = QLabel(f"Waypoints: {waypoint_count}")
-        waypoints_label.setStyleSheet("font-size: 11px;")
-        settings_layout.addWidget(waypoints_label)
-        
-        # Route style kontrollerini ekle
-        self.add_route_style_controls(settings_layout)
+        self.settings_tab = QWidget()
+        self.create_settings_tab()
+        self.tab_widget.addTab(self.settings_tab, "Settings")
         
         # Detay sekmesi
-        details_tab = QWidget()
-        details_layout = QVBoxLayout(details_tab)
-        details_layout.setContentsMargins(10, 10, 10, 10)
+        self.details_tab = QWidget()
+        self.create_details_tab()
+        self.tab_widget.addTab(self.details_tab, "Details")
         
-        # Detay bilgilerini ekle
-        self.add_route_details(details_layout)
-        
-        # Sekmeleri tab widget'a ekle
-        self.tab_widget.addTab(settings_tab, "Ayarlar")
-        self.tab_widget.addTab(details_tab, "Detay")
-        
-        # Tab widget'ını ana layout'a ekle
         layout.addWidget(self.tab_widget)
         
         # Butonlar
         btn_layout = QHBoxLayout()
         btn_layout.setSpacing(5)
+        
+        self.update_btn = QPushButton("Update")
+        self.update_btn.clicked.connect(self.on_update)
+        self.update_btn.setDefault(True)
         
         self.save_btn = QPushButton("Save")
         self.save_btn.clicked.connect(self.on_export_json)
@@ -183,6 +166,7 @@ class RoutePopupDialog(QDialog):
         self.cancel_btn.clicked.connect(self.reject)
         
         btn_layout.addStretch()
+        btn_layout.addWidget(self.update_btn)
         btn_layout.addWidget(self.save_btn)
         btn_layout.addWidget(self.move_btn)
         btn_layout.addWidget(self.rotate_btn)
@@ -190,9 +174,9 @@ class RoutePopupDialog(QDialog):
         btn_layout.addWidget(self.cancel_btn)
         
         # Buton genişliklerini popup genişliğine göre orantılı olarak ayarla
-        buttons = [self.save_btn, self.move_btn, self.rotate_btn, self.cancel_btn, self.remove_btn]
+        buttons = [self.update_btn, self.save_btn, self.move_btn, self.rotate_btn, self.cancel_btn, self.remove_btn]
         button_count = len(buttons)
-        popup_width = 380  # Popup genişliği
+        popup_width = 480  # Popup genişliği
         button_space = popup_width - 80  # Kenar boşlukları ve butonlar arası boşluk için çıkarma
         button_width = button_space / button_count
         
@@ -200,69 +184,291 @@ class RoutePopupDialog(QDialog):
         for btn in buttons:
             btn.setFixedWidth(int(button_width))
             
-        # Buton layout'unu ana layout'a ekle
         layout.addLayout(btn_layout)
         
-        self.setFixedSize(380, 250)  # Sekme yapısı için boyut artırıldı
+        self.setFixedSize(480, 350)  # Popup boyutu artırıldı
+        
+        # Tab değişikliğinde detay sekmesini güncelle
+        self.tab_widget.currentChanged.connect(self.on_tab_changed)
     
-    def add_route_style_controls(self, layout):
-        """Route style kontrollerini ekle"""
-        # Route color kontrolü
-        color_layout = QHBoxLayout()
-        color_label = QLabel("Route Color:")
-        color_label.setStyleSheet("font-size: 11px;")
+    def create_settings_tab(self):
+        """Ayarlar sekmesini oluşturur"""
+        content_layout = QVBoxLayout(self.settings_tab)
+        content_layout.setContentsMargins(10, 10, 10, 10)
         
-        self.color_btn = QPushButton()
-        # Mevcut route rengini al
-        route_color = self.config.get('color', '#FF0000')
-        self.color_btn.setStyleSheet(f"background-color: {route_color}; min-width: 30px; max-width: 30px; min-height: 20px; max-height: 20px;")
-        self.color_btn.clicked.connect(self.on_color_change)
+        # Rota bilgisi
+        route_name = self.config.get('name', 'Route')
+        info_label = QLabel(f"Route: {route_name}")
+        info_label.setStyleSheet("font-size: 11px; font-weight: bold;")
+        content_layout.addWidget(info_label)
         
-        color_layout.addWidget(color_label)
-        color_layout.addWidget(self.color_btn)
-        color_layout.addStretch()
+        # Waypoint sayısı bilgisi
+        points = self.config.get('points', [])
+        waypoint_count = len(points)
+        waypoints_label = QLabel(f"Waypoints: {waypoint_count}")
+        waypoints_label.setStyleSheet("font-size: 11px;")
+        content_layout.addWidget(waypoints_label)
         
-        # Route line width kontrolü
-        width_layout = QHBoxLayout()
-        width_label = QLabel("Line Width:")
-        width_label.setStyleSheet("font-size: 11px;")
+        # Görsel ayarlar
+        visual_settings_layout = QGridLayout()
+        visual_settings_layout.setVerticalSpacing(8)
+        visual_settings_layout.setHorizontalSpacing(10)
         
-        self.width_spinbox = QSpinBox()
-        self.width_spinbox.setMinimum(1)
-        self.width_spinbox.setMaximum(10)
-        # Mevcut line width'i al
-        line_width = self.config.get('line_width', 2)
-        self.width_spinbox.setValue(line_width)
-        self.width_spinbox.valueChanged.connect(self.on_width_change)
+        # Renk ayarı
+        visual_settings_layout.addWidget(QLabel("Route Color:"), 0, 0)
+        self.color_button = QPushButton()
+        self.color_button.setFixedSize(40, 25)
+        # Config'de renk yoksa varsayılan rengi config'e kaydet
+        if 'color' not in self.config:
+            self.config['color'] = self.get_default_color()
+        current_color = self.config.get('color', self.get_default_color())
+        self.color_button.setStyleSheet(f"background-color: {current_color}; border: 1px solid #444444;")
+        self.color_button.clicked.connect(self.on_color_changed)
+        visual_settings_layout.addWidget(self.color_button, 0, 1)
         
-        width_layout.addWidget(width_label)
-        width_layout.addWidget(self.width_spinbox)
-        width_layout.addStretch()
+        # Kalınlık ayarı
+        visual_settings_layout.addWidget(QLabel("Line Width:"), 1, 0)
+        self.width_slider = QSlider(Qt.Horizontal)
+        self.width_slider.setRange(1, 8)
+        # Config'de width yoksa varsayılan değeri config'e kaydet
+        if 'width' not in self.config:
+            self.config['width'] = self.get_default_width()
+        self.width_slider.setValue(self.config.get('width', self.get_default_width()))
+        self.width_slider.valueChanged.connect(self.on_width_changed)
+        visual_settings_layout.addWidget(self.width_slider, 1, 1)
         
-        layout.addLayout(color_layout)
-        layout.addLayout(width_layout)
+        self.width_label = QLabel(f"{self.config.get('width', self.get_default_width())}px")
+        visual_settings_layout.addWidget(self.width_label, 1, 2)
         
-    def on_color_change(self):
-        """Route color değiştiğinde çağrılır"""
-        color = QColorDialog.getColor()
-        if color.isValid():
-            color_hex = color.name()
-            self.color_btn.setStyleSheet(f"background-color: {color_hex}; min-width: 30px; max-width: 30px; min-height: 20px; max-height: 20px;")
-            # Sinyal emit et
-            rid = self.config.get('id', '')
-            if rid:
-                self.routeColorChanged.emit(rid, color_hex)
-                # Detay sekmesini güncelle
-                self.update_details_tab()
+        content_layout.addLayout(visual_settings_layout)
+        content_layout.addStretch()
+    
+    def create_details_tab(self):
+        """Detay sekmesini oluşturur"""
+        content_layout = QVBoxLayout(self.details_tab)
+        content_layout.setContentsMargins(10, 10, 10, 10)
+        
+        # Scroll area oluştur
+        scroll_area = QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setFrameStyle(QScrollArea.NoFrame)
+        
+        # Detay içeriği için widget
+        self.details_content = QWidget()
+        self.details_layout = QVBoxLayout(self.details_content)
+        
+        # Monospace font oluştur
+        mono_font = QFont("Courier New", 9)
+        mono_font.setFixedPitch(True)
+        
+        # Detay text alanı
+        self.details_text = QTextEdit()
+        self.details_text.setFont(mono_font)
+        self.details_text.setReadOnly(True)
+        self.details_text.setStyleSheet("""
+            QTextEdit {
+                background-color: #f8f8f8;
+                border: 1px solid #cccccc;
+                border-radius: 3px;
+                padding: 8px;
+                font-family: 'Courier New', monospace;
+                font-size: 9px;
+                line-height: 1.4;
+            }
+        """)
+        
+        self.details_layout.addWidget(self.details_text)
+        scroll_area.setWidget(self.details_content)
+        content_layout.addWidget(scroll_area)
+        
+        # İlk detay içeriğini oluştur
+        self.update_details_content()
+    
+    def on_color_changed(self):
+        """Renk değiştiğinde çağrılır"""
+        current_color = self.config.get('color', self.get_default_color())
+        print(f"Color dialog opening with current color: {current_color}")
+        
+        # QColorDialog'u modal olarak aç
+        color_dialog = QColorDialog(QColor(current_color), self)
+        color_dialog.setOption(QColorDialog.ShowAlphaChannel, False)
+        color_dialog.setWindowTitle("Select Route Color")
+        color_dialog.setModal(True)  # Modal yap
+        
+        # Dialog'u göster ve sonucu kontrol et
+        if color_dialog.exec_() == QColorDialog.Accepted:
+            color = color_dialog.selectedColor()
+            if color.isValid():
+                color_hex = color.name()
+                print(f"Color changed to: {color_hex}")
+                self.config['color'] = color_hex
+                self.color_button.setStyleSheet(f"background-color: {color_hex}; border: 1px solid #444444;")
+                self.update_details_content()
                 
-    def on_width_change(self, value):
-        """Route line width değiştiğinde çağrılır"""
-        rid = self.config.get('id', '')
-        if rid:
-            self.routeLineWidthChanged.emit(rid, value)
-            # Detay sekmesini güncelle
-            self.update_details_tab()
+                # Popup'ı öne getir
+                self.raise_()
+                self.activateWindow()
+            else:
+                print("Color dialog cancelled")
+        else:
+            print("Color dialog cancelled")
+            # Popup'ı öne getir
+            self.raise_()
+            self.activateWindow()
     
+    def on_width_changed(self, value):
+        """Kalınlık değiştiğinde çağrılır"""
+        print(f"Width changed to: {value}")
+        self.config['width'] = value
+        self.width_label.setText(f"{value}px")
+        self.update_details_content()
+    
+    def on_tab_changed(self, index):
+        """Tab değiştiğinde detay sekmesini günceller"""
+        if index == 1:  # Detay sekmesi seçildi
+            self.update_details_content()
+    
+    def update_details_content(self):
+        """Detay sekmesinin içeriğini günceller"""
+        try:
+            # Debug: points yapısını kontrol et
+            points = self.config.get('points', [])
+            print(f"Points type: {type(points)}")
+            if points:
+                print(f"First point type: {type(points[0])}")
+                print(f"First point content: {points[0]}")
+            
+            # Detay bilgilerini oluştur
+            details = []
+            
+            # Temel tanımlama bilgileri
+            details.append("=== ROUTE DETAILS ===\n")
+            details.append("1. ROUTE IDENTIFICATION")
+            details.append(f"   Route ID         : {self.config.get('id', 'N/A')}")
+            details.append(f"   Route Name       : {self.config.get('name', 'N/A')}")
+            details.append(f"   Route Type       : User Route")
+            details.append("")
+            
+            # Navigasyon bilgileri
+            details.append("2. NAVIGATION INFORMATION")
+            details.append(f"   Total Waypoints  : {len(points)}")
+            details.append("")
+            
+            if points:
+                details.append("   Waypoint Details:")
+                total_distance = 0
+                for i, point in enumerate(points):
+                    # Points tuple ise (lat, lon) formatında
+                    if isinstance(point, tuple) and len(point) >= 2:
+                        lat, lon = point[0], point[1]
+                    # Points dict ise
+                    elif isinstance(point, dict):
+                        lat = point.get('lat', 0)
+                        lon = point.get('lon', 0)
+                    else:
+                        lat, lon = 0, 0
+                        
+                    details.append(f"   WP{i+1:2d}             : {lat:9.6f}°, {lon:10.6f}°")
+                    
+                    # Mesafe hesaplama (bir sonraki waypoint'e kadar)
+                    if i < len(points) - 1:
+                        next_point = points[i + 1]
+                        if isinstance(next_point, tuple) and len(next_point) >= 2:
+                            next_lat, next_lon = next_point[0], next_point[1]
+                        elif isinstance(next_point, dict):
+                            next_lat = next_point.get('lat', 0)
+                            next_lon = next_point.get('lon', 0)
+                        else:
+                            next_lat, next_lon = 0, 0
+                        
+                        # Haversine formula ile mesafe hesaplama
+                        distance = self.calculate_distance(lat, lon, next_lat, next_lon)
+                        total_distance += distance
+                        
+                        # Bearing hesaplama
+                        bearing = self.calculate_bearing(lat, lon, next_lat, next_lon)
+                        details.append(f"                    → Distance: {distance:6.2f} NM, Bearing: {bearing:6.1f}°")
+                
+                details.append("")
+                details.append("3. GEOMETRIC PROPERTIES")
+                details.append(f"   Total Route Length : {total_distance:.2f} NM")
+            
+            # Görsel stil bilgileri
+            details.append("")
+            details.append("4. VISUAL STYLE PROPERTIES")
+            details.append(f"   Route Color      : {self.config.get('color', self.get_default_color())}")
+            details.append(f"   Line Width       : {self.config.get('width', self.get_default_width())}px")
+            details.append("")
+            
+            # Zaman damgaları
+            details.append("5. TIMESTAMPS")
+            details.append(f"   Created          : Current Session")
+            details.append(f"   Last Modified    : Current Session")
+            details.append("")
+            
+            # Durum bilgileri
+            details.append("6. STATUS INFORMATION")
+            details.append(f"   Route Status     : Active")
+            details.append(f"   Editable         : Yes")
+            details.append(f"   Exportable       : Yes")
+            
+            # Detay metnini güncelle
+            self.details_text.setPlainText("\n".join(details))
+            
+        except Exception as e:
+            self.details_text.setPlainText(f"Error generating details: {str(e)}")
+    
+    def calculate_distance(self, lat1, lon1, lat2, lon2):
+        """İki nokta arasındaki mesafeyi nautical mile cinsinden hesaplar"""
+        # Haversine formula
+        R = 3440.065  # Dünya yarıçapı nautical mile cinsinden
+        
+        lat1_rad = math.radians(lat1)
+        lat2_rad = math.radians(lat2)
+        delta_lat = math.radians(lat2 - lat1)
+        delta_lon = math.radians(lon2 - lon1)
+        
+        a = math.sin(delta_lat/2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(delta_lon/2)**2
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+        
+        return R * c
+    
+    def calculate_bearing(self, lat1, lon1, lat2, lon2):
+        """İki nokta arasındaki bearing'i hesaplar"""
+        lat1_rad = math.radians(lat1)
+        lat2_rad = math.radians(lat2)
+        delta_lon = math.radians(lon2 - lon1)
+        
+        y = math.sin(delta_lon) * math.cos(lat2_rad)
+        x = math.cos(lat1_rad) * math.sin(lat2_rad) - math.sin(lat1_rad) * math.cos(lat2_rad) * math.cos(delta_lon)
+        
+        bearing = math.atan2(y, x)
+        bearing = math.degrees(bearing)
+        bearing = (bearing + 360) % 360
+        
+        return bearing
+    
+    def get_default_color(self):
+        """Route için varsayılan renk"""
+        return '#800080'  # Mor
+    
+    def get_default_width(self):
+        """Route için varsayılan kalınlık"""
+        return 2
+    
+    def on_update(self):
+        """Route ayarlarını güncelle"""
+        # Güncellenmiş konfigürasyonu oluştur
+        updated_config = self.config.copy()
+        updated_config.update({
+            'color': self.config.get('color', self.get_default_color()),
+            'width': self.config.get('width', self.get_default_width())
+        })
+        
+        # Route güncellemesi sinyalini gönder
+        self.routeSettingsChanged.emit(updated_config)
+        print(f"Route settings updated: {updated_config}")
+        
     def on_export_json(self):
         """Rotayı JSON olarak kaydet"""
         rid = self.config.get('id', '')
@@ -322,88 +528,3 @@ class RoutePopupDialog(QDialog):
                 parent.last_route_popup_pos = self.pos()
         else:
             super().mouseReleaseEvent(event)
-
-    def add_route_details(self, layout):
-        """Route detaylarını ekle"""
-        # Route detay bilgilerini göster
-        self.details_text = QTextEdit()
-        self.details_text.setReadOnly(True)
-        self.details_text.setStyleSheet("font-family: monospace; font-size: 10px;")
-        
-        # Detay bilgilerini hazırla
-        details_content = self.generate_route_details()
-        self.details_text.setPlainText(details_content)
-        
-        layout.addWidget(self.details_text)
-        
-    def generate_route_details(self):
-        """Route detay bilgilerini oluştur"""
-        details = []
-        
-        # Temel bilgiler
-        details.append("=== ROUTE DETAILS ===")
-        details.append(f"Route ID: {self.config.get('id', 'N/A')}")
-        details.append(f"Route Name: {self.config.get('name', 'N/A')}")
-        details.append(f"Route Type: {self.config.get('type', 'N/A')}")
-        details.append("")
-        
-        # Waypoint bilgileri
-        points = self.config.get('points', [])
-        waypoint_names = self.config.get('waypoint_names', [])
-        
-        if points:
-            details.append("=== WAYPOINTS ===")
-            for i, point in enumerate(points):
-                lat, lon = point
-                waypoint_name = waypoint_names[i] if i < len(waypoint_names) else f"WP{i+1}"
-                details.append(f"{waypoint_name}: {lat:.6f}, {lon:.6f}")
-            details.append("")
-        
-        # Segment bilgileri
-        segment_distances = self.config.get('segment_distances', [])
-        segment_angles = self.config.get('segment_angles', [])
-        
-        if segment_distances:
-            details.append("=== SEGMENTS ===")
-            for i, distance in enumerate(segment_distances):
-                angle = segment_angles[i] if i < len(segment_angles) else 0
-                details.append(f"Segment {i+1}: {distance:.2f} NM, {angle:.1f}°")
-            details.append("")
-        
-        # Toplam mesafe
-        if segment_distances:
-            total_distance = sum(d for d in segment_distances if d > 0)
-            details.append(f"Total Distance: {total_distance:.2f} NM")
-            details.append("")
-        
-        # Style bilgileri (UI'dan güncel değerleri al)
-        details.append("=== STYLE ===")
-        # Renk butonundan güncel rengi al - styleSheet'ten çıkar
-        button_style = self.color_btn.styleSheet()
-        current_color = "N/A"
-        if "background-color:" in button_style:
-            # StyleSheet'ten renk kodunu çıkar
-            start = button_style.find("background-color:") + len("background-color:")
-            end = button_style.find(";", start)
-            if end == -1:
-                end = len(button_style)
-            current_color = button_style[start:end].strip()
-        details.append(f"Color: {current_color}")
-        details.append(f"Line Width: {self.width_spinbox.value()}")
-        details.append("")
-        
-        # Zaman bilgileri (varsa)
-        if 'created_at' in self.config:
-            details.append("=== TIMING ===")
-            details.append(f"Created: {self.config.get('created_at', 'N/A')}")
-            if 'modified_at' in self.config:
-                details.append(f"Modified: {self.config.get('modified_at', 'N/A')}")
-        
-        return "\n".join(details)
-    
-    def update_details_tab(self):
-        """Detay sekmesini günceller"""
-        # Yeni detay metnini oluştur
-        details_text = self.generate_route_details()
-        # Detay metin alanını güncelle
-        self.details_text.setPlainText(details_text)

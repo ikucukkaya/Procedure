@@ -176,9 +176,6 @@ class AirspaceVisualizer(QMainWindow):
         
         # Connect signals
         self.connect_signals()
-        
-        # UI ayarlarını başlat
-        self.initialize_ui_settings()
 
     def prompt_and_load_data(self):
         """Show startup dialog, load selected data, return True on success."""
@@ -275,6 +272,18 @@ class AirspaceVisualizer(QMainWindow):
         self.action_exit.setShortcut("Alt+F4")
         file_menu.addAction(self.action_exit)
         
+        # Edit menu
+        edit_menu = self.menubar.addMenu("Edit")
+        self.action_undo = QAction("Undo", self)
+        self.action_undo.setShortcut("Ctrl+Z")
+        self.action_undo.triggered.connect(self.map_widget.undo)
+        edit_menu.addAction(self.action_undo)
+
+        self.action_redo = QAction("Redo", self)
+        self.action_redo.setShortcut("Ctrl+Y")
+        self.action_redo.triggered.connect(self.map_widget.redo)
+        edit_menu.addAction(self.action_redo)
+
         # Tools menu
         tools_menu = self.menubar.addMenu("Tools")
         
@@ -368,12 +377,7 @@ class AirspaceVisualizer(QMainWindow):
         self.left_sidebar.showRestrictedAreasToggled.connect(self.on_show_restricted_areas_toggled)
         self.left_sidebar.showSegmentDistancesToggled.connect(self.on_show_segment_distances_toggled)
         
-        # Eski çizgi kalınlığı ve renk ayarları sinyalleri kaldırıldı (artık route popup'ta yapılıyor)
-        
-        # Harita renkleri için sinyal bağlantıları
-        self.left_sidebar.landColorChanged.connect(self.on_land_color_changed)
-        self.left_sidebar.backgroundColorChanged.connect(self.on_background_color_changed)
-        self.left_sidebar.restrictedAreaColorChanged.connect(self.on_restricted_area_color_changed)
+        # Line Settings artık popup'larda yönetiliyor
         
         # Snap ayarları için sinyal bağlantıları
         self.left_sidebar.snapEnabledToggled.connect(self.on_snap_enabled_toggled)
@@ -392,21 +396,31 @@ class AirspaceVisualizer(QMainWindow):
         # (Waypoint görünürlüğü ile snap ayarlarını senkronize etmek için)
         self.left_sidebar.post_init()
 
-
-
-    def initialize_ui_settings(self):
-        """UI ayarlarını başlangıç değerlerine göre ayarla"""
-        # Renk butonlarını güncelle - hata kontrolü ile
-        try:
-            if hasattr(self.left_sidebar, 'update_land_color_button'):
-                self.left_sidebar.update_land_color_button(self.map_widget.land_color)
-            if hasattr(self.left_sidebar, 'update_background_color_button'):
-                self.left_sidebar.update_background_color_button(self.map_widget.background_color)
-            if hasattr(self.left_sidebar, 'update_restricted_area_color_button'):
-                self.left_sidebar.update_restricted_area_color_button(self.map_widget.restricted_area_border_color)
-        except AttributeError as e:
-            print(f"Warning: Could not initialize color buttons: {e}")
-            # Devam et, bu kritik değil
+    def setup_connections(self):
+        """Setup signal-slot connections"""
+        # Left sidebar connections
+        self.left_sidebar.procedureToggled.connect(self.on_procedure_toggled)
+        self.left_sidebar.runwayToggled.connect(self.on_runway_toggled)
+        self.left_sidebar.resetViewRequested.connect(self.map_widget.on_reset_view)
+        self.left_sidebar.runwayDisplayOptionsRequested.connect(self.show_runway_options_dialog)
+        self.left_sidebar.showWaypointsToggled.connect(self.on_show_waypoints_toggled)
+        self.left_sidebar.showTmaBoundaryToggled.connect(self.on_show_tma_boundary_toggled)
+        self.left_sidebar.showRestrictedAreasToggled.connect(self.on_show_restricted_areas_toggled)
+        self.left_sidebar.showSegmentDistancesToggled.connect(self.on_show_segment_distances_toggled)
+        
+        # Line Settings artık popup'larda yönetiliyor
+        
+        # Map widget connections
+        self.map_widget.coordinatesChanged.connect(self.on_coordinates_changed)
+        self.map_widget.pathSelected.connect(self.on_path_selected)
+        
+        # Map widget connections for route drawing
+        self.map_widget.route_drawer.routeDrawingStarted.connect(self.on_route_drawing_started)
+        self.map_widget.route_drawer.routeDrawingFinished.connect(self.on_route_drawing_finished)
+        self.map_widget.route_drawer.routePointAdded.connect(self.on_route_point_added)
+        
+        # Trajectory import action connection
+        self.action_import_trajectory.triggered.connect(self.on_import_trajectory)
 
     def on_procedure_toggled(self, checked, proc_type, airport, runway, procedure):
         """Handle procedure toggle"""
@@ -1162,60 +1176,6 @@ class AirspaceVisualizer(QMainWindow):
             self.map_widget.route_drawer.snap_manager.set_snap_tolerance(value)
             self.map_widget.update()
             self.map_widget.update_status_message(f"Snap toleransı: {value}px")
-            
-    # Eski route color ve width handler'ları kaldırıldı (artık popup'ta yapılıyor)
-    
-    # Route popup'tan gelen sinyalleri işle
-    def on_route_color_changed(self, route_id, color):
-        """Route rengi değiştiğinde haritayı güncelle"""
-        print(f"DEBUG: Route {route_id} color changed to {color}")
-        # Route'un haritadaki rengini güncelle
-        for route in self.map_widget.drawn_elements.get('routes', []):
-            if route.get('id') == route_id:
-                route['color'] = color
-                break
-        self.map_widget.update()
-        self.statusBar().showMessage(f"Route color updated: {color}", 2000)
-        
-    def on_route_line_width_changed(self, route_id, width):
-        """Route line width değiştiğinde haritayı güncelle"""
-        print(f"DEBUG: Route {route_id} line width changed to {width}")
-        # Route'un haritadaki kalınlığını güncelle
-        for route in self.map_widget.drawn_elements.get('routes', []):
-            if route.get('id') == route_id:
-                route['line_width'] = width
-                break
-        self.map_widget.update()
-        self.statusBar().showMessage(f"Route line width updated: {width}px", 2000)
-        
-    def on_land_color_changed(self, color):
-        """Land rengi değiştiğinde tetiklenen metot"""
-        print(f"DEBUG: Land color changed to {color.name()}")
-        if isinstance(color, QColor) and color.isValid():
-            self.map_widget.land_color = color
-            self.map_widget.country_color = color
-            self.map_widget.colors['land'] = color
-            self.map_widget.update()  # Haritayı güncelle
-            self.statusBar().showMessage(f"Land rengi değiştirildi: {color.name()}", 2000)
-    
-    def on_background_color_changed(self, color):
-        """Background rengi değiştiğinde tetiklenen metot"""
-        print(f"DEBUG: Background color changed to {color.name()}")
-        if isinstance(color, QColor) and color.isValid():
-            self.map_widget.background_color = color
-            self.map_widget.colors['background'] = color
-            self.map_widget.update()  # Haritayı güncelle
-            self.statusBar().showMessage(f"Background rengi değiştirildi: {color.name()}", 2000)
-    
-    def on_restricted_area_color_changed(self, color):
-        """Yasaklı sahalar rengi değiştiğinde tetiklenen metot"""
-        print(f"DEBUG: Restricted area color changed to {color.name()}")
-        if isinstance(color, QColor) and color.isValid():
-            self.map_widget.restricted_area_border_color = color
-            self.map_widget.restricted_area_grid_color = QColor(color.red(), color.green(), color.blue(), 80)  # %31 saydamlık
-            self.map_widget.restricted_area_fill_color = QColor(color.red(), color.green(), color.blue(), 40)  # %16 saydamlık
-            self.map_widget.update()  # Haritayı güncelle
-            self.statusBar().showMessage(f"Yasaklı sahalar rengi değiştirildi: {color.name()}", 2000)
 
     def center_on_screen(self):
         """Pencereyi ekranın merkezinde konumlandır"""

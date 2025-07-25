@@ -290,18 +290,21 @@ class PathExtensionDialog(QDialog):
         self.pm_second_leg_tab = QWidget()
         self.pm_segment_tab = QWidget()
         self.pm_connections_tab = QWidget()
+        self.pm_double_pms_tab = QWidget()
         
         # Setup layouts for each tab
         self.pm_main_tab_layout = QVBoxLayout(self.pm_main_tab)
         self.pm_second_leg_tab_layout = QVBoxLayout(self.pm_second_leg_tab)
         self.pm_segment_tab_layout = QVBoxLayout(self.pm_segment_tab)
         self.pm_connections_tab_layout = QVBoxLayout(self.pm_connections_tab)
+        self.pm_double_pms_tab_layout = QVBoxLayout(self.pm_double_pms_tab)
         
         # Add tabs to widget
         self.pointmerge_tab_widget.addTab(self.pm_main_tab, "Main Leg")
         self.pointmerge_tab_widget.addTab(self.pm_second_leg_tab, "Second Leg")
         self.pointmerge_tab_widget.addTab(self.pm_segment_tab, "Segment Distances")
         self.pointmerge_tab_widget.addTab(self.pm_connections_tab, "Connections")
+        self.pointmerge_tab_widget.addTab(self.pm_double_pms_tab, "Double PMS")
         
         # Connect tab changed signal to automatically create segment distances when tab is selected
         self.pointmerge_tab_widget.currentChanged.connect(self._on_tab_selection_changed)
@@ -576,6 +579,30 @@ class PathExtensionDialog(QDialog):
         connections_group.setLayout(connections_layout)
         self.pm_connections_tab_layout.addWidget(connections_group)
 
+        # ---- Double PMS Tab ----
+        double_pms_group = QGroupBox("Double Point-Merge System")
+        double_pms_layout = QVBoxLayout()
+
+        self.enable_double_pms = QCheckBox("Enable Double PMS")
+        self.enable_double_pms.stateChanged.connect(self._toggle_double_pms)
+        double_pms_layout.addWidget(self.enable_double_pms)
+
+        self.double_pms_options = QWidget()
+        double_pms_options_layout = QHBoxLayout(self.double_pms_options)
+        
+        double_pms_options_layout.addWidget(QLabel("Base Segment Distance (NM):"))
+        self.base_segment_distance = self._create_distance_input(5.0, 0.1, 20.0)
+        double_pms_options_layout.addWidget(self.base_segment_distance)
+        double_pms_options_layout.addStretch()
+        
+        self.double_pms_options.setVisible(False)
+        double_pms_layout.addWidget(self.double_pms_options)
+        double_pms_layout.addStretch()
+
+        double_pms_group.setLayout(double_pms_layout)
+        self.pm_double_pms_tab_layout.addWidget(double_pms_group)
+
+
     def _toggle_second_leg(self, state):
         """Toggle visibility of second leg options"""
         self.has_second_leg = (state == Qt.Checked)
@@ -584,6 +611,10 @@ class PathExtensionDialog(QDialog):
         # Hide/show second leg segment container if it exists
         if hasattr(self, 'second_leg_segment_container'):
             self.second_leg_segment_container.setVisible(self.has_second_leg)
+
+    def _toggle_double_pms(self, state):
+        """Toggle visibility of Double PMS options"""
+        self.double_pms_options.setVisible(state == Qt.Checked)
 
     def _create_segment_distance_inputs(self):
         """Create input fields for segment distances"""
@@ -1050,6 +1081,15 @@ class PathExtensionDialog(QDialog):
                     'merge_lat': merge_coords[0],
                     'merge_lon': merge_coords[1]
                 }
+
+                # Add Double PMS config if enabled
+                if self.enable_double_pms.isChecked():
+                    if not self.base_segment_distance.text():
+                        return None
+                    config['double_pms_enabled'] = True
+                    config['base_segment_distance'] = float(self.base_segment_distance.text() or 0)
+                else:
+                    config['double_pms_enabled'] = False
                 
                 return config
         except ValueError as e:
@@ -1190,6 +1230,14 @@ class PathExtensionDialog(QDialog):
                     self.segment_distances_second[empty_field_index].setFocus()
                 return False
         
+        # Check Double PMS parameters if enabled
+        if self.enable_double_pms.isChecked():
+            if not self.base_segment_distance.text():
+                QMessageBox.warning(self, "Input Error", "Please enter Base Segment Distance for Double PMS")
+                self.pointmerge_tab_widget.setCurrentIndex(4) # Switch to Double PMS tab
+                self.base_segment_distance.setFocus()
+                return False
+
         return True
         
     def _get_merge_point_coords(self):
@@ -1417,7 +1465,12 @@ def calculate_trombone_waypoints(runway, config):
     # Point 'C': Extension leg end point
     # Extension should be parallel to the approach centerline, but point AWAY from the threshold
     # This direction is the same as the runway heading (away from threshold).
-    extension_leg_angle_rad = runway_heading_rad 
+    extension_leg_angle_rad = runway_heading_rad
+    
+    # Check if the extension direction should be inverted (flipped vertically)
+    if config.get('extension_inverted', False):
+        extension_leg_angle_rad += math.pi # Add 180 degrees
+        
     extension_leg_angle_deg = math.degrees(extension_leg_angle_rad)
 
     # Daha doğru hesaplama için büyük daire hesaplaması kullanıyoruz
